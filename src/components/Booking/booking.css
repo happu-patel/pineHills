@@ -1,0 +1,83 @@
+/* Booking Section Styling */
+
+.booking-container {
+    padding: 20px 15px;
+}
+
+.booking-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.booking-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 26px;
+    letter-spacing: 1px;    
+    color: #1B1C21;
+    font-family: "Raleway";
+}
+
+.select-date {
+    padding: 14px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    border-radius: 4px;
+    width: 590px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.counter span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.book-now-btn {
+    padding: 18px 44px;
+    border-color: #1B1C21;
+    color: #1B1C21;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 1220px) {
+    .booking-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

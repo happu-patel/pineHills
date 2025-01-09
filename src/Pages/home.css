@@ -1,0 +1,95 @@
+.banner-wrapper {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.home-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: white;
+    padding: 150px 0px 270px;
+    /* Adjusted bottom padding */
+    position: relative;
+}
+
+.banner-content {
+    margin: 0 auto;
+}
+
+.reconnect-text {
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: 'Raleway';
+    padding-bottom: 16px;
+}
+
+.reconnect-text span {
+    margin: 0 10px;
+}
+
+.luxury-title {
+    font-size: 88px;
+    font-family: 'GFS Didot';
+    padding-bottom: 20px;
+    margin-bottom: 0px !important;
+    letter-spacing: -2px;
+    line-height: 100px;
+}
+
+.banner-subtitle {
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0px !important;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.view-facilities-btn {
+    background-color: #000;
+    color: white;
+    font-family: 'Raleway';
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-facilities-btn:hover {
+    background-color: #333;
+}
+
+.booking-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    /* Adjust this value to control how much the form overlaps */
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 17px 48px;
+    z-index: 10;
+    width: 100%;
+    max-width: 1280px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .luxury-title {
+        font-size: 40px;
+    }
+
+    .reconnect-text,
+    .banner-subtitle {
+        font-size: 12px;
+    }
+}

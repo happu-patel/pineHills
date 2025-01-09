@@ -89,11 +89,9 @@ body {
 }
 
 .our_info {
-    padding-top: 55px;
+    padding-top: 60px;
     position: relative;
-    /* overflow-x: hidden; */
-    /* overflow: hidden; */
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .video-box {

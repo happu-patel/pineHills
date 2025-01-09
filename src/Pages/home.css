@@ -225,13 +225,80 @@ body {
     color: #1B1C21;
 }
 
-
-
 .image-box {
     background-color: #d3d3d3;
     height: 340px;
     width: 600px;
 
+}
+
+.lodging-container {
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.section-title {
+    color: #a29061;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.main-title {
+    font-size: 48px;
+    padding-top: 12px;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: 'GFS Didot';
+    letter-spacing: -1px;
+}
+
+.description {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: #666666;
+    line-height: 26px;
+}
+
+.options-container {
+    display: grid;
+    padding: 60px 0px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+}
+
+.option-card {
+    background-color:#f4f1ee;
+    padding: 32px;
+    text-align: center;
+}
+
+.icon-placeholder {
+    width: 70px;
+    height: 70px;
+    background-color: #4F4F4F;
+    margin: 0 auto 1rem;
+}
+
+.option-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    line-height: 32px;
+    font-family: 'GFS Didot';
+}
+.icon_orn {
+    padding: 16px 0px;
+}
+.option-description {
+    font-size: 17px;
+    margin-bottom: 0px;
+    line-height: 26px;  
+    color: #666666;
+    font-family: 'Raleway';
 }
 
 

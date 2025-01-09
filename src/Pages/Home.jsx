@@ -114,6 +114,56 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="lodging container">
+                <div className='title_part text-center'>
+                    <img src={ornament_icon} />
+                    <span className="section-title px-2">
+                        MORE WAYS TO STAY
+                    </span>
+                    <img src={ornament_icon} />
+                </div>
+                <h2 className="main-title text-center">Expand Your Lodging Choices</h2>
+                <p className="description text-center">
+                    Whether you're seeking the cozy charm of a rustic cabin, the elegance of a
+                    luxury suite, or the <br /> spacious comfort of a family villa, we have the
+                    perfect lodging option for you.
+                </p>
+                <div className="options-container">
+                    <div className="option-card">
+                        <div className="icon-placeholder"></div>
+                        <h4 className="option-title">HOTEL & RESORT</h4>
+                        <img src={ornament_icon} className='icon_orn' />
+                        <p className="option-description">
+                            Enjoy top-tier comfort and service in premium accommodations.
+                        </p>
+                    </div>
+                    <div className="option-card">
+                        <div className="icon-placeholder"></div>
+                        <h4 className="option-title">HOMES & VILLAS</h4>
+                        <img src={ornament_icon} className='icon_orn' />
+                        <p className="option-description">
+                            Relax in spacious, private homes perfect for families and groups.
+                        </p>
+                    </div>
+                    <div className="option-card">
+                        <div className="icon-placeholder"></div>
+                        <h4 className="option-title">INCLUSIVE RESORT</h4>
+                        <img src={ornament_icon} className='icon_orn' />
+                        <p className="option-description">
+                            All-inclusive stays with everything you need for a stress-free
+                            getaway.
+                        </p>
+                    </div>
+                    <div className="option-card">
+                        <div className="icon-placeholder"></div>
+                        <h4 className="option-title">HOTEL & TRAVEL</h4>
+                        <img src={ornament_icon} className='icon_orn'/>
+                        <p className="option-description">
+                            Convenient packages combining your hotel stay with travel options.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </>
     )

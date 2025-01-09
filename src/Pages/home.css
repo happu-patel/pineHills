@@ -46,6 +46,7 @@
     line-height: 28px;
     margin-bottom: 0px !important;
     letter-spacing: 4px;
+    color: #fff;
     font-weight: 600;
     padding-bottom: 30px;
 }
@@ -81,6 +82,160 @@
     width: 100%;
     max-width: 1280px;
 }
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.our_info {
+    padding-top: 55px;
+    position: relative;
+    /* overflow-x: hidden; */
+    /* overflow: hidden; */
+    padding-bottom: 20px;
+}
+
+.video-box {
+
+    width: 100%;
+    height: 300px;
+}
+
+.our_info::before {
+    content: "OUR STORY";
+    position: absolute;
+    top: 15%;
+    left: -179px;
+    transform: translateY(-50%);
+    font-size: 200px;
+    font-weight: 400;
+    font-family: 'GFS Didot';
+    color: rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.our_info::after {
+    content: "ABOUT VILLA";
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(51%);
+    font-size: 200px;
+    font-weight: 400;
+    font-family: 'GFS Didot';
+    color: rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.img-fluid {
+    height: 340px !important;
+    width: 600px;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: #333;
+    cursor: pointer;
+}
+
+.section-title {
+    padding-top: 40px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 4px;
+    font-weight: 600 !important;
+    font-family: 'Raleway';
+    color: #B7A18B;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title_part {
+    padding-top: 40px;
+}
+
+.our_info h2 {
+    padding-top: 12px;
+    font-size: 48px;
+    font-family: 'GFS Didot';
+    line-height: 56px;
+    letter-spacing: -1px;
+    color: #1B1C21;
+    margin-bottom: 0px;
+    padding-bottom: 32px;
+}
+
+.our_info p {
+    font-size: 17px;
+    font-family: 'Raleway';
+    line-height: 26px;
+    color: #666666;
+    margin-bottom: 0px;
+    padding-bottom: 24px;
+}
+
+.right_col {
+    padding-top: 120px;
+}
+
+.stats {
+    margin-top: 30px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    padding-left: 10px;
+}
+
+.text-box h3 {
+    font-family: 'GFS Didot';
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    color: #1B1C21;
+    font-weight: 400 !important;
+}
+
+.text-box p {
+    padding-bottom: 0px;
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+    color: #1B1C21;
+}
+
+
+
+.image-box {
+    background-color: #d3d3d3;
+    height: 340px;
+    width: 600px;
+
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

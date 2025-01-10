@@ -247,6 +247,7 @@ body {
     font-size: 48px;
     padding-top: 12px;
     font-weight: 400;
+    margin-bottom: 0px;
     line-height: 56px;
     font-family: 'GFS Didot';
     letter-spacing: -1px;
@@ -256,6 +257,7 @@ body {
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 17px;
+    padding-top: 30px;
     margin-bottom: 0px;
     color: #666666;
     line-height: 26px;
@@ -305,6 +307,7 @@ body {
     background-color: #F7F7F7;
     position: relative;
 }
+
 .detail_resort::before,
 .detail_resort::after {
     content: "";
@@ -337,6 +340,7 @@ body {
     position: relative;
     padding: 120px 0px;
 }
+
 .main_part::before,
 .main_part::after {
     content: "";
@@ -360,12 +364,11 @@ body {
     bottom: -50px;
     right: 19%;
 }
+
 .left-section {
     flex: 7;
-    background: linear-gradient(to right,
-            #a29281 0%,
-            #b3a396 30%,
-            #c6b6a7 50%);
+    /* First Gradient */
+    background: linear-gradient(to right, rgb(130, 116, 102), rgb(167, 163, 157));
     padding: 70px 50px;
     color: #fff;
     text-align: left;
@@ -402,6 +405,10 @@ body {
 
 .feature p {
     margin-bottom: 0px;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .right-section {
@@ -467,6 +474,280 @@ body {
     background-color: #b8a48e;
 }
 
+.Amenities {
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.Amenities_box .Amenities_box_data {
+    background-color: gray;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.Amenities_box_data .Amenities_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    /* Darker square */
+    text-align: center;
+    margin: auto;
+}
+
+.Amenities_box_data h1 {
+    color: white;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'GFS Didot';
+}
+
+.amenities-card {
+    background-color: #1c1c1c;
+    /* Dark card background */
+    color: #fff;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.amenities-card::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -16px;
+    width: 135px;
+    height: 100px;
+    background-image: url('../assets/image/leaf.png');
+    /* Replace with actual background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.amenities-card::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100px;
+    background-image: url('../assets/image/detail_leaf3.svg');
+    /* Replace with actual background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.amenities-card .card-content {
+    position: relative;
+    z-index: 1;
+}
+
+.amenities-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #c5a880;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid white;
+    padding-top: 60px;
+}
+
+.amenities-heading {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'GFS Didot';
+    line-height: 56px;
+    padding-bottom: 32px;
+    letter-spacing: -1px;
+}
+
+.amenities-text {
+    font-family: 'Raleway';
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding-bottom: 32px;
+    letter-spacing: 1px;   
+    line-height: 26px;
+    
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding:18px 44px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+}
+
+.b_white {
+    padding-top: 50px;
+    border-bottom: 1px solid white;
+}
+
+/* our_services */
+
+.our_service {
+    background-color: #472C10;
+    padding-top: 50px;
+    padding-left: 50px;
+    opacity: 50%;
+    display: none;
+    height: 800px;
+}
+
+.service_contain {
+    background-color: #fff;
+    height: 700px;
+}
+
+.testimonial_part {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    padding-top: 50px;
+}
+
+.testimonial-box {
+    width: 100%;
+    background: linear-gradient(to bottom, #CCCCCC, #B3B3B3);
+    padding: 50px 20px 25px 100px;
+    position: relative;
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    max-width: 500px;
+}
+
+.content_title {
+    padding-left: 25px !important;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.content_title h3 {
+    font-family: 'GFS Didot';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 0px;
+    color: #1B1C21;
+}
+
+.content_title .title {
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+    color: #666666;
+}
+
+h3,
+.content .title {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /* Keeps them inline but on separate lines */
+    /* Ensures text is aligned to the right */
+}
+
+.quote-container {
+    background-color: #472C10;
+    opacity: 50%;
+    padding: 18px;
+    position: relative;
+    margin-top: 20px;
+    max-width: 318px;
+    /* justify-content: flex-end; */
+    margin-left: auto;
+}
+
+.quote-mark {
+    position: absolute;
+    top: -16px;
+    left: 19px;
+    color: white;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.quote-text {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+/* news_section */
+.news-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news_head {
+    font-family: 'GFS Didot';
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.card-title {
+    padding-top: 20px;
+    font-family: 'GFS Didot';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card-text {
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 12px;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

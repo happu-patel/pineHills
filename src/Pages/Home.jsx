@@ -8,6 +8,7 @@ import play_circle from '../assets/image/PlayCircle.svg'
 import ornament_icon from '../assets/image/ornament.svg'
 import white_logo from '../assets/image/footer_logo.svg'
 import ph_logo from '../assets/image/PH.png'
+import testimonial_icon from '../assets/image/testimonial_icon.svg'
 
 const Home = () => {
     return (
@@ -167,7 +168,7 @@ const Home = () => {
                 </div>
             </div>
             <section className='detail_resort'>
-                
+
                 <div className="container main_part">
                     {/* Left Section */}
                     <div className="left-section">
@@ -199,6 +200,178 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="container Amenities">
+                <div className="row">
+                    <div className="col-lg-8 Amenities_box">
+                        <div className="row g-3 mb-3">
+
+                            <div className="col-lg-7">
+                                <div className="Amenities_box_data">
+                                    <div>
+                                        <div className="Amenities_icon"></div>
+                                        <h1>PRIVATE POOL</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-5">
+                                <div className="Amenities_box_data">
+                                    <div>
+                                        <div className="Amenities_icon"></div>
+                                        <h1>RESTAURANT</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row g-3 mb-3">
+                            <div className="col-lg-5">
+                                <div className="Amenities_box_data">
+                                    <div>
+                                        <div className="Amenities_icon"></div>
+                                        <h1>SPA SERVICE</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-7">
+                                <div className="Amenities_box_data">
+                                    <div>
+                                        <div className="Amenities_icon"></div>
+                                        <h1>QUALITY GYM</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="amenities-card">
+                            <div className="card-content text-center">
+                                <div className='title_part text-center'>
+                                    <img src={ornament_icon} />
+                                    <span className="section-title px-2 pb-1" style={{ color:'#B7A18B'}}>
+                                        AMENITIES
+                                    </span>
+                                    <img src={ornament_icon} />
+                                </div>
+                                
+                                <h2 className="amenities-heading">We Offer You <br /> Luxurious Amenities</h2>
+                                <p className="amenities-text">
+                                    Indulge in unparalleled luxury with our top-tier amenities.
+                                    From private pools and fully equipped kitchens to personalized concierge services and elegant interiors.
+                                </p>
+                                <a href="#" className="read-more-btn">Read More</a>
+                            </div>
+                            <div className="b_white">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className='our_service'>
+                <div className='container'>
+                    <div className='service_contain'>
+                        <div className='left_contain'>
+                        
+                        </div>
+                        <div className='right_contain'>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='testimonial-sec'>
+                <div className='container'>
+                    <div className='title_part text-center'>
+                        <img src={ornament_icon} />
+                        <span className="section-title px-2">
+                            Testimonials
+                        </span>
+                        <img src={ornament_icon} />
+                    </div>
+                    <h2 className="main-title text-center">They Were happy with our service</h2>
+                    <p className='description text-center'>Read firsthand accounts of unforgettable experiences, exceptional service, and unparalleled comfort.<br /> Our testimonials highlight the unique aspects of our accommodations and the memorable moments.</p>
+                    <div className='testimonial_part'>
+                        <div className="testimonial-box">
+                            <div className="content">
+                                <div className="content_title">
+                                    <h3>Emily Johnson</h3>
+                                    <p className='title'>Marketing Manager. Rui Company</p>
+                                </div>
+
+                                <div className="quote-container">
+                                    <span className="quote-mark"><img src={testimonial_icon}/></span>
+                                    <p className="quote-text">
+                                        Staying at the Oceanfront Paradise Villa was an absolute dream. The view was breathtaking, and the private pool was the perfect spot.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="testimonial-box">
+                            <div className="content">
+                                <div className="content_title">
+                                    <h3>David Lee</h3>
+                                    <p className='title'>Financial Analyst, Rui Company</p>
+                                </div>
+                                <div className="quote-container">
+                                    <span className="quote-mark"><img src={testimonial_icon} /></span>
+                                    <p className="quote-text">
+                                        Our experience at the Highland Peaks Retreat exceeded all expectations. The serene mountain views and elegant design provided the perfect.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="news-section">
+                <div class="container py-5">
+                    <div class="text-center mb-5">
+                        <small class="title"><img src={ornament_icon} /><span className="section-title px-2">
+                            OUR News
+                        </span><img src={ornament_icon} /></small>
+                        <h2 class="news_head">Keep Updated With <br /> The Latest News And Trends</h2>
+                        <p class=" description">
+                            Stay informed with our latest news and updates. From exciting new resort openings and special offers <br />
+                            to important announcements and upcoming events.
+                        </p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="img_div">
+                                <img src={resort_img} class="card-img-top" alt="Luxury Villas" />
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Pine Hills Unveils New Luxury Villas With Stunning Mountain Views</h5>
+                                    <p class="card-text text-muted">July 22, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="img_div">
+                                <img src={resort_img}
+                                    class="card-img-top" alt="Special Offer" />
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Special Offer: Save 20% On All Bookings At Pine Hills This Summer!</h5>
+                                    <p class="card-text text-muted">July 20, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img_div">
+                                <img src={resort_img} class="card-img-top" alt="Wellness Retreat" />
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Pine Hills Announces Exciting New Wellness Retreat Program</h5>
+                                    <p class="card-text text-muted">July 25, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </>
     )

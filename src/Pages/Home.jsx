@@ -6,6 +6,8 @@ import resort_img from '../assets/image/resort_img.jpg'
 import resort_img1 from '../assets/image/resort_img1.jpg'
 import play_circle from '../assets/image/PlayCircle.svg'
 import ornament_icon from '../assets/image/ornament.svg'
+import white_logo from '../assets/image/footer_logo.svg'
+import ph_logo from '../assets/image/PH.png'
 
 const Home = () => {
     return (
@@ -157,13 +159,46 @@ const Home = () => {
                     <div className="option-card">
                         <div className="icon-placeholder"></div>
                         <h4 className="option-title">HOTEL & TRAVEL</h4>
-                        <img src={ornament_icon} className='icon_orn'/>
+                        <img src={ornament_icon} className='icon_orn' />
                         <p className="option-description">
                             Convenient packages combining your hotel stay with travel options.
                         </p>
                     </div>
                 </div>
             </div>
+            <section className='detail_resort'>
+                
+                <div className="container main_part">
+                    {/* Left Section */}
+                    <div className="left-section">
+                        <img src={white_logo} alt='logo' className='logo_sec' />
+                        <div className="feature">
+                            <h4>FIVE STARS RESORT</h4>
+                            <p>Unmatched luxury and elegance throughout.</p>
+                        </div>
+                        <div className="feature">
+                            <h4>FIVE-STAR FACILITIES</h4>
+                            <p>Top-tier amenities for ultimate comfort.</p>
+                        </div>
+                        <div className="feature">
+                            <h4>GREAT CUSTOMER SERVICE</h4>
+                            <p>Exceptional care and personalized attention guaranteed.</p>
+                        </div>
+                    </div>
+
+                    {/* Right Section */}
+                    <div className="right-section">
+                        <img src={ph_logo} />
+                        <h2>SPACIOUS <br /> STAYS AWAY FROM<br /> THE CITY</h2>
+                        <hr className="styled-hr" />
+                        <p>
+                            Indulge in breathtaking views of<br /> Table Mountain and our harbor from<br />
+                            Cape Town's largest hotel rooms and <br />suites.
+                        </p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </section>
 
         </>
     )

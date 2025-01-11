@@ -9,6 +9,12 @@ import ornament_icon from '../assets/image/ornament.svg'
 import white_logo from '../assets/image/footer_logo.svg'
 import ph_logo from '../assets/image/PH.png'
 import testimonial_icon from '../assets/image/testimonial_icon.svg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import VillaSlider from '../components/SlickSlider/SlickSlider'
+import SlickSlider from '../components/SlickSlider/SlickSlider'
 
 const Home = () => {
     return (
@@ -168,7 +174,6 @@ const Home = () => {
                 </div>
             </div>
             <section className='detail_resort'>
-
                 <div className="container main_part">
                     {/* Left Section */}
                     <div className="left-section">
@@ -200,6 +205,94 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="escape_villa">
+                <div className="container">
+                    <div className="hero-container d-flex">
+                        <div className="col-md-8">
+                            <div className="title_part p-0">
+                                <img src={ornament_icon} alt="Ornament Icon" />
+                                <span className="section-title px-2">ESCAPE TO LUXURY VILLAS</span>
+                                <img src={ornament_icon} alt="Ornament Icon" />
+                            </div>
+                            <h2 className="main-title">
+                                Explore Our Best Villas For An Unforgettable Vacation
+                            </h2>
+                            <div className="des_btn">
+                                <p className="description">
+                                    Experience the perfect blend of privacy and comfort in our exquisite villas. Each villa offers spacious living areas, modern amenities, and breathtaking surroundings, making it an ideal retreat for families.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-md-4 text-end d-flex align-items-end justify-content-end">
+                            <button className="discover_btn">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div className='container'>
+                <SlickSlider/>
+            </div>
+{/* chhose us */}
+            <div className="container my-5">
+                <div className="row gap-5">
+                    {/* Left Column */}
+                    <div className="col-md-5 col-lg-5 left_side">
+                        <div className='title_part p-0'>
+                            <img src={ornament_icon} />
+                            <span className="section-title px-2">
+                                WHY CHOOSE US
+                            </span>
+                            <img src={ornament_icon} />
+                        </div>
+                        <h2 className="main-title">Reasons To Make Pine Hills As Place Tranquility</h2>
+                        <p className="description">
+                            From our luxurious accommodations to our personalized services, we ensure every detail is tailored to your needs.
+                        </p>
+                        <div className="why-choose-us-features">
+                            {[
+                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.' },
+                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.' },
+                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.' },
+                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.' }
+                            ].map((feature, index) => (
+                                <div key={index} className="feature-item d-flex align-items-start">
+                                    <div className="feature-icon"></div>
+                                    <div className="feature-content">
+                                        <h5>{feature.title}</h5>
+                                        <p>{feature.text}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="col-md-7 col-lg-7 position-relative right_side">
+                        <div className="testimonial-section">
+                            <div className="testimonial-container">
+                                {/* Left image section */}
+                                <div className="image-left"></div>
+
+                                {/* Right content section */}
+                                <div className="content-right">
+                                    <div className="testimonial-card">
+                                        <div className="author-info">
+                                            <h3 className="author-name">ADAM JOHNSON</h3>
+                                            <p className="author-title">CEO PINE HILLS</p>
+                                        </div>
+                                        <div className="testimonial-text">
+                                            <p>Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years</p>
+                                            <span className="quote-mark">“</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
             <section className="container Amenities">
                 <div className="row">
@@ -248,12 +341,12 @@ const Home = () => {
                             <div className="card-content text-center">
                                 <div className='title_part text-center'>
                                     <img src={ornament_icon} />
-                                    <span className="section-title px-2 pb-1" style={{ color:'#B7A18B'}}>
+                                    <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
                                         AMENITIES
                                     </span>
                                     <img src={ornament_icon} />
                                 </div>
-                                
+
                                 <h2 className="amenities-heading">We Offer You <br /> Luxurious Amenities</h2>
                                 <p className="amenities-text">
                                     Indulge in unparalleled luxury with our top-tier amenities.
@@ -269,18 +362,78 @@ const Home = () => {
                 </div>
             </section>
 
-            <div className='our_service'>
-                <div className='container'>
-                    <div className='service_contain'>
-                        <div className='left_contain'>
-                        
-                        </div>
-                        <div className='right_contain'>
+            <section class="service">
+                <div class="container service_sec">
+                    <div class="our_service_box">
+                        <div class="d-flex">
+                            <div class="col-lg-7 p-0">
+                                <div class="service_data">
+                                    <div class="service_data_sec">
+                                        <div className="title_part p-0">
+                                            <img src={ornament_icon} alt="Ornament Icon" />
+                                            <span className="section-title px-2">OUR SERVICES</span>
+                                            <img src={ornament_icon} alt="Ornament Icon" />
+                                        </div>
+                                        <h1 className='main-title pb-4'>Exceptional Service <br /> For An Unforgettable Stay</h1>
 
+                                        <div class="service_data_box">
+                                            <div class="row">
+                                                <div class="col-lg-2 d-flex  align-items-center">
+                                                    <div class="black_box"></div>
+                                                </div>
+                                                <div class="col-lg-10 box_data">
+                                                    <h5>meeting & events</h5>
+                                                    <p>Seamlessly host your event with our versatile spaces and expert support.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service_data_box">
+                                            <div class="row">
+                                                <div class="col-lg-2 d-flex align-items-center">
+                                                    <div class="black_box"></div>
+                                                </div>
+                                                <div class="col-lg-10 box_data">
+                                                    <h5>wedding & romantic moments</h5>
+                                                    <p>Create unforgettable memories with our elegant venues and personalized services.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service_data_box">
+                                            <div class="row">
+                                                <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                                    <div class="black_box"></div>
+                                                </div>
+                                                <div class="col-lg-10 box_data">
+                                                    <h5>family holidays</h5>
+                                                    <p>Enjoy a fun and relaxing family getaway with activities and accommodations for all ages.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" bg-black ms-0">
+                                    <div class="black_box_detail d-flex">
+                                        <div className='contain_p col-lg-8'>
+                                            Our range of premium services is designed to make your stay as enjoyable and stress free as possible.
+                                        </div>
+                                        <button className='col-lg-4'>
+                                            BOOK NOW
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 service_blank">
+                                <div class="service_black_sec">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div className='testimonial-sec'>
                 <div className='container'>
@@ -302,7 +455,7 @@ const Home = () => {
                                 </div>
 
                                 <div className="quote-container">
-                                    <span className="quote-mark"><img src={testimonial_icon}/></span>
+                                    <span className="quote-mark"><img src={testimonial_icon} /></span>
                                     <p className="quote-text">
                                         Staying at the Oceanfront Paradise Villa was an absolute dream. The view was breathtaking, and the private pool was the perfect spot.
                                     </p>

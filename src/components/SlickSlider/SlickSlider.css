@@ -1,0 +1,46 @@
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    color: #fff;
+    background-color: #666;
+    padding: 20px;
+}
+
+.slider-item h2 {
+    padding-top: 180px;
+    font-family: 'GFS Didot';
+    font-size: 48px;
+    line-height: 56px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.slider-item p {
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.slider-item button {
+    margin-top: 20px;
+    padding: 18px 40px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.slider-container {
+    margin-top: -190px;
+}

@@ -1,0 +1,171 @@
+.contact_pine {
+    background-color: #8a7b6d;
+    color: #fff;
+    padding: 80px 0px;
+}
+
+.contact_pine .breadcrumb {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 16px;
+    font-family: 'Inter';
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact_pine .section-title {
+    font-family: 'Inter';
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-weight: 600 !important;
+}
+
+.contact_head {
+    padding-top: 16px;
+    font-family: 'GFS Didot';
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+
+
+.bg-gray {
+    background-color: #BDBDBD;
+    width: 840px !important;
+}
+
+.contact_section_wrapper .col-md-5 {
+    margin-left: -200px;
+    width: 670px !important;
+    /* Overlap the form section over the left section */
+    z-index: 2;
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+    /* Ensure it appears above the gray background */
+}
+
+.contact_section_wrapper .styled-hr {
+    width: 231px;
+    padding-bottom: 32px;
+    height: 2px;
+    margin: 0px auto;
+    color: #1B1C21;
+    opacity: 1;
+}
+
+.form-container {
+    position: relative;
+    padding: 35px;
+}
+
+.form-container .form-control {
+    padding: 12px 24px;
+    font-family: 'Raleway';
+    line-height: 26px;
+    font-size: 16px !important;
+    color: #A6A6A6;
+    border-radius: 0 !important;
+}
+
+.contact_section_wrapper .form-container .form-check-label {
+    font-family: 'Raleway';
+    padding-left: 12px;
+    line-height: 26px;
+    font-size: 16px !important;
+    color: #5B5B62;
+}
+
+.form-check-input {
+    border-radius: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.form-check-input:focus {
+    border-color: #7b6c60 !important;
+    box-shadow: none !important;
+}
+
+.form-container .submit_btn {
+    background-color: #fff;
+    padding: 18px 40px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    color: #472C10;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    /* Button matches the design */
+    border-color: #8a7b6d;
+}
+
+.form-container .btn-primary:hover {
+    background-color: #7b6c60;
+    border-color: #7b6c60;
+}
+
+.contact-info {
+    padding: 58px 0px 100px;
+}
+
+.contact-info .row {
+    padding: 0px 24px;
+}
+
+.contact-column-middle {
+    padding-left: 42px !important;
+}
+
+.contact-info .border-end {
+    border-right: 1px solid #000 !important;
+}
+
+.contact-item {
+    text-align: left;
+    /* Align content to the left */
+}
+
+.icon {
+    padding-right: 20px;
+}
+
+
+
+.contact_content h5 {
+    font-family: 'GFS Didot';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.contact_content p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #666666;
+    margin-bottom: 0px;
+    line-height: 26px;
+    font-family: 'Raleway';
+}
+
+
+.grey_area {
+    background-color: #828282;
+    border-radius: 12px;
+    height: 370px;
+}
+
+@media (max-width:1232px) {
+    .bg-gray {
+        background-color: #BDBDBD;
+        width: 810px !important;
+    }
+
+    .contact_section_wrapper .col-md-5 {
+        width: 605px !important;
+    }
+}

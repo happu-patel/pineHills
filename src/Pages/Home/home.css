@@ -951,7 +951,7 @@ h3,
 
 .testimonial-section {
     padding: 80px 0;
-    background-color: #f5f5f5;
+    background-color: #bdbdbd;
     position: relative;
 }
 
@@ -969,11 +969,12 @@ h3,
     text-align: end;
     position: relative;
     z-index: 1;
-    top: 350px;
+    top: 390px;
     left: -40px;
-    background-color: #ccc;
+    background-color: #bdbdbd;
     /* Placeholder background */
     height: 300px;
+    border: 12px solid #fff;
 }
 
 .content-right {

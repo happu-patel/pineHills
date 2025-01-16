@@ -39,6 +39,7 @@ const SlickSlider = () => {
   ];
 
   return (
+    <section className='home_slide'>
     <div className="slider-container">
       <Slider {...settings}>
         {slides.map((slide) => (
@@ -76,6 +77,7 @@ const SlickSlider = () => {
         ))}
       </Slider>
     </div>
+    </section>
   );
 };
 

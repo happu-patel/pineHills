@@ -1,0 +1,22 @@
+.slick-dots {
+    z-index: 1;
+    bottom: -48px !important;
+}
+.slick-list {
+    padding-bottom: 10px !important;
+}
+.slider-container .slider-item {
+    padding: 0 10px;
+    background-color: #fff;
+    height: 400px;
+    /* Adds horizontal spacing between slides */
+}
+
+.slider-container .slider-content {
+    height: 400px;
+    /* width: 730px !important; */
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

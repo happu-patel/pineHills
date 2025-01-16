@@ -1,20 +1,18 @@
 import React from 'react'
 import './home.css'
-import squre_icon from '../assets/image/squre.svg'
-import BookingSection from '../components/Booking/BookingSection'
-import resort_img from '../assets/image/resort_img.jpg'
-import resort_img1 from '../assets/image/resort_img1.jpg'
-import play_circle from '../assets/image/PlayCircle.svg'
-import ornament_icon from '../assets/image/ornament.svg'
-import white_logo from '../assets/image/footer_logo.svg'
-import ph_logo from '../assets/image/PH.png'
-import testimonial_icon from '../assets/image/testimonial_icon.svg'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import squre_icon from '../../assets/image/squre.svg'
+import BookingSection from '../../components/Booking/BookingSection'
+import resort_img from '../../assets/image/resort_img.jpg'
+import resort_img1 from '../../assets/image/resort_img1.jpg'
+import play_circle from '../../assets/image/PlayCircle.svg'
+import ornament_icon from '../../assets/image/ornament.svg'
+import white_logo from '../../assets/image/footer_logo.svg'
+import ph_logo from '../../assets/image/PH.png'
+import testimonial_icon from '../../assets/image/testimonial_icon.svg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import VillaSlider from '../components/SlickSlider/SlickSlider'
-import SlickSlider from '../components/SlickSlider/SlickSlider'
+import SlickSlider from '../../components/SlickSlider/SlickSlider'
 
 const Home = () => {
     return (
@@ -43,86 +41,88 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-            <div className="container  our_info">
-                <div className="row gx-5">
-                    {/* Left Column */}
-                    <div className="col-md-6">
-                        <div className="video-box position-relative">
-                            {/* <h1 className="background-text">OUR STORY</h1> */}
-                            <img src={resort_img} alt="Video Thumbnail"
-                                className="img-fluid" />
-                            <div className="play-icon">
-                                <img src={play_circle} alt="" />
-                            </div>
-                        </div>
-                        <div className='title_part'>
-                            <img src={ornament_icon} />
-                            <span className="section-title px-2">
-                                Our Legacy
-                            </span>
-                            <img src={ornament_icon} />
-                        </div>
-                        <h2>From Humble Beginnings To A Premier Mountain Retreat</h2>
-                        <p>
-                            Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years, we’ve grown into a luxurious resort, while staying true to our roots and the natural beauty that surrounds us.
-                        </p>
-                        <div className="stats d-flex justify-content-between">
-                            {/* Stat 1 */}
-                            <div className="stat-box">
-                                <div className="icon-box">
-                                    {/* <img src="/path-to-your-image/icon1.png" alt="Icon 1" /> */}
+            <section className='our_info'>
+                <div className="container">
+                    <div className="row gx-5">
+                        {/* Left Column */}
+                        <div className="col-md-6">
+                            <div className="video-box position-relative">
+                                {/* <h1 className="background-text">OUR STORY</h1> */}
+                                <img src={resort_img} alt="Video Thumbnail"
+                                    className="img-fluid" />
+                                <div className="play-icon">
+                                    <img src={play_circle} alt="" />
                                 </div>
-                                <div className="text-box d-flex flex-column">
-                                    <h3>150 K+</h3>
-                                    <p>Guest Served</p>
+                            </div>
+                            <div className='title_part'>
+                                <img src={ornament_icon} />
+                                <span className="section-title px-2">
+                                    Our Legacy
+                                </span>
+                                <img src={ornament_icon} />
+                            </div>
+                            <h2>From Humble Beginnings To A Premier Mountain Retreat</h2>
+                            <p>
+                                Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years, we’ve grown into a luxurious resort, while staying true to our roots and the natural beauty that surrounds us.
+                            </p>
+                            <div className="stats d-flex justify-content-between">
+                                {/* Stat 1 */}
+                                <div className="stat-box">
+                                    <div className="icon-box">
+                                        {/* <img src="/path-to-your-image/icon1.png" alt="Icon 1" /> */}
+                                    </div>
+                                    <div className="text-box d-flex flex-column">
+                                        <h3>150 K+</h3>
+                                        <p>Guest Served</p>
+                                    </div>
+                                </div>
+
+                                {/* Stat 2 */}
+                                <div className="stat-box">
+                                    <div className="icon-box">
+                                        {/* <img src="/path-to-your-image/icon2.png" alt="Icon 2" /> */}
+                                    </div>
+                                    <div className="text-box d-flex flex-column">
+                                        <h3>25</h3>
+                                        <p>Villas & Resorts</p>
+                                    </div>
+                                </div>
+
+                                {/* Stat 3 */}
+                                <div className="stat-box">
+                                    <div className="icon-box">
+                                        {/* <img src="/path-to-your-image/icon3.png" alt="Icon 3" /> */}
+                                    </div>
+                                    <div className="text-box d-flex flex-column">
+                                        <h3>12+</h3>
+                                        <p>Locations</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            {/* Stat 2 */}
-                            <div className="stat-box">
-                                <div className="icon-box">
-                                    {/* <img src="/path-to-your-image/icon2.png" alt="Icon 2" /> */}
-                                </div>
-                                <div className="text-box d-flex flex-column">
-                                    <h3>25</h3>
-                                    <p>Villas & Resorts</p>
-                                </div>
-                            </div>
-
-                            {/* Stat 3 */}
-                            <div className="stat-box">
-                                <div className="icon-box">
-                                    {/* <img src="/path-to-your-image/icon3.png" alt="Icon 3" /> */}
-                                </div>
-                                <div className="text-box d-flex flex-column">
-                                    <h3>12+</h3>
-                                    <p>Locations</p>
-                                </div>
-                            </div>
                         </div>
 
-                    </div>
-
-                    {/* Right Column */}
-                    <div className="col-md-6 right_col">
-                        <div className='title_part'>
-                            <img src={ornament_icon} />
-                            <span className="section-title px-2">
-                                Who we are
-                            </span>
-                            <img src={ornament_icon} />
-                        </div>
-                        <h2>Gateway To Tranquility And Luxury In The Mountains</h2>
-                        <p>
-                            Pine Hills Resort is more than just a place to stay; it’s an escape into nature’s embrace, where comfort meets adventure. Nestled in the breathtaking mountains, we offer a unique combination of luxury accommodations, exceptional service, and a variety of activities for every traveler.
-                        </p>
-                        <div className="image-box">
-                            <img src={resort_img1} alt="Video Thumbnail"
-                                className="img-fluid" />
+                        {/* Right Column */}
+                        <div className="col-md-6 right_col">
+                            <div className='title_part'>
+                                <img src={ornament_icon} />
+                                <span className="section-title px-2">
+                                    Who we are
+                                </span>
+                                <img src={ornament_icon} />
+                            </div>
+                            <h2>Gateway To Tranquility And Luxury In The Mountains</h2>
+                            <p>
+                                Pine Hills Resort is more than just a place to stay; it’s an escape into nature’s embrace, where comfort meets adventure. Nestled in the breathtaking mountains, we offer a unique combination of luxury accommodations, exceptional service, and a variety of activities for every traveler.
+                            </p>
+                            <div className="image-box">
+                                <img src={resort_img1} alt="Video Thumbnail"
+                                    className="img-fluid" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <div className="lodging container">
                 <div className='title_part text-center'>
                     <img src={ornament_icon} />
@@ -140,24 +140,24 @@ const Home = () => {
                 <div className="options-container">
                     <div className="option-card">
                         <div className="icon-placeholder"></div>
-                        <h4 className="option-title">HOTEL & RESORT</h4>
                         <img src={ornament_icon} className='icon_orn' />
+                        <h4 className="option-title">HOTEL & RESORT</h4>
                         <p className="option-description">
                             Enjoy top-tier comfort and service in premium accommodations.
                         </p>
                     </div>
                     <div className="option-card">
                         <div className="icon-placeholder"></div>
-                        <h4 className="option-title">HOMES & VILLAS</h4>
                         <img src={ornament_icon} className='icon_orn' />
+                        <h4 className="option-title">HOMES & VILLAS</h4>
                         <p className="option-description">
                             Relax in spacious, private homes perfect for families and groups.
                         </p>
                     </div>
                     <div className="option-card">
                         <div className="icon-placeholder"></div>
-                        <h4 className="option-title">INCLUSIVE RESORT</h4>
                         <img src={ornament_icon} className='icon_orn' />
+                        <h4 className="option-title">INCLUSIVE RESORT</h4>
                         <p className="option-description">
                             All-inclusive stays with everything you need for a stress-free
                             getaway.
@@ -165,8 +165,8 @@ const Home = () => {
                     </div>
                     <div className="option-card">
                         <div className="icon-placeholder"></div>
-                        <h4 className="option-title">HOTEL & TRAVEL</h4>
                         <img src={ornament_icon} className='icon_orn' />
+                        <h4 className="option-title">HOTEL & TRAVEL</h4>
                         <p className="option-description">
                             Convenient packages combining your hotel stay with travel options.
                         </p>
@@ -231,9 +231,9 @@ const Home = () => {
                 </div>
             </section>
             <div className='container'>
-                <SlickSlider/>
+                <SlickSlider />
             </div>
-{/* chhose us */}
+            {/* chhose us */}
             <div className="container my-5">
                 <div className="row gap-5">
                     {/* Left Column */}

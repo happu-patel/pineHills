@@ -1,0 +1,107 @@
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq_area {
+    background-color: #666;
+    padding: 60px 0px 0px;
+}
+
+.faq_row {
+    gap: 55px;
+}
+
+.faq_area .col-lg-6 {
+    width: 620px !important;
+}
+
+.faq-card {
+    text-align: center;
+    background: #fff;
+    padding: 26px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    margin-bottom: -50px;
+}
+
+.faq-answer .styled_hr {
+    width: 20px !important;
+}
+
+.faq-card h3 {
+    font-family: 'GFS Didot';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.faq-card p {
+    font-size: 17px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    line-height: 26px;
+    color: #666;
+}
+
+.faq-item {
+    margin-top: 25px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    background: none;
+    border: 2px solid #D3D3D3 !important;
+    padding: 16px 30px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-item .faq-question.active {
+    background: #472C10 !important;
+    color: #fff;
+    border: none !important;
+}
+
+.faq-question .icon {
+    width: 24px;
+    height: 24px;
+    border: 1px solid;
+    transition: transform 0.3s ease;
+}
+
+.faq-question .icon img {
+    margin: 3px 5px;
+    margin-bottom: 9px !important;
+}
+
+.faq-answer {
+    padding: 16px 20px;
+    text-align: left;
+    color: #5B5B62;
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.faq-question:focus {
+    outline: none;
+}
+
+.collapse p {
+    padding: 10px 0 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.faq_testimonial {
+    padding-bottom: 90px
+}

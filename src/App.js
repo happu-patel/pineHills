@@ -8,6 +8,8 @@ import Contact from './Pages/contact/Contact';
 import About from './Pages/About/About';
 import Facilities from './Pages/Facilities/Facilities';
 import Faq from './Pages/Faq/Faq';
+import Testimonial from './Pages/Testimonial/Testimonial';
+import BlogList from './Pages/Blog/BlogList';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path='/testimonial' element={<Testimonial/>} />
+          <Route path='/blog' element={<BlogList/>} />
         </Routes>
         <Footer />
       </div>

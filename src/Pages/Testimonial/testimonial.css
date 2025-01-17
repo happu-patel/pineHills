@@ -1,0 +1,83 @@
+.grey_part {
+    background-color: rgb(60 60 60 / 61%);
+    height: 370px;
+    margin-top: -200px;
+}
+
+.testimonial_area {
+    margin-top: -120px;
+}
+
+.testimonial_area .card {
+    border: 1px solid #ddd;
+    border-radius: 0px !important;
+    padding: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonial_area .card-body {
+    padding: 0px !important;
+}
+.testimonial_area .card-title {
+    padding-top: 16px !important;
+    font-family: 'GFS Didot';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-bottom: 0px !important;
+    padding-bottom: 8px !important;
+
+}
+
+.testimonial_area .card-subtitle {
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #472C10;
+}
+
+.testimonial_area .card-text {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 0px !important;
+    padding-bottom: 24px !important;
+    color: #666666;
+    line-height: 26px;
+}
+
+.avatar {
+    color: #888;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #bdbdbd;
+    /* Light background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #bdbdbd;
+    /* Gray border */
+    overflow: hidden;
+    /* Ensures the image fits inside the circle */
+}
+
+.avatar-img {
+    position: absolute;
+    top: 70px;
+    /* Ensures the image covers the circle perfectly */
+}

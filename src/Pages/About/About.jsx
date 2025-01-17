@@ -123,7 +123,7 @@ const About = () => {
           luxury suite, or the <br /> spacious comfort of a family villa, we have the
           perfect lodging option for you.
         </p>
-        <div className="options-container p-0">
+        <div className="options-container pb-0">
           <div className="option-card">
             <div className="icon-placeholder"></div>
             <img src={ornament_icon} className='icon_orn' />

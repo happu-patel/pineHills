@@ -1,0 +1,89 @@
+.main_blog_title {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-family: 'GFS Didot';
+    font-size: 32px;
+    line-height: 40px;
+    color: #1B1C21;
+}
+.blog{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.blog .card-body {
+    padding: 0px !important;
+}
+
+.blog .card {
+    border: 0px !important;
+}
+
+.blog .card-title {
+    font-family: 'GFS Didot';
+    font-size: 24px;
+    margin-bottom: 0px !important;
+    padding-bottom: 16px;
+    line-height: 32px;
+}
+
+.blog .card-text {
+    padding-top: 0px !important;
+    font-size: 14px;
+    font-family: 'Raleway';
+    line-height: 20px;
+}
+.main_card {
+    padding-bottom: 40px;
+}
+.pagination {
+    padding-top: 50px;
+    gap: 12px;
+    border-radius: 0px !important;
+    --bs-pagination-border-radius: 0 !important;
+}
+
+.pagination .active .page-link {
+    background-color: #472C10;
+    border-color: #472C10;
+    color: #fff !important;
+}
+
+.page-link {
+    font-family: 'Inter';
+    font-size: 16px !important;
+    line-height: 24px;
+    color: #000 !important;
+
+}
+
+.news-card {
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.news-image-placeholder {
+    background-color: #e0e0e0;
+    height: 390px;
+}
+
+.news-card h5 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'GFS Didot';
+    line-height: 32px;
+}
+
+.news-card p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    font-family: 'Raleway';
+
+}
+.blog_hr{
+    width: 100%;
+    height: 2px;
+    color: #666666;
+}

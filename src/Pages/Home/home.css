@@ -720,7 +720,9 @@ body {
 
 .testimonial-box {
     width: 100%;
-    background: linear-gradient(to bottom, #CCCCCC, #B3B3B3);
+    background: linear-gradient(90deg, rgba(200, 200, 200, 1) 0%,
+                rgba(255, 255, 255, 1) 100%
+            );
     padding: 50px 20px 25px 100px;
     position: relative;
     display: flex;
@@ -779,13 +781,15 @@ h3,
     margin-left: auto;
 }
 
-.quote-mark {
+.testimonial-text .quote-mark {
     position: absolute;
-    top: -16px;
-    left: 19px;
+    top: -38px;
+    right: 85px;
+    font-size: 75px;
     color: white;
     opacity: 0.8;
     z-index: 1;
+    font-family: 'sarif';
 }
 
 .quote-text {
@@ -836,7 +840,7 @@ h3,
     line-height: 32px;
 }
 
-.card-text {
+.news-section .card-text {
     font-family: 'Raleway';
     font-size: 14px;
     line-height: 20px;
@@ -1031,7 +1035,7 @@ h3,
     margin: 0;
 }
 
-.quote-mark {
+.testimonial-box .quote-mark {
     font-size: 89px;
     color: white;
     position: absolute;

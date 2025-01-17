@@ -10,9 +10,11 @@ const PineHillGallery = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Show 3 slides at a time
+        slidesToShow: 1, // Show 3 slides at a time
         slidesToScroll: 1, // Scroll one slide at a time
         arrows: false,
+        centerMode: true,
+        centerPadding: "400px",
         responsive: [
             {
                 breakpoint: 1024, // For screens smaller than 1024px

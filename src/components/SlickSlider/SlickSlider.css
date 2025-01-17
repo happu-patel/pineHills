@@ -13,10 +13,19 @@
     background-color: #666;
 }
 
+.slick-slide
+{
+    padding-left: 10px !important ;
+    padding-right: 10px !important;
+}
+
+
 .home_slide .slick-dots {
     z-index: 1;
     bottom: -20px !important;
 }
+
+
 .slider-item h2 {
     padding-top: 180px;
     font-family: 'GFS Didot';

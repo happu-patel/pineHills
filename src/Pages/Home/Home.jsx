@@ -230,9 +230,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className='container'>
+            {/* <div className='container'> */}
                 <SlickSlider />
-            </div>
+            {/* </div> */}
             {/* chhose us */}
             <div className="container my-5">
                 <div className="row gap-5">

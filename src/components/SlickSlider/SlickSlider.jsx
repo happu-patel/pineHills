@@ -11,7 +11,10 @@ const SlickSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: "170px",
     arrows: false, // Set to true if you want arrows
+
   };
 
   const slides = [
@@ -40,43 +43,43 @@ const SlickSlider = () => {
 
   return (
     <section className='home_slide'>
-    <div className="slider-container">
-      <Slider {...settings}>
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="slider-item"
-            style={{
-              backgroundColor: '#666',
-              height: '500px',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
-              textAlign: 'center',
-              color: '#fff',
-              padding: '20px',
-            }}
-          >
-            <h2 style={{ fontSize: '2rem', margin: '10px 0' }}>{slide.text}</h2>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>{slide.description}</p>
-            <button
+      <div className="slider-container">
+        <Slider {...settings}>
+          {slides.map((slide) => (
+            <div
+              key={slide.id}
+              className="slider-item"
               style={{
-                marginTop: '20px',
-                padding: '10px 20px',
-                border: '1px solid #fff',
                 backgroundColor: '#666',
+                height: '500px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center',
                 color: '#fff',
-                cursor: 'pointer',
-                fontSize: '1rem',
+                padding: '20px',
               }}
             >
-              View Villa
-            </button>
-          </div>
-        ))}
-      </Slider>
-    </div>
+              <h2 style={{ fontSize: '2rem', margin: '10px 0' }}>{slide.text}</h2>
+              <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>{slide.description}</p>
+              <button
+                style={{
+                  marginTop: '20px',
+                  padding: '10px 20px',
+                  border: '1px solid #fff',
+                  backgroundColor: '#666',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  fontSize: '1rem',
+                }}
+              >
+                View Villa
+              </button>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

@@ -10,6 +10,9 @@ import Facilities from './Pages/Facilities/Facilities';
 import Faq from './Pages/Faq/Faq';
 import Testimonial from './Pages/Testimonial/Testimonial';
 import BlogList from './Pages/Blog/BlogList';
+import BlogDetail from './components/BlogDetail/BlogDetail';
+import PricingPlans from './Pages/PricePlan/PricingPlans';
+import Villas from './Pages/Villas/Villas';
 
 function App() {
   return (
@@ -22,8 +25,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path='/testimonial' element={<Testimonial/>} />
-          <Route path='/blog' element={<BlogList/>} />
+          <Route path='/testimonial' element={<Testimonial />} />
+          <Route path='/blog' element={<BlogList />} />
+          <Route path='/blog/:id' element={<BlogDetail />} />
+          <Route path='/villa' element={<Villas />} />
+          {/* <Route path='/pricing' element={<PricingPlans />} /> */}
         </Routes>
         <Footer />
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './blog.css'
 import ornament_icon from '../../assets/image/ornament.svg'
 import squre_icon from '../../assets/image/squre.svg';
+import { useNavigate } from "react-router-dom";
 
 const blogPosts = [
     { title: "Pine Hills Unveils New Luxury Villas With Stunning Mountain Views", date: "July 20, 2024" },
@@ -48,7 +49,8 @@ const blogPosts = [
     { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024" },
     { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024" },
     { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024" },
-];
+    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 21, 2024" },
+].sort((a, b) => new Date(b.date) - new Date(a.date));
 
 const BlogList = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -176,6 +178,7 @@ const BlogList = () => {
         return pages;
     };
 
+    const navigate = useNavigate();
 
     return (
         <>
@@ -239,7 +242,9 @@ const BlogList = () => {
                     <h3 className="text-center main_blog_title my-4">Previous Blog Posts</h3>
                     <div className="row">
                         {currentPosts.map((post, index) => (
-                            <div className="col-md-4 main_card" key={index}>
+                            <div className="col-md-4 main_card" key={index}
+                                onClick={() => navigate(`/blog/${index + 1}`)}
+                                style={{ cursor: 'pointer' }}>
                                 <div className="card text-center">
                                     {/* Placeholder for Image */}
                                     <div

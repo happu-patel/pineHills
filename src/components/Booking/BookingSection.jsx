@@ -9,7 +9,7 @@ const BookingSection = () => {
     const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
 
-    const incrementAdults = () => setAdults(adults + 0);
+    const incrementAdults = () => setAdults(adults + 1);
     const decrementAdults = () => adults > 0 && setAdults(adults - 1);
 
     const incrementChildren = () => setChildren(children + 1);

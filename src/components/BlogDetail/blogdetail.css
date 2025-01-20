@@ -1,0 +1,101 @@
+.blog_detail {
+    background-color: #00000080;
+    padding: 40px 0px;
+
+}
+
+.blog_detail_head {
+    font-size: 32px;
+    font-family: 'GFS Didot';
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.blog_breadcrumb {
+    padding-top: 16px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Raleway';
+}
+
+.share_social h5 {
+    font-family: 'Raleway';
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+.post_date {
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #1B1C21;
+}
+.blog-title {
+    font-family: 'GFS Didot';
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.blog_content {
+    font-family: 'Raleway';
+    line-height: 26px;
+    font-size: 17px;
+    color: #666666;
+    margin-bottom: 0px;
+}
+
+.blog_post_sec {
+    padding: 40px 0px;
+}
+
+.middle_Sec {
+    padding-bottom: 40px;
+}
+
+.has_tag {
+    font-family: 'Raleway';
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #1B1C21;
+    letter-spacing: 1px;
+}
+
+.has_tag span {
+    margin-right: 14px;
+}
+
+.blog_hr {
+    color: #1B1C21;
+    opacity: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.blog_has {
+    padding: 32px 0px;
+}
+
+.bottom_Sec {
+    padding-bottom: 40px;
+}
+
+.blog_form {
+    background-color: #D3D3D3;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.blog_label {
+    font-size: 17px;
+    text-align: left;
+}
+
+.blog_form .styled-hr {
+    width: 230px;
+    padding-bottom: 40px;
+}

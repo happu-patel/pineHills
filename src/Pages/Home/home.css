@@ -726,6 +726,7 @@ body {
     padding: 50px 20px 25px 100px;
     position: relative;
     display: flex;
+    border: 1px solid #D3D3D3;
     /* justify-content: flex-end; */
     flex-direction: column;
     align-items: center;
@@ -869,8 +870,8 @@ h3,
 .escape_villa::after {
     content: "OUR VILLA";
     position: absolute;
-    top: -40%;
-    right: -93px;
+    top: -28%;
+    right: -86px;
     transform: translateY(51%);
     font-size: 200px;
     font-weight: 400;

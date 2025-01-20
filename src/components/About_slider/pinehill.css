@@ -1,6 +1,6 @@
 .slick-dots {
     z-index: 1;
-    bottom: -48px !important;
+    bottom: 40px !important;
 }
 .slick-list {
     padding-bottom: 10px !important;
@@ -8,8 +8,6 @@
 .slider-container .slider-item {
     padding: 0 10px;
     background-color: #fff;
-    height: 550px;
-    /* Adds horizontal spacing between slides */
 }
 
 .slider-container .slider-content {

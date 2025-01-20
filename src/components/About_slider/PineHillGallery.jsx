@@ -22,6 +22,7 @@ const PineHillGallery = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
+                    centerPadding: "200px",
                     dots: true,
                 },
             },
@@ -30,6 +31,7 @@ const PineHillGallery = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    centerPadding: "0px",
                 },
             },
         ],

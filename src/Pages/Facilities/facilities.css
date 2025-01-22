@@ -32,7 +32,10 @@
     height: 360px;
     width: 32% !important;
 }
-
+.beach_bg {
+    background-image: url('../../assets/image/beach_bg.jpg');
+    background-size: cover;
+}
 .detail_side p {
     font-family: 'Raleway';
     font-weight: 400;

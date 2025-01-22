@@ -4,6 +4,11 @@ import squre_icon from '../../assets/image/squre.svg';
 import ornament_icon from '../../assets/image/ornament.svg'
 import markicon from '../../assets/image/testimonal_pg.svg';
 import testimonial_icon from '../../assets/image/testimonial_icon.svg'
+import TestimonialSection from '../../components/Testimonial/TestimonialSection';
+import architure from '../../assets/image/architure.svg'
+import amenities from '../../assets/image/amenities.svg'
+import best_price from '../../assets/image/best_price.svg'
+import service from '../../assets/image/service.svg'
 
 const testimonialsData = [
     {
@@ -88,50 +93,7 @@ const Testimonial = () => {
                     </p>
                 </div>
             </section>
-            <div className='testimonial-sec'>
-                <div className='container'>
-                    <div className='title_part text-center'>
-                        <img src={ornament_icon} />
-                        <span className="section-title px-2">
-                            Testimonials
-                        </span>
-                        <img src={ornament_icon} />
-                    </div>
-                    <h2 className="main-title text-center">They Were happy with our service</h2>
-                    <p className='description text-center'>Read firsthand accounts of unforgettable experiences, exceptional service, and unparalleled comfort.<br /> Our testimonials highlight the unique aspects of our accommodations and the memorable moments.</p>
-                    <div className='testimonial_part faq_testimonial'>
-                        <div className="testimonial-box">
-                            <div className="content">
-                                <div className="content_title">
-                                    <h3>Emily Johnson</h3>
-                                    <p className='title'>Marketing Manager. Rui Company</p>
-                                </div>
-
-                                <div className="quote-container">
-                                    <span className="quote-mark"><img src={markicon} /></span>
-                                    <p className="quote-text">
-                                        Staying at the Oceanfront Paradise Villa was an absolute dream. The view was breathtaking, and the private pool was the perfect spot.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testimonial-box">
-                            <div className="content">
-                                <div className="content_title">
-                                    <h3>David Lee</h3>
-                                    <p className='title'>Financial Analyst, Rui Company</p>
-                                </div>
-                                <div className="quote-container">
-                                    <span className="quote-mark"><img src={markicon} /></span>
-                                    <p className="quote-text">
-                                        Our experience at the Highland Peaks Retreat exceeded all expectations. The serene mountain views and elegant design provided the perfect.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TestimonialSection />
             <section className='grey_part'></section>
             <section className='testimonial_area'>
                 <div className="container my-5">
@@ -163,65 +125,69 @@ const Testimonial = () => {
                 </div>
             </section>
             {/* chhose us */}
-            <div className="container my-5">
-                <div className="row gap-5">
-                    {/* Left Column */}
-                    <div className="col-md-5 col-lg-5 left_side">
-                        <div className='title_part p-0'>
-                            <img src={ornament_icon} />
-                            <span className="section-title px-2">
-                                WHY CHOOSE US
-                            </span>
-                            <img src={ornament_icon} />
-                        </div>
-                        <h2 className="main-title">Reasons To Make Pine Hills As Place Tranquility</h2>
-                        <p className="description">
-                            From our luxurious accommodations to our personalized services, we ensure every detail is tailored to your needs.
-                        </p>
-                        <div className="why-choose-us-features">
-                            {[
-                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.' },
-                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.' },
-                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.' },
-                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.' }
-                            ].map((feature, index) => (
-                                <div key={index} className="feature-item d-flex align-items-start">
-                                    <div className="feature-icon"></div>
-                                    <div className="feature-content">
-                                        <h5>{feature.title}</h5>
-                                        <p>{feature.text}</p>
+              <div className="container my-5">
+                            <div className="row gap-5">
+                                {/* Left Column */}
+                                <div className="col-md-5 col-lg-5 left_side">
+                                    <div className='title_part p-0'>
+                                        <img src={ornament_icon} />
+                                        <span className="section-title px-2">
+                                            WHY CHOOSE US
+                                        </span>
+                                        <img src={ornament_icon} />
+                                    </div>
+                                    <h2 className="main-title">Reasons To Make Pine Hills As Place Tranquility</h2>
+                                    <p className="description">
+                                        From our luxurious accommodations to our personalized services, we ensure every detail is tailored to your needs.
+                                    </p>
+                                    <div className="why-choose-us-features">
+                                        {[
+                                            { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.', icon: architure },
+                                            { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.', icon: amenities },
+                                            { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.', icon: best_price },
+                                            { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.', icon: service }
+                                        ].map((feature, index) => (
+                                            <div key={index} className="feature-item d-flex align-items-start">
+                                               
+                                                    <div className="feature-icon">
+                                                        <img src={feature.icon} alt={`${feature.title} Icon`} />
+                                                    </div>
+                                               
+                                                <div className="feature-content">
+                                                    <h5>{feature.title}</h5>
+                                                    <p>{feature.text}</p>
+                                                </div>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Right Column */}
-                    <div className="col-md-7 col-lg-7 position-relative right_side">
-                        <div className="testimonial-section">
-                            <div className="testimonial-container">
-                                {/* Left image section */}
-                                <div className="image-left"></div>
-
-                                {/* Right content section */}
-                                <div className="content-right">
-                                    <div className="testimonial-card">
-                                        <div className="author-info">
-                                            <h3 className="author-name">ADAM JOHNSON</h3>
-                                            <p className="author-title">CEO PINE HILLS</p>
-                                        </div>
-                                        <div className="testimonial-text">
-                                            <p>Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years</p>
-                                            <span className="quote-mark">“</span>
+            
+                                {/* Right Column */}
+                                <div className="col-md-7 col-lg-7 position-relative right_side">
+                                    <div className="testimonial-section">
+                                        <div className="testimonial-container">
+                                            {/* Left image section */}
+                                            <div className="image-left"></div>
+            
+                                            {/* Right content section */}
+                                            <div className="content-right">
+                                                <div className="testimonial-card">
+                                                    <div className="author-info">
+                                                        <h3 className="author-name">ADAM JOHNSON</h3>
+                                                        <p className="author-title">CEO PINE HILLS</p>
+                                                    </div>
+                                                    <div className="testimonial-text">
+                                                        <p>Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years</p>
+                                                        <span className="quote-mark">“</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+            
                             </div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
         </>
     )
 }

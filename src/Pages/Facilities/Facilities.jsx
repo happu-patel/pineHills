@@ -4,6 +4,14 @@ import squre_icon from '../../assets/image/squre.svg';
 import ornament_icon from '../../assets/image/ornament.svg';
 import white_logo from '../../assets/image/footer_logo.svg'
 import ph_logo from '../../assets/image/PH.png'
+import pool from '../../assets/image/pool.svg'
+import restaurant from '../../assets/image/restaurant.svg'
+import bathtub from '../../assets/image/bathtub.svg'
+import gym from '../../assets/image/gym.svg'
+import reasot from '../../assets/image/reasot.svg';
+import wifi from '../../assets/image/wifi.svg';
+import laundry from '../../assets/image/laundry.svg';
+import kids_area from '../../assets/image/kids_area.svg';
 
 const Facilities = () => {
     return (
@@ -60,18 +68,23 @@ const Facilities = () => {
                         <div className="row g-3 mb-3">
 
                             <div className="col-lg-7">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data pool_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={pool} alt="" />
+                                        </div>
                                         <h1>PRIVATE POOL</h1>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data res_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={restaurant} alt="" />
+
+                                        </div>
                                         <h1>RESTAURANT</h1>
                                     </div>
                                 </div>
@@ -79,24 +92,30 @@ const Facilities = () => {
                         </div>
                         <div className="row g-3 mb-3">
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data spa_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={bathtub} alt="" />
+
+                                        </div>
                                         <h1>SPA SERVICE</h1>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data gym_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={gym} alt="" />
+
+                                        </div>
                                         <h1>QUALITY GYM</h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4" style={{ paddingLeft: '5px' }}>
+                    <div className="col-lg-4">
                         <div className="amenities-card">
                             <div className="card-content text-center">
                                 <div className='title_part text-center'>
@@ -127,18 +146,22 @@ const Facilities = () => {
                         <div className="row g-3 mb-3">
 
                             <div className="col-lg-8">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data beach_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon ">
+                                            <img src={reasot} alt="" />
+                                        </div>
                                         <h1>BEACHFRONT ACCESS</h1>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-lg-4">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data res_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon ">
+                                            <img src={wifi} alt="" />
+                                        </div>
                                         <h1>FREE INTERNENT</h1>
                                     </div>
                                 </div>
@@ -146,17 +169,21 @@ const Facilities = () => {
                         </div>
                         <div className="row g-3 mb-3">
                             <div className="col-lg-4">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data spa_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon ">
+                                            <img src={laundry} alt="" />
+                                        </div>
                                         <h1>LAUNDRY SERVICE</h1>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-8">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data gym_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon ">
+                                            <img src={kids_area} alt="" />
+                                        </div>
                                         <h1>KIDS' CLUB</h1>
                                     </div>
                                 </div>

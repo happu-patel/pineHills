@@ -4,7 +4,7 @@
 }
 
 .home-banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url('../../assets/image/hotel_img2.jpg');
     background-size: cover;
     background-position: center;
     height: auto;
@@ -12,6 +12,19 @@
     padding: 150px 0px 270px;
     /* Adjusted bottom padding */
     position: relative;
+    z-index: 1;
+}
+
+.home-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust the last value (0.5) for opacity level */
+    z-index: -1;
 }
 
 .banner-content {
@@ -62,11 +75,12 @@
     letter-spacing: 2px;
     line-height: 26px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .view-facilities-btn:hover {
     background-color: #333;
+    transition: all 0.3s ease-in-out;
 }
 
 .booking-section {
@@ -77,7 +91,7 @@
     /* Adjust this value to control how much the form overlaps */
     background: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 17px 48px;
+    padding: 17px 35px;
     z-index: 10;
     width: 100%;
     max-width: 1280px;
@@ -90,6 +104,7 @@ body {
 
 .our_info {
     padding-top: 60px;
+    z-index: -1;
     position: relative;
     padding-bottom: 60px;
 }
@@ -109,33 +124,72 @@ body {
     font-family: 'GFS Didot';
     color: rgba(0, 0, 0, 0.05);
     white-space: nowrap;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
 }
 
 .our_info::after {
     content: "ABOUT VILLA";
     position: absolute;
-    top: 52%;
+    top: 51%;
     right: -100px;
     transform: translateY(51%);
     font-size: 200px;
     font-weight: 400;
     font-family: 'GFS Didot';
-    color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.06);
     white-space: nowrap;
-    z-index: 1;
+    z-index: 3;
     pointer-events: none;
 }
+
+
 
 .img-fluid {
     height: 340px !important;
     width: 600px;
+    margin-left: 20px;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.border-overlay {
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    height: 100%;
+    z-index: 0;
+    width: 94%;
+    border-top: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    pointer-events: none;
+}
+
+.image-box {
+    position: relative;
+}
+
+.border_info {
+    position: absolute;
+    top: 22px;
+    right: -26px;
+    height: 100%;
+    z-index: 0;
+    width: 94%;
+    border-top: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    pointer-events: none;
 }
 
 .play-icon {
     position: absolute;
     top: 50%;
+    z-index: 3;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 64px;
@@ -176,7 +230,10 @@ body {
     line-height: 26px;
     color: #666666;
     margin-bottom: 0px;
-    padding-bottom: 40px;
+}
+
+.info_hr {
+    margin: 24px 0px;
 }
 
 .right_col {
@@ -196,10 +253,13 @@ body {
 .icon-box {
     width: 70px;
     height: 70px;
-    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.icon-box img {
+    width: 60px;
 }
 
 .text-box {
@@ -223,12 +283,6 @@ body {
     color: #1B1C21;
 }
 
-.image-box {
-    background-color: #d3d3d3;
-    height: 340px;
-    width: 600px;
-
-}
 
 .lodging {
     padding: 40px 0px 60px;
@@ -277,8 +331,11 @@ body {
 .icon-placeholder {
     width: 70px;
     height: 70px;
-    background-color: #4F4F4F;
     margin: 0 auto 1rem;
+}
+
+.icon-placeholder img {
+    width: 70px;
 }
 
 .option-title {
@@ -365,7 +422,8 @@ body {
 .left-section {
     flex: 7;
     /* First Gradient */
-    background: linear-gradient(to right, rgb(130, 116, 102), rgb(167, 163, 157));
+    background: rgb(71, 44, 16);
+    background: linear-gradient(140deg, rgba(71, 44, 16, 0.6951155462184874) 0%, rgba(189, 189, 189, 1) 60%, rgba(71, 44, 16, 0.5018382352941176) 100%);
     padding: 70px 50px;
     color: #fff;
     text-align: left;
@@ -465,30 +523,94 @@ body {
     margin-bottom: 40px;
     background: transparent;
     letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
 }
 
 .right-section button:hover {
     background-color: #b8a48e;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #b8a48e;
 }
 
 .Amenities {
     padding-top: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 80px;
 }
 
 .Amenities_box .Amenities_box_data {
-    background-color: gray;
+
     padding: 100px 50px;
+
+    background-repeat: no-repeat;
     text-align: center;
 }
 
+.pool_bg {
+    position: relative;
+    background-image: url('../../assets/image/pool_bg.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Overlay for background opacity */
+.pool_bg::before,
+.res_bg::before,
+.gym_bg::before,
+.spa_bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adjust the last value (0.5) for opacity level */
+    z-index: -1;
+}
+
+/* Ensure content stays above the overlay */
+.Amenities_box_data {
+    position: relative;
+    z-index: 2;
+}
+
+/* If you have icons, make sure they're also above the overlay */
+.Amenities_box_data img {
+    position: relative;
+    z-index: 2;
+}
+
+.res_bg {
+    background-image: url('../../assets/image/restaurant_bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.gym_bg {
+    background-image: url('../../assets/image/gym_bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.spa_bg {
+    background-image: url('../../assets/image/spa_bg.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
 .Amenities_box_data .Amenities_icon {
-    width: 40px;
     height: 40px;
-    background-color: #333;
     /* Darker square */
     text-align: center;
     margin: auto;
+}
+
+.Amenities_box_data .Amenities_icon img {
+    width: 40px;
+    filter: invert(1);
 }
 
 .Amenities_box_data h1 {
@@ -589,8 +711,10 @@ body {
 }
 
 .read-more-btn:hover {
-    background-color: #fff;
-    color: #1c1c1c;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    transition: all 0.3s ease-in-out;
 }
 
 .card-content {
@@ -654,7 +778,10 @@ body {
 .black_box {
     height: 70px;
     width: 70px;
-    background-color: black;
+}
+
+.black_box img {
+    width: 70px;
 }
 
 .service_data {
@@ -681,6 +808,12 @@ body {
     line-height: 26px;
     color: #fff;
     letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.black_box_detail button:hover {
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
 }
 
 .contain_p {
@@ -708,7 +841,8 @@ body {
 }
 
 .service_blank {
-    background-color: gray;
+    background-image: url('../../assets/image/our_Service.jpg');
+    background-size: cover;
 }
 
 .testimonial_part {
@@ -721,8 +855,7 @@ body {
 .testimonial-box {
     width: 100%;
     background: linear-gradient(90deg, rgba(200, 200, 200, 1) 0%,
-                rgba(255, 255, 255, 1) 100%
-            );
+            rgba(255, 255, 255, 1) 100%);
     padding: 50px 20px 25px 100px;
     position: relative;
     display: flex;
@@ -782,15 +915,10 @@ h3,
     margin-left: auto;
 }
 
-.testimonial-text .quote-mark {
+.testimonial-box .quote-mark {
     position: absolute;
-    top: -38px;
-    right: 85px;
-    font-size: 75px;
-    color: white;
-    opacity: 0.8;
-    z-index: 1;
-    font-family: 'sarif';
+    top: -15px;
+    left: 11px;
 }
 
 .quote-text {
@@ -833,7 +961,10 @@ h3,
     font-size: 48px;
     line-height: 56px;
 }
-
+.card-img-top {
+    width: 100%;
+    height: 300px;
+}
 .card-title {
     padding-top: 20px;
     font-family: 'GFS Didot';
@@ -892,6 +1023,12 @@ h3,
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.discover_btn:hover {
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
 }
 
 /* HeroSection.css */
@@ -928,10 +1065,12 @@ h3,
 }
 
 .feature-icon {
-    width: 50px;
     height: 50px;
-    background-color: #333;
     flex-shrink: 0;
+}
+
+.feature-icon img {
+    width: 50px;
 }
 
 .feature-content h5 {
@@ -954,12 +1093,15 @@ h3,
 
 }
 
+/* Overall section styling */
 .testimonial-section {
     padding: 80px 0;
-    background-color: #bdbdbd;
+    background-image: url('../../assets/image/dining_hall.jpg');
+    background-size: cover;
     position: relative;
 }
 
+/* Container for the testimonial section */
 .testimonial-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -969,37 +1111,39 @@ h3,
     padding: 0 15px;
 }
 
+/* Left image styling */
 .image-left {
-    width: 300px;
-    text-align: end;
-    position: relative;
-    z-index: 1;
-    top: 390px;
-    left: -40px;
-    background-color: #bdbdbd;
-    /* Placeholder background */
-    height: 300px;
+    width: 390px;
+    height: 370px;
+    background-image: url('../../assets/image/hotel_interior.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 321px;
+    left: -45px;
     border: 12px solid #fff;
+    z-index: 1;
 }
 
+/* Right content area */
 .content-right {
     width: 55%;
     position: relative;
     min-height: 600px;
-    /* background-color: black; */
-    /* Placeholder background */
 }
 
+/* Author information box */
 .author-info {
-    padding-bottom: 40px;
     padding: 24px;
-    background-color: #898787a1;
+    background-color: #828282;
     width: 330px;
-    left: -80px;
     position: relative;
+    z-index: 2;
+    right: -63%;
     height: 165px;
+    /* Ensure it overlaps correctly */
 }
 
+/* Author name styling */
 .author-name {
     font-size: 18px;
     margin: 0;
@@ -1009,6 +1153,7 @@ h3,
     color: #1B1C21;
 }
 
+/* Author title styling */
 .author-title {
     font-size: 14px;
     color: #1B1C21;
@@ -1016,18 +1161,21 @@ h3,
     font-family: 'Inter';
     margin-top: 5px;
     line-height: 20px;
-
 }
 
+/* Testimonial text box */
 .testimonial-text {
-    background-color: #7a5e3a;
+    background-color: #472c0a8c;
     /* Brown box */
     padding: 20px;
     color: white;
     top: -50px;
+    right: -240px;
     position: relative;
+    z-index: 2;
 }
 
+/* Text paragraph inside the testimonial text box */
 .testimonial-text p {
     font-size: 14px;
     font-family: 'Raleway';
@@ -1036,14 +1184,27 @@ h3,
     margin: 0;
 }
 
-.testimonial-box .quote-mark {
-    font-size: 89px;
+/* Quote mark styling */
+.testimonial-text .quote-mark {
+    font-size: 94px;
     color: white;
     position: absolute;
-    bottom: -18px;
-    top: -78px;
-    left: 20px;
+    /* bottom: -18px; */
+    top: -51px;
+    right: 50px;
     font-family: serif;
+}
+
+/* Custom border styling for overall layout */
+.testimonial-section::before {
+    content: "";
+    position: absolute;
+    top: 118px;
+    left: -19px;
+    width: 100%;
+    height: 80%;
+    border: 1px solid #D3D3D3;
+    z-index: 0;
 }
 
 @media (max-width:1230px) {

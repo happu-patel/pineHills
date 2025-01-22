@@ -13,22 +13,23 @@ const Header = () => {
             {/* Top Bar */}
             <div className="top-bar d-flex justify-content-between align-items-center py-3">
                 <div className="left-links d-flex align-items-center col-lg-4 gap-4">
-                    <span className="">EN</span>
-                    <img className="" src={mail_icon} alt='email' />
+                    <Link to=""><span className="">EN</span></Link>
+                    <Link to=""><img className="" src={mail_icon} alt='email' /></Link>
                     <Link to="/newsletter" className="">NEWSLETTER</Link>
                     <Link to="/resorts">RESORTS</Link>
                 </div>
                 <div className='col-lg-4 justify-content-center d-flex'>
-                <Link className="navbar-brand mx-auto logo" to="/">
-                    <img src={logo} alt='logo' />
-                </Link>
+                    <Link className="navbar-brand mx-auto logo" to="/">
+                        <img src={logo} alt='logo' />
+                    </Link>
                 </div>
                 <div className="right-links col-lg-4 d-felx text-end">
-                    <div className='d-flex flex-col gap-2 text-end justify-content-end'>
-                        <img src={call_icon} alt='call' />
-                        <span>(987) 654-3210</span>
-                    </div>
-                  
+                    <Link to=''>
+                        <div className='d-flex flex-col gap-2 text-end justify-content-end'>
+                            <img src={call_icon} alt='call' />
+                            <span style={{textDecoration:'none'}}>(987) 654-3210</span>
+                        </div>
+                    </Link>
                 </div>
             </div>
 

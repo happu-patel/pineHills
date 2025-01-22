@@ -1,4 +1,222 @@
-.black-card {
+.pricing_plan .black-card {
     background-color: #1B1C21;
+    position: relative;
 }
 
+.pricing_plan .black-card::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/pricing_leaf.png');
+    top: 0;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.pricing_plan .black-card::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/pricing_leaf2.png');
+    top: 0;
+    width: 112px;
+    height: 185px;
+    left: 0;
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.start_btn {
+    position: relative;
+}
+
+.start_btn::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/pricing_leaf3.png');
+    bottom: 27px;
+    left: -29px;
+    width: 150px;
+    height: 200px;
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.white_card {
+    position: relative;
+}
+
+.white_card::after {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/white_leaf.png');
+    top: 0;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.pricing_plan .white_card::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/white_leaf3.png');
+    top: 0;
+    width: 112px;
+    height: 185px;
+    left: 0;
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.start_btn_white {
+    position: relative;
+}
+
+.start_btn_white::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../assets/image/white_leaf3.png');
+    bottom: -27px;
+    left: -29px;
+    width: 150px;
+    height: 200px;
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.pricing_plan .card {
+    border-radius: 0px;
+    border: 1px solid #B7A18B;
+}
+
+.pricing_plan .card-body {
+    padding: 28px;
+}
+
+.pricing_plan .card-title {
+    margin-bottom: 0px;
+    padding-bottom: 16px;
+}
+
+.card_title1 {
+    font-size: 28px;
+    font-family: 'GFS Didot';
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 36px;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+.card-price {
+    font-family: 'GFS Didot';
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+}
+
+.text_night {
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+    color: #A6A6A6;
+}
+
+.pricing_plan .card-text {
+    font-family: 'Raleway';
+    font-size: 17px;
+    color: #A6A6A6;
+    margin-bottom: 0px;
+    line-height: 26px;
+}
+
+.pricing_plan .price_hr {
+    color: #fff;
+    opacity: 1;
+    width: 123px;
+    margin: 30px auto;
+}
+
+.feature_txt {
+    font-family: 'Raleway';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+
+.feature_list {
+    padding-top: 16px;
+    margin-bottom: 0px;
+    font-family: 'Raleway';
+    font-size: 17px;
+    color: #fff;
+    line-height: 26px;
+}
+
+.feature_list li {
+    padding-bottom: 16px;
+}
+
+.check_icon {
+    margin-right: 7px;
+}
+
+.pricing_plan .start_btn {
+    background-color: #B7A18B;
+    border: 1px solid #B7A18B;
+    padding: 15px 40px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    color: #472C10;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.pricing_plan .start_btn_white {
+    border: 1px solid #000;
+    color: #000;
+    background-color: #FFFFFF;
+}
+
+.feature_list li:last-child {
+    padding-bottom: 0px;
+}
+
+.card_title1_black {
+    color: #472C10;
+}
+
+.pricing_plan .card-text1 {
+    color: #666666;
+}
+
+.card_padding {
+    padding-top: 60px;
+}
+
+.pricing_plan .Amenities {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}

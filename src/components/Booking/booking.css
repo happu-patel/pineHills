@@ -39,6 +39,21 @@ label {
     border-bottom: 1px solid #D3D3D3;
 }
 
+.date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #aaa;
+
+}
+
 .counter {
     display: flex;
     align-items: center;
@@ -58,11 +73,12 @@ label {
     font-size: 16px;
     font-weight: bold;
     color: #000;
+    border-bottom: 1px solid #66666659;
 }
 
 .book-now-btn {
     padding: 18px 44px;
-    border-color: #1B1C21;
+    border:1px solid #1B1C21;
     color: #1B1C21;
     cursor: pointer;
     font-size: 15px;
@@ -71,9 +87,15 @@ label {
     font-weight: bold;
     background: transparent;
     text-transform: uppercase;
+    transition: 0.3s ease;
 }
 
-
+.book-now-btn:hover {
+    background-color: #B7A18B;
+    color: #000;
+    transition:  0.3s ease;
+    border:1px solid #B7A18B;
+}
 
 @media (max-width: 1220px) {
     .booking-container {

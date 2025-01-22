@@ -1,10 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './SlickSlider.css'; // Custom CSS file (optional)
+import golder_sunset from '../../assets/image/golder_sunset.jpg'
 
 const SlickSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -22,22 +23,22 @@ const SlickSlider = () => {
       id: 1,
       text: 'Misty Hills Haven',
       description:
-        'Nestled in the tranquil mist of rolling hills, this villa provides a peaceful retreat with panoramic vistas.',
-      bgColor: '#808080', // Gray background
+        'Nestled in the tranquil mist of rolling hills, this villa provides a peaceful \n retreat with panoramic vistas.',
+      className: 'misty-hills-slide'
     },
     {
       id: 2,
       text: 'Serene Lakeside Escape',
       description:
-        'Experience ultimate relaxation at this lakeside retreat with breathtaking views and serene surroundings.',
-      bgColor: '#4a90e2', // Blue background
+        'Experience ultimate relaxation at this lakeside retreat with breathtaking \n views and serene surroundings.',
+      className: 'lakeside-slide'
     },
     {
       id: 3,
       text: 'Golden Sunset Retreat',
       description:
         'Enjoy the magical sunsets and warm ambiance at this luxurious getaway destination.',
-      bgColor: '#f5a623', // Golden orange background
+      className: 'sunset-slide'
     },
   ];
 
@@ -48,35 +49,24 @@ const SlickSlider = () => {
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="slider-item"
+              className={slide.className}
               style={{
-                backgroundColor: '#666',
                 height: '500px',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'end',
                 alignItems: 'center',
                 textAlign: 'center',
                 color: '#fff',
                 padding: '20px',
               }}
             >
-              <h2 style={{ fontSize: '2rem', margin: '10px 0' }}>{slide.text}</h2>
-              <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>{slide.description}</p>
-              <button
-                style={{
-                  marginTop: '20px',
-                  padding: '10px 20px',
-                  border: '1px solid #fff',
-                  backgroundColor: '#666',
-                  color: '#fff',
-                  cursor: 'pointer',
-                  fontSize: '1rem',
-                }}
-              >
-                View Villa
-              </button>
-            </div>
+                <h2>{slide.text}</h2>
+                <p>{slide.description}</p>
+                <button>
+                  View Villa
+                </button>
+              </div>
           ))}
         </Slider>
       </div>

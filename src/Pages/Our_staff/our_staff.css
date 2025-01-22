@@ -1,0 +1,104 @@
+.guest-review-container {
+    padding: 50px 0;
+    background: linear-gradient(90deg, #8080803d 27%, #fcfcfc00 39%, #ffffffa6 49%, #00000070 100%)
+}
+
+.guest_rew {
+    padding-top: 70px;
+}
+
+.guest-name {
+    font-size: 32px;
+    font-family: 'GFS Didot';
+    line-height: 40px;
+    color: #1B1C21;
+}
+
+.guest-role {
+    font-size: 18px;
+    font-family: 'Raleway';
+    color: #1B1C21;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.quote-box {
+    background: #b49f8d;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 420px;
+    background: #828282;
+}
+
+.name_author {
+    padding-top: 70px;
+    margin-left: 250px;
+}
+
+.guest-review-container .quote-container {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 147px;
+    max-width: 470px;
+}
+
+.guest-review-container .quote-mark {
+    font-size: 89px;
+    color: white;
+    position: absolute;
+    bottom: -18px;
+    top: -78px;
+    right: 20px;
+}
+
+.guest-review-container .quote-text {
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 500;
+}
+
+.middle_text h4 {
+    margin-bottom: 0px;
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 26px;
+    color: #666666;
+    padding-top: 70px;
+}
+
+
+.placeholder-img {
+    width: 100%;
+    padding-top: 75%;
+    /* Aspect ratio 4:3 */
+    background-color: #d3d3d3;
+}
+.our_staff .team-card {
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+
+.our_staff .card-title {
+    font-size:24px;
+    font-family: 'GFS Didot';
+    line-height: 32px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.our_staff .card-text {
+    color: #472C10;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Raleway';
+    line-height: 26px;
+}

@@ -6,13 +6,34 @@ import resort_img from '../../assets/image/resort_img.jpg'
 import resort_img1 from '../../assets/image/resort_img1.jpg'
 import play_circle from '../../assets/image/PlayCircle.svg'
 import ornament_icon from '../../assets/image/ornament.svg'
+import testimonial_icon from '../../assets/image/testimonial_icon.svg'
 import white_logo from '../../assets/image/footer_logo.svg'
 import ph_logo from '../../assets/image/PH.png'
-import testimonial_icon from '../../assets/image/testimonial_icon.svg'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import SlickSlider from '../../components/SlickSlider/SlickSlider'
+import TestimonialSection from '../../components/Testimonial/TestimonialSection'
+import guest_served from '../../assets/image/guest_served2.svg';
+import villa from '../../assets/image/villa.svg'
+import location from '../../assets/image/location_2.svg'
+import hotel from '../../assets/image/hotel.svg'
+import resort from '../../assets/image/reasot.svg'
+import hotel_travel from '../../assets/image/hotel_Travel.svg'
+import architure from '../../assets/image/architure.svg'
+import amenities from '../../assets/image/amenities.svg'
+import best_price from '../../assets/image/best_price.svg'
+import service from '../../assets/image/service.svg'
+import pool from '../../assets/image/pool.svg'
+import restaurant from '../../assets/image/restaurant.svg'
+import bathtub from '../../assets/image/bathtub.svg'
+import gym from '../../assets/image/gym.svg'
+import events from '../../assets/image/event.svg'
+import wedding from '../../assets/image/wedding.svg'
+import family from '../../assets/image/family.svg'
+import news_section2 from '../../assets/image/news_section2.jpg';
+import news_section3 from '../../assets/image/news_section3.jpg';
+
 
 const Home = () => {
     return (
@@ -50,6 +71,7 @@ const Home = () => {
                                 {/* <h1 className="background-text">OUR STORY</h1> */}
                                 <img src={resort_img} alt="Video Thumbnail"
                                     className="img-fluid" />
+                                <div class="border-overlay"></div>
                                 <div className="play-icon">
                                     <img src={play_circle} alt="" />
                                 </div>
@@ -65,11 +87,12 @@ const Home = () => {
                             <p>
                                 Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years, we’ve grown into a luxurious resort, while staying true to our roots and the natural beauty that surrounds us.
                             </p>
+                            <hr className='info_hr'></hr>
                             <div className="stats d-flex justify-content-between">
                                 {/* Stat 1 */}
                                 <div className="stat-box">
                                     <div className="icon-box">
-                                        {/* <img src="/path-to-your-image/icon1.png" alt="Icon 1" /> */}
+                                        <img src={guest_served} alt="" />
                                     </div>
                                     <div className="text-box d-flex flex-column">
                                         <h3>150 K+</h3>
@@ -80,7 +103,8 @@ const Home = () => {
                                 {/* Stat 2 */}
                                 <div className="stat-box">
                                     <div className="icon-box">
-                                        {/* <img src="/path-to-your-image/icon2.png" alt="Icon 2" /> */}
+                                        <img src={villa} alt="" />
+
                                     </div>
                                     <div className="text-box d-flex flex-column">
                                         <h3>25</h3>
@@ -91,7 +115,7 @@ const Home = () => {
                                 {/* Stat 3 */}
                                 <div className="stat-box">
                                     <div className="icon-box">
-                                        {/* <img src="/path-to-your-image/icon3.png" alt="Icon 3" /> */}
+                                        <img src={location} alt="" />
                                     </div>
                                     <div className="text-box d-flex flex-column">
                                         <h3>12+</h3>
@@ -115,9 +139,11 @@ const Home = () => {
                             <p>
                                 Pine Hills Resort is more than just a place to stay; it’s an escape into nature’s embrace, where comfort meets adventure. Nestled in the breathtaking mountains, we offer a unique combination of luxury accommodations, exceptional service, and a variety of activities for every traveler.
                             </p>
+                            <hr className='info_hr'></hr>
                             <div className="image-box">
                                 <img src={resort_img1} alt="Video Thumbnail"
                                     className="img-fluid" />
+                                <div class="border_info"></div>
                             </div>
                         </div>
                     </div>
@@ -139,7 +165,9 @@ const Home = () => {
                 </p>
                 <div className="options-container">
                     <div className="option-card">
-                        <div className="icon-placeholder"></div>
+                        <div className="icon-placeholder">
+                            <img src={hotel} alt="" />
+                        </div>
                         <img src={ornament_icon} className='icon_orn' />
                         <h4 className="option-title">HOTEL & RESORT</h4>
                         <p className="option-description">
@@ -147,7 +175,9 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="option-card">
-                        <div className="icon-placeholder"></div>
+                        <div className="icon-placeholder">
+                            <img src={villa} alt='' />
+                        </div>
                         <img src={ornament_icon} className='icon_orn' />
                         <h4 className="option-title">HOMES & VILLAS</h4>
                         <p className="option-description">
@@ -155,7 +185,9 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="option-card">
-                        <div className="icon-placeholder"></div>
+                        <div className="icon-placeholder">
+                            <img src={resort} alt='' />
+                        </div>
                         <img src={ornament_icon} className='icon_orn' />
                         <h4 className="option-title">INCLUSIVE RESORT</h4>
                         <p className="option-description">
@@ -164,7 +196,9 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="option-card">
-                        <div className="icon-placeholder"></div>
+                        <div className="icon-placeholder">
+                            <img src={hotel_travel} alt="" />
+                        </div>
                         <img src={ornament_icon} className='icon_orn' />
                         <h4 className="option-title">HOTEL & TRAVEL</h4>
                         <p className="option-description">
@@ -231,7 +265,7 @@ const Home = () => {
                 </div>
             </section>
             {/* <div className='container'> */}
-                <SlickSlider />
+            <SlickSlider />
             {/* </div> */}
             {/* chhose us */}
             <div className="container my-5">
@@ -251,13 +285,17 @@ const Home = () => {
                         </p>
                         <div className="why-choose-us-features">
                             {[
-                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.' },
-                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.' },
-                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.' },
-                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.' }
+                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.', icon: architure },
+                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.', icon: amenities },
+                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.', icon: best_price },
+                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.', icon: service }
                             ].map((feature, index) => (
                                 <div key={index} className="feature-item d-flex align-items-start">
-                                    <div className="feature-icon"></div>
+                                   
+                                        <div className="feature-icon">
+                                            <img src={feature.icon} alt={`${feature.title} Icon`} />
+                                        </div>
+                                   
                                     <div className="feature-content">
                                         <h5>{feature.title}</h5>
                                         <p>{feature.text}</p>
@@ -299,19 +337,24 @@ const Home = () => {
                     <div className="col-lg-8 Amenities_box">
                         <div className="row g-3 mb-3">
 
-                            <div className="col-lg-7">
-                                <div className="Amenities_box_data">
-                                    <div>
-                                        <div className="Amenities_icon"></div>
-                                        <h1>PRIVATE POOL</h1>
+                                <div className="col-lg-7">
+                                    <div className="Amenities_box_data pool_bg">
+                                        <div>
+                                            <div className="Amenities_icon">
+                                                <img src={pool} alt="" />
+                                            </div>
+                                            <h1>PRIVATE POOL</h1>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data res_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={restaurant} alt="" />
+
+                                        </div>
                                         <h1>RESTAURANT</h1>
                                     </div>
                                 </div>
@@ -319,17 +362,23 @@ const Home = () => {
                         </div>
                         <div className="row g-3 mb-3">
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data spa_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={bathtub} alt="" />
+
+                                        </div>
                                         <h1>SPA SERVICE</h1>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data gym_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={gym} alt="" />
+
+                                        </div>
                                         <h1>QUALITY GYM</h1>
                                     </div>
                                 </div>
@@ -379,7 +428,9 @@ const Home = () => {
                                         <div class="service_data_box">
                                             <div class="row">
                                                 <div class="col-lg-2 d-flex  align-items-center">
-                                                    <div class="black_box"></div>
+                                                    <div class="black_box">
+                                                        <img src={events} alt="" />
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-10 box_data">
                                                     <h5>meeting & events</h5>
@@ -391,7 +442,9 @@ const Home = () => {
                                         <div class="service_data_box">
                                             <div class="row">
                                                 <div class="col-lg-2 d-flex align-items-center">
-                                                    <div class="black_box"></div>
+                                                    <div class="black_box">
+                                                        <img src={wedding} alt="" />
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-10 box_data">
                                                     <h5>wedding & romantic moments</h5>
@@ -403,7 +456,9 @@ const Home = () => {
                                         <div class="service_data_box">
                                             <div class="row">
                                                 <div class="col-lg-2 d-flex justify-content-center align-items-center">
-                                                    <div class="black_box"></div>
+                                                    <div class="black_box">
+                                                        <img src={family} alt="" />
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-10 box_data">
                                                     <h5>family holidays</h5>
@@ -435,7 +490,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <div className='testimonial-sec'>
+            {/* <div className='testimonial-sec'>
                 <div className='container'>
                     <div className='title_part text-center'>
                         <img src={ornament_icon} />
@@ -478,7 +533,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <TestimonialSection />
+
             <div className="news-section">
                 <div class="container py-5">
                     <div class="text-center mb-5">
@@ -504,7 +561,7 @@ const Home = () => {
 
                         <div class="col-md-4">
                             <div class="img_div">
-                                <img src={resort_img}
+                                <img src={news_section2}
                                     class="card-img-top" alt="Special Offer" />
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Special Offer: Save 20% On All Bookings At Pine Hills This Summer!</h5>
@@ -514,7 +571,7 @@ const Home = () => {
                         </div>
                         <div class="col-md-4">
                             <div class="img_div">
-                                <img src={resort_img} class="card-img-top" alt="Wellness Retreat" />
+                                <img src={news_section3} class="card-img-top" alt="Wellness Retreat" />
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Pine Hills Announces Exciting New Wellness Retreat Program</h5>
                                     <p class="card-text text-muted">July 25, 2024</p>
@@ -524,7 +581,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
 
         </>
     )

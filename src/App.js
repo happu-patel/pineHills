@@ -13,6 +13,7 @@ import BlogList from './Pages/Blog/BlogList';
 import BlogDetail from './components/BlogDetail/BlogDetail';
 import PricingPlans from './Pages/PricePlan/PricingPlans';
 import Villas from './Pages/Villas/Villas';
+import Our_staff from './Pages/Our_staff/Our_staff';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           <Route path='/blog' element={<BlogList />} />
           <Route path='/blog/:id' element={<BlogDetail />} />
           <Route path='/villa' element={<Villas />} />
-          {/* <Route path='/pricing' element={<PricingPlans />} /> */}
+          <Route path='/pricing' element={<PricingPlans />} /> 
+          <Route path='/our_staff' element={<Our_staff/>} />
         </Routes>
         <Footer />
       </div>

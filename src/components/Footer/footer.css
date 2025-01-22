@@ -81,12 +81,20 @@
     background: transparent;
     border-color: #D3D3D3;
     padding: 8px 44px;
+    border: 1px solid #D3D3D3;
     font-size: 15px;
     letter-spacing: 2px;
     line-height: 26px;
     font-family: 'Raleway';
+    transition: all 0.3s ease-in-out;
 }
 
+.btn-signup:hover {
+    transition: all 0.3s ease-in-out;
+    background-attachment: #333;
+    border-color: #333;
+    border: 1px solid #333;
+}
 /* Footer Links and Bottom Section */
 .footer-main-section {
     display: flex;

@@ -5,6 +5,15 @@ import ornament_icon from '../../assets/image/ornament.svg'
 import arrow_down from '../../assets/image/arrow_down.svg'
 import arrow_right from '../../assets/image/arrow_right.svg'
 import testimonial_icon from '../../assets/image/testimonial_icon.svg'
+import architure from '../../assets/image/architure.svg'
+import amenities from '../../assets/image/amenities.svg'
+import best_price from '../../assets/image/best_price.svg'
+import service from '../../assets/image/service.svg'
+import TestimonialSection from '../../components/Testimonial/TestimonialSection';
+import pool from '../../assets/image/pool.svg'
+import restaurant from '../../assets/image/restaurant.svg'
+import bathtub from '../../assets/image/bathtub.svg'
+import gym from '../../assets/image/gym.svg'
 
 const Faq = () => {
     // State to manage the active FAQ
@@ -169,18 +178,23 @@ const Faq = () => {
                         <div className="row g-3 mb-3">
 
                             <div className="col-lg-7">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data pool_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={pool} alt="" />
+                                        </div>
                                         <h1>PRIVATE POOL</h1>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data res_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={restaurant} alt="" />
+
+                                        </div>
                                         <h1>RESTAURANT</h1>
                                     </div>
                                 </div>
@@ -188,17 +202,23 @@ const Faq = () => {
                         </div>
                         <div className="row g-3 mb-3">
                             <div className="col-lg-5">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data spa_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={bathtub} alt="" />
+
+                                        </div>
                                         <h1>SPA SERVICE</h1>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-7">
-                                <div className="Amenities_box_data">
+                                <div className="Amenities_box_data gym_bg">
                                     <div>
-                                        <div className="Amenities_icon"></div>
+                                        <div className="Amenities_icon">
+                                            <img src={gym} alt="" />
+
+                                        </div>
                                         <h1>QUALITY GYM</h1>
                                     </div>
                                 </div>
@@ -248,13 +268,17 @@ const Faq = () => {
                         </p>
                         <div className="why-choose-us-features">
                             {[
-                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.' },
-                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.' },
-                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.' },
-                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.' }
+                                { title: 'Beautiful Architecture', text: 'Stunning designs that harmonize with nature, combining elegance and functionality.', icon: architure },
+                                { title: 'Exclusive Amenities', text: 'Access private pools, spa services, and gourmet dining for a truly luxurious stay.', icon: amenities },
+                                { title: 'Best Price Guarantee', text: 'Get the highest quality stay at the most competitive rates with our best price guarantee.', icon: best_price },
+                                { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.', icon: service }
                             ].map((feature, index) => (
                                 <div key={index} className="feature-item d-flex align-items-start">
-                                    <div className="feature-icon"></div>
+
+                                    <div className="feature-icon">
+                                        <img src={feature.icon} alt={`${feature.title} Icon`} />
+                                    </div>
+
                                     <div className="feature-content">
                                         <h5>{feature.title}</h5>
                                         <p>{feature.text}</p>
@@ -290,50 +314,7 @@ const Faq = () => {
 
                 </div>
             </div>
-            <div className='testimonial-sec'>
-                <div className='container'>
-                    <div className='title_part text-center'>
-                        <img src={ornament_icon} />
-                        <span className="section-title px-2">
-                            Testimonials
-                        </span>
-                        <img src={ornament_icon} />
-                    </div>
-                    <h2 className="main-title text-center">They Were happy with our service</h2>
-                    <p className='description text-center'>Read firsthand accounts of unforgettable experiences, exceptional service, and unparalleled comfort.<br /> Our testimonials highlight the unique aspects of our accommodations and the memorable moments.</p>
-                    <div className='testimonial_part faq_testimonial'>
-                        <div className="testimonial-box">
-                            <div className="content">
-                                <div className="content_title">
-                                    <h3>Emily Johnson</h3>
-                                    <p className='title'>Marketing Manager. Rui Company</p>
-                                </div>
-
-                                <div className="quote-container">
-                                    <span className="quote-mark"><img src={testimonial_icon} /></span>
-                                    <p className="quote-text">
-                                        Staying at the Oceanfront Paradise Villa was an absolute dream. The view was breathtaking, and the private pool was the perfect spot.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testimonial-box">
-                            <div className="content">
-                                <div className="content_title">
-                                    <h3>David Lee</h3>
-                                    <p className='title'>Financial Analyst, Rui Company</p>
-                                </div>
-                                <div className="quote-container">
-                                    <span className="quote-mark"><img src={testimonial_icon} /></span>
-                                    <p className="quote-text">
-                                        Our experience at the Highland Peaks Retreat exceeded all expectations. The serene mountain views and elegant design provided the perfect.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TestimonialSection />
         </>
     );
 };

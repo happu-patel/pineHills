@@ -5,15 +5,25 @@
 .slick-list {
     padding-bottom: 10px !important;
 }
-.slider-container .slider-item {
+.about_slide.slider-container .slider-item {
     padding: 0 10px;
     background-color: #fff;
 }
-
+.slide1_img {
+    background-image: url('../../assets/image/hotel_interior.jpg');
+    background-size: cover;
+}
+.slide2_img {
+    background-image: url('../../assets/image/news_section2.jpg');
+    background-size: cover;
+}
+.slide3_img {
+    background-image: url('../../assets/image/restaurant_bg.jpg');
+    background-size: cover;
+}
 .slider-container .slider-content {
     height: 400px;
-    /* width: 730px !important; */
-    background-color: #e0e0e0;
+    width: 100% !important; 
     display: flex;
     justify-content: center;
     align-items: center;

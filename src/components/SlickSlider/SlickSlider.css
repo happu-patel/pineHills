@@ -1,21 +1,68 @@
-.slider-item {
-    display: flex;
+.sunset-slide {
+    background-image: url('../../assets/image/golder_sunset.jpg');
+    background-size: cover;
+    display: flex !important;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     text-align: center;
-    height: 500px;
+    height: 715px;
+    position: relative;
+    z-index: 1;
     color: #fff;
-    background-color: #666;
     padding: 20px;
-}
-.home_slide .slider-container .slider-item {
-    background-color: #666;
+    padding-bottom: 50px !important;
 }
 
-.slick-slide
-{
-    padding-left: 10px !important ;
+.misty-hills-slide {
+    background-image: url('../../assets/image/mist_hill.jpg');
+    background-size: cover;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    height: 715px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 50px !important;
+}
+
+.lakeside-slide {
+    display: flex !important;
+    background-image: url('../../assets/image/lake_Side.jpg');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    height: 715px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 50px !important;
+}
+
+.lakeside-slide::before,
+.sunset-slide::before,
+.misty-hills-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust the last value (0.5) for opacity level */
+    z-index: -1;
+
+}
+
+.slick-slide {
+    padding-left: 10px !important;
     padding-right: 10px !important;
 }
 
@@ -26,8 +73,10 @@
 }
 
 
-.slider-item h2 {
-    padding-top: 180px;
+.sunset-slide h2,
+.lakeside-slide h2,
+.misty-hills-slide h2 {
+
     font-family: 'GFS Didot';
     font-size: 48px;
     line-height: 56px;
@@ -35,19 +84,24 @@
     margin: 10px 0;
 }
 
-.slider-item p {
+.sunset-slide p,
+.lakeside-slide p,
+.misty-hills-slide p {
     font-family: 'Raleway';
     font-size: 17px;
     line-height: 26px;
     font-weight: 400;
     margin: 10px 0;
+    white-space: pre-wrap;
 }
 
-.slider-item button {
+.sunset-slide button,
+.lakeside-slide button,
+.misty-hills-slide button {
     margin-top: 20px;
     padding: 18px 40px;
     border: none;
-    background-color: transparent;
+    background-color: #000;
     color: #fff;
     cursor: pointer;
     font-family: 'Raleway';
@@ -55,6 +109,14 @@
     line-height: 26px;
     letter-spacing: 2px;
     font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.sunset-slide button:hover,
+.lakeside-slide button:hover,
+.misty-hills-slide button:hover {
+    background-color: #333;
+    transition: 0.3s ease;
 }
 
 .slider-container {

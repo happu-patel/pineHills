@@ -38,7 +38,7 @@ const PineHillGallery = () => {
     };
 
     return (
-        <>
+        <div className="about_slide">
             <div className="container text-center">
                 <div className='title_part p-0'>
                     <img src={ornament_icon} />
@@ -53,23 +53,22 @@ const PineHillGallery = () => {
                 </p>
             </div>
             <Slider {...settings} className="slider-container mt-4">
-                <div className="slider-item">
+                <div className="slider-item slide1_img">
                     <div className="slider-content">
-                        <p>Slide 1</p>
                     </div>
                 </div>
-                <div className="slider-item">
+                <div className="slider-item slide2_img">
                     <div className="slider-content">
-                        <p>Slide 2</p>
+                        
                     </div>
                 </div>
-                <div className="slider-item">
+                <div className="slider-item slide3_img">
                     <div className="slider-content">
-                        <p>Slide 3</p>
+                        
                     </div>
                 </div>
             </Slider>
-        </>
+        </div>
     );
 };
 

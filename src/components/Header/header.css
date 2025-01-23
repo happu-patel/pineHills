@@ -15,9 +15,11 @@
     color: #1B1C21;
 
 }
+
 a {
     text-decoration: none !important;
 }
+
 .right-links span {
     font-size: 12px;
     color: #1B1C21;
@@ -71,11 +73,11 @@ a {
     padding: 17px;
 }
 
-.active{
+.active {
     background-color: #B7A18B !important;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: transparent !important;
 }
 
@@ -92,4 +94,22 @@ a {
     position: relative;
     top: 8px;
     left: 4px;
+}
+
+@media(max-width:767px) {
+    .main-header .top-bar {
+        display: block !important;
+    }
+
+    .our_info::before {
+        display: none;
+    }
+
+    .our_info::after {
+        display: none;
+    }
+
+    .escape_villa::after {
+        display: none;
+    }
 }

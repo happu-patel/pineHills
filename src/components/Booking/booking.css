@@ -78,7 +78,7 @@ label {
 
 .book-now-btn {
     padding: 18px 44px;
-    border:1px solid #1B1C21;
+    border: 1px solid #1B1C21;
     color: #1B1C21;
     cursor: pointer;
     font-size: 15px;
@@ -93,8 +93,8 @@ label {
 .book-now-btn:hover {
     background-color: #B7A18B;
     color: #000;
-    transition:  0.3s ease;
-    border:1px solid #B7A18B;
+    transition: 0.3s ease;
+    border: 1px solid #B7A18B;
 }
 
 @media (max-width: 1220px) {
@@ -116,5 +116,21 @@ label {
 
     .book-now-btn {
         padding: 16px 35px;
+    }
+}
+
+@media (max-width:991px) {
+    .book-now-btn {
+        padding: 16px 8px;
+    }
+
+    .booking-row {
+        gap: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .booking-row {
+        display: block;
     }
 }

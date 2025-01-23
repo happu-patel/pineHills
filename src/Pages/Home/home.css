@@ -250,13 +250,7 @@ body {
     align-items: center;
 }
 
-.icon-box {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .icon-box img {
     width: 60px;
@@ -288,12 +282,7 @@ body {
     padding: 40px 0px 60px;
 }
 
-.section-title {
-    color: #a29061;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
+
 
 .main-title {
     font-size: 48px;
@@ -328,11 +317,7 @@ body {
     text-align: center;
 }
 
-.icon-placeholder {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 1rem;
-}
+
 
 .icon-placeholder img {
     width: 70px;
@@ -961,10 +946,12 @@ h3,
     font-size: 48px;
     line-height: 56px;
 }
+
 .card-img-top {
     width: 100%;
     height: 300px;
 }
+
 .card-title {
     padding-top: 20px;
     font-family: 'GFS Didot';
@@ -1213,14 +1200,256 @@ h3,
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width:1024px) {
+    .luxury-title {
+        font-size: 65px;
+        line-height: 70px;
+    }
+
+    .our_info::before {
+        font-size: 140px;
+    }
+
+    .our_info h2 {
+        font-size: 37px;
+        line-height: 40px;
+    }
+
+    .our_info p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .img-fluid {
+        margin-left: 10px;
+    }
+
+    .right_col .img-fluid {
+        margin-left: 0px;
+    }
+
+    .icon-box img {
+        width: 46px;
+    }
+
+    .text-box h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .text-box {
+        padding-left: 0px;
+    }
+
+    .our_info::after {
+        font-size: 140px;
+        top: 58%;
+    }
+
+    .border_info {
+        position: absolute;
+        top: 17px;
+        right: -10px;
+    }
+
+    .our_info {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .lodging {
+        padding: 0px 0px 0px;
+    }
+
+    .main-title,
+    .news_head {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .description {
+        padding-top: 15px;
+        font-size: 15px;
+    }
+
+    .icon-placeholder img {
+        width: 48px;
+    }
+
+    .option-card {
+        padding: 18px;
+    }
+
+    .options-container {
+        gap: 20px;
+    }
+
+    .option-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .option-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .detail_resort::before,
+    .detail_resort::after {
+        width: 210px;
+        height: 310px;
+    }
+
+    .detail_resort::after {
+        right: -7px;
+    }
+
+    .main_part::before {
+        left: -7px;
+    }
+
+    .main_part::before,
+    .main_part::after {
+        width: 210px;
+        height: 310px;
+    }
+
+    .main_part::after {
+        bottom: -80px;
+        right: 22%;
+    }
+
+    .escape_villa::after {
+        font-size: 140px;
+        top: -12%;
+    }
+
+    .discover_btn {
+        padding: 18px 15px;
+    }
+
+    .sunset-slide h2,
+    .lakeside-slide h2,
+    .misty-hills-slide h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .sunset-slide button,
+    .lakeside-slide button,
+    .misty-hills-slide button {
+        padding: 18px 20px !important;
+    }
+
+    .feature-icon img {
+        width: 40px;
+    }
+
+    .feature-content h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .feature-content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .left_side {
+        width: 465px !important;
+    }
+
+    .right_side {
+        width: 530px !important;
+    }
+
+    .testimonial-text {
+        right: -219px;
+    }
+
+    .author-info {
+        left: 48%;
+    }
+
+    .amenities-heading {
+        font-size: 40px;
+        line-height: 43px;
+        padding-bottom: 22px;
+    }
+
+    .Amenities_box_data h1 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .black_box img {
+        width: 40px;
+    }
+
+    .service_data {
+        padding-right: 55px !important;
+        padding-left: 55px;
+    }
+
+    .box_data h5 {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .box_data p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .black_box_detail {
+        padding: 55px 55px !important;
+    }
+
+    .contain_p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .slick-prev {
+        left: -10px !important;
+    }
+
+    .slick-right {
+        right: -10px !important;
+    }
+
+    .content_title .title {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .content_title h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
     .testimonial-container {
         flex-direction: column;
     }
 
     .image-left,
     .content-right {
-        width: 100%;
+        width: 85%;
+        left: -17px;
     }
 
     .testimonial-card {
@@ -1229,10 +1458,161 @@ h3,
         width: 100%;
         margin-top: 30px;
     }
+
+    .our_info::before {
+        font-size: 120px;
+        top: 12%;
+    }
+
+    .our_info::after {
+        font-size: 120px;
+        top: 69%;
+    }
+
+    .our_info h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .icon-box {
+        padding-right: 10px;
+    }
+
+    .text-box h3 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .text-box p {
+        font-size: 11px;
+    }
+
+    .stats {
+        margin-top: 70px;
+    }
+
+    .our_info::after {
+        top: 64%;
+    }
+
+    .options-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Show exactly 2 columns */
+    }
+
+    .detail_resort::before,
+    .detail_resort::after {
+        width: 170px;
+        height: 206px;
+    }
+
+    .feature {
+        width: 360px;
+    }
+
+    .feature h4 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .right-section p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .right-section {
+        padding: 0 26px;
+    }
+
+    .right-section h2 {
+        font-size: 24px;
+    }
+
+    .right-section button {
+        padding: 18px 20px;
+    }
+
+    .escape_villa::after {
+        font-size: 120px;
+        top: -4%;
+    }
+
+    .main-title,
+    .news_head {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .sunset-slide h2,
+    .lakeside-slide h2,
+    .misty-hills-slide h2 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+
+    .left_side {
+        width: 365px !important;
+    }
+
+    .right_side {
+        width: 430px !important;
+    }
+
+    .testimonial-text {
+        right: -114px;
+        width: 73%;
+    }
+
+    .author-info {
+        left: 10%;
+    }
+
+    .feature-content h5 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .service_data {
+        padding-right: 20px !important;
+        padding-left: 20px;
+    }
+
+    .box_data h5 {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1px;
+    }
+
+    .black_box_detail {
+        gap: 5px;
+    }
+
+    .black_box_detail button {
+        font-size: 12px;
+    }
+
+    .black_box_detail {
+        padding: 25px 25px !important;
+    }
+
+    .contain_p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .left_side {
+        width: 360px;
+    }
+
+    .right_side {
+        width: 390px !important;
+    }
+
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .luxury-title {
         font-size: 40px;
     }
@@ -1241,4 +1621,7 @@ h3,
     .banner-subtitle {
         font-size: 12px;
     }
+        .main_part {
+            display: block;
+        }
 }

@@ -95,12 +95,13 @@
     border-color: #333;
     border: 1px solid #333;
 }
+
 /* Footer Links and Bottom Section */
 .footer-main-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 0 ;
+    padding: 60px 0;
     border-bottom: 1px solid #666666;
 }
 
@@ -199,7 +200,7 @@
     filter: sepia(2) saturate(4) hue-rotate(311deg) brightness(0.9);
 }
 
-.sub_titile p{
+.sub_titile p {
     font-family: 'Raleway';
     font-size: 15px;
     font-weight: bold;
@@ -212,6 +213,18 @@
     margin-bottom: 0px !important;
 }
 
+
+@media(max-width:1024px) {
+    .footer-bottom {
+        padding-left: 37px;
+        width: 37%;
+    }
+
+    .footer-links {
+        gap: 26px;
+        width: 60%;
+    }
+}
 
 @media (max-width: 991px) {
     .footer-links-section .col-lg-3 {

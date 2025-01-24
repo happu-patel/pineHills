@@ -141,4 +141,13 @@ label {
     .react-datepicker__input-container {
         width: 300px;
     }
+
+    .booking-section {
+
+        bottom: -124px;
+    }
+
+    .banner-wrapper {
+        margin-bottom: 118px;
+    }
 }

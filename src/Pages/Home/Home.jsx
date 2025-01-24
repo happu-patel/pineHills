@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             <section className='our_info'>
                 <div className="container">
-                    <div className="row gx-5 gx-md-4">
+                    <div className="row gx-lg-5 gx-0 gx-md-4">
                         {/* Left Column */}
                         <div className="col-md-6">
                             <div className="video-box position-relative">
@@ -414,8 +414,8 @@ const Home = () => {
             <section class="service">
                 <div class="container service_sec">
                     <div class="our_service_box">
-                        <div class="d-flex">
-                            <div class="col-lg-7 col-md-6 p-0">
+                        <div class="d-block d-lg-flex">
+                            <div class="col-lg-7 col-md-6 col-sm-12 p-0">
                                 <div class="service_data">
                                     <div class="service_data_sec">
                                         <div className="title_part p-0">
@@ -427,12 +427,12 @@ const Home = () => {
 
                                         <div class="service_data_box">
                                             <div class="row">
-                                                <div class="col-lg-2 col-md-2 d-flex  align-items-center">
+                                                <div class="col-lg-2 col-md-2 col-sm-12 d-flex  align-items-center">
                                                     <div class="black_box">
                                                         <img src={events} alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-10 col-md-10 box_data">
+                                                <div class="col-lg-10 col-md-10 col-sm-12 box_data">
                                                     <h5>meeting & events</h5>
                                                     <p>Seamlessly host your event with our versatile spaces and expert support.</p>
                                                 </div>
@@ -441,12 +441,12 @@ const Home = () => {
 
                                         <div class="service_data_box">
                                             <div class="row">
-                                                <div class="col-lg-2 col-md-2 d-flex align-items-center">
+                                                <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
                                                     <div class="black_box">
                                                         <img src={wedding} alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-10 col-md-10 box_data">
+                                                <div class="col-lg-10 col-md-10 col-sm-12 box_data">
                                                     <h5>wedding & romantic moments</h5>
                                                     <p>Create unforgettable memories with our elegant venues and personalized services.</p>
                                                 </div>
@@ -455,7 +455,7 @@ const Home = () => {
 
                                         <div class="service_data_box">
                                             <div class="row">
-                                                <div class="col-lg-2 col-md-2 d-flex justify-content-center align-items-center">
+                                                <div class="col-lg-2 col-md-2 d-flex  align-items-center">
                                                     <div class="black_box">
                                                         <img src={family} alt="" />
                                                     </div>
@@ -480,7 +480,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-md-6  service_blank">
+                            <div class="col-lg-5 col-md-6 col-sm-12 service_blank">
                                 <div class="service_black_sec">
 
                                 </div>

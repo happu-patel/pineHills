@@ -15,7 +15,32 @@ const SlickSlider = () => {
     centerMode: true,
     centerPadding: "170px",
     arrows: false, // Set to true if you want arrows
-
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "30px", // Increase padding for larger screens
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "20px", // Adjust for tablets
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: "10px", // Adjust for mobile
+        },
+      },
+    ],
   };
 
   const slides = [
@@ -61,12 +86,12 @@ const SlickSlider = () => {
                 padding: '20px',
               }}
             >
-                <h2>{slide.text}</h2>
-                <p>{slide.description}</p>
-                <button>
-                  View Villa
-                </button>
-              </div>
+              <h2>{slide.text}</h2>
+              <p>{slide.description}</p>
+              <button>
+                View Villa
+              </button>
+            </div>
           ))}
         </Slider>
       </div>

@@ -88,7 +88,7 @@ const Home = () => {
                                 Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years, we’ve grown into a luxurious resort, while staying true to our roots and the natural beauty that surrounds us.
                             </p>
                             <hr className='info_hr'></hr>
-                            <div className="stats d-flex justify-content-between">
+                            <div className="stats  d-flex justify-content-between">
                                 {/* Stat 1 */}
                                 <div className="stat-box">
                                     <div className="icon-box">
@@ -242,8 +242,8 @@ const Home = () => {
 
             <section className="escape_villa">
                 <div className="container">
-                    <div className="hero-container d-flex">
-                        <div className="col-md-8">
+                    <div className="hero-container d-block d-lg-flex">
+                        <div className="col-md-8 col-sm-12">
                             <div className="title_part p-0">
                                 <img src={ornament_icon} alt="Ornament Icon" />
                                 <span className="section-title px-2">ESCAPE TO LUXURY VILLAS</span>
@@ -258,7 +258,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 text-end d-flex align-items-end justify-content-end">
+                        <div className="col-md-4 col-sm-12 text-end d-flex align-items-end justify-content-end">
                             <button className="discover_btn">DISCOVER MORE</button>
                         </div>
                     </div>
@@ -291,11 +291,11 @@ const Home = () => {
                                 { title: 'Unparalleled Service', text: 'Receive personalized, attentive service for an effortless and memorable experience.', icon: service }
                             ].map((feature, index) => (
                                 <div key={index} className="feature-item d-flex align-items-start">
-                                   
-                                        <div className="feature-icon">
-                                            <img src={feature.icon} alt={`${feature.title} Icon`} />
-                                        </div>
-                                   
+
+                                    <div className="feature-icon">
+                                        <img src={feature.icon} alt={`${feature.title} Icon`} />
+                                    </div>
+
                                     <div className="feature-content">
                                         <h5>{feature.title}</h5>
                                         <p>{feature.text}</p>
@@ -337,16 +337,16 @@ const Home = () => {
                     <div className="col-lg-8 Amenities_box">
                         <div className="row g-3 mb-3">
 
-                                <div className="col-lg-7">
-                                    <div className="Amenities_box_data pool_bg">
-                                        <div>
-                                            <div className="Amenities_icon">
-                                                <img src={pool} alt="" />
-                                            </div>
-                                            <h1>PRIVATE POOL</h1>
+                            <div className="col-lg-7">
+                                <div className="Amenities_box_data pool_bg">
+                                    <div>
+                                        <div className="Amenities_icon">
+                                            <img src={pool} alt="" />
                                         </div>
+                                        <h1>PRIVATE POOL</h1>
                                     </div>
                                 </div>
+                            </div>
 
                             <div className="col-lg-5">
                                 <div className="Amenities_box_data res_bg">

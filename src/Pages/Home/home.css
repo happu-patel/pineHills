@@ -1613,15 +1613,111 @@ h3,
 
 /* Responsive Styles */
 @media (max-width: 767px) {
+    .home-banner {
+        padding-top: 100px;
+    }
+
     .luxury-title {
-        font-size: 40px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 1px;
     }
 
     .reconnect-text,
     .banner-subtitle {
         font-size: 12px;
     }
-        .main_part {
-            display: block;
-        }
+
+    .main_part {
+        display: block;
+    }
+
+    .our_info::before {
+        font-size: 85px;
+    }
+
+    .our_info::after {
+        font-size: 85px;
+    }
+
+    .img-fluid {
+        margin-left: 0px;
+    }
+
+    .right_col {
+        padding-top: 0px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .options-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .discover_btn {
+        margin-top: 20px;
+    }
+
+    .escape_villa {
+        height: 700px;
+    }
+
+    .our_info::before {
+        font-size: 64px;
+        top: 5%;
+        left: 0px;
+    }
+
+    .our_info::after {
+        font-size: 64px;
+        right: 0px;
+    }
+
+    .escape_villa::after {
+        font-size: 64px;
+        right: 5px;
+    }
+
+    .icon-box img {
+        width: 55px;
+    }
+
+    .text-box h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .text-box p {
+        font-size: 14px;
+    }
+
+    .stat-box {
+        margin-bottom: 30px;
+    }
+
+    .main_part::after {
+        bottom: -80px;
+        right: -2%;
+    }
+
+    .main_part::before,
+    .main_part::after {
+        width: 200px;
+        height: 280px;
+    }
+
+    .detail_resort::before {
+        left: 0px;
+    }
+
+    .service .container.service_sec {
+        padding-right: 10px;
+    }
+
+    .stat-box {
+        flex-direction: column;
+        text-align: center;
+    }
 }

@@ -1,5 +1,4 @@
 /* Booking Section Styling */
-
 .booking-container {
     padding: 20px 15px;
 }
@@ -23,16 +22,16 @@ label {
     line-height: 26px;
     letter-spacing: 1px;
     color: #1B1C21;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
 }
 
 .select-date {
     padding: 14px 12px;
     font-size: 15px;
     font-weight: bold;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     border-radius: 4px;
-    width: 590px;
+    width: 100%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -43,6 +42,7 @@ label {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .dropdown-icon {
@@ -51,13 +51,14 @@ label {
     cursor: pointer;
     font-size: 16px;
     color: #aaa;
-
 }
 
 .counter {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
 .counter button {
@@ -88,12 +89,12 @@ label {
     background: transparent;
     text-transform: uppercase;
     transition: 0.3s ease;
+    width: 100%;
 }
 
 .book-now-btn:hover {
     background-color: #B7A18B;
     color: #000;
-    transition: 0.3s ease;
     border: 1px solid #B7A18B;
 }
 
@@ -102,35 +103,42 @@ label {
         max-width: 1220px;
         padding: 0 10px;
     }
-
-    .select-date {
-        width: 400px;
-    }
-
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
+    .booking-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .booking-item {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+        width: 100%;
+    }
+
     .select-date {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .counter {
+        justify-content: center;
+    }
+
+    .book-now-btn {
+        max-width: 400px;
+        padding: 16px 20px;
+    }
+
+    .react-datepicker__input-container {
         width: 300px;
-    }
-
-    .book-now-btn {
-        padding: 16px 35px;
-    }
-}
-
-@media (max-width:991px) {
-    .book-now-btn {
-        padding: 16px 8px;
-    }
-
-    .booking-row {
-        gap: 30px;
-    }
-}
-
-@media (max-width:767px) {
-    .booking-row {
-        display: block;
     }
 }

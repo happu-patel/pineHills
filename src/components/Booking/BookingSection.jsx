@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './booking.css';
-import arrow_down from '../../assets/image/down_arrow.svg'
+import arrow_down from '../../assets/image/down_arrow.svg';
 
 const BookingSection = () => {
     const [startDate, setStartDate] = useState(null);
@@ -37,7 +37,7 @@ const BookingSection = () => {
                             className="select-date"
                             ref={datePickerRef}
                         />
-                        <img className="dropdown-icon" src={arrow_down}></img>
+                        <img className="dropdown-icon" src={arrow_down} alt="dropdown icon" />
                     </div>
                 </div>
 
@@ -51,6 +51,7 @@ const BookingSection = () => {
                     </div>
                 </div>
 
+                {/* Children Counter */}
                 <div className="booking-item">
                     <label>CHILDREN</label>
                     <div className="counter">

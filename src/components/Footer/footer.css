@@ -231,6 +231,14 @@
         margin-bottom: 30px;
     }
 
+    .footer-leaf {
+        right: 28%;
+    }
+
+    .second-leaf {
+        right: 0%;
+    }
+
     .footer-bottom .col-lg-4 {
         text-align: center;
         margin-bottom: 20px;

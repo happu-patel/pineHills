@@ -53,6 +53,9 @@ a {
     color: #8b5e34;
 }
 
+
+
+
 .dropdown-menu {
     background-color: #f8f9fa;
     width: 287px;
@@ -96,28 +99,74 @@ a {
     left: 4px;
 }
 
+
+
 img.menu-toggle-icon {
     width: 35px;
 }
 
+@media(max-width:991px) {
+    .navbar-nav img {
+        display: none;
+    }
+
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        z-index: 1;
+        position: absolute;
+        top: -74px;
+        right: -11px;
+        background: #F9FAFB;
+        width: 100vw;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    .navbar_menu_icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* Ensure the container spans the full width */
+    }
+}
+
 @media (max-width: 767px) {
     .top-bar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         gap: 10px;
     }
 
-    .left-links,
+
+
+    .main-header .left-links,
     .right-links {
         justify-content: center;
-        gap: 10px;
+        gap: 40px !important;
+    }
+
+    .right-links {
+        margin-left: 20px;
+    }
+
+    .right-links span {
+        display: none;
     }
 
     .navbar-collapse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-basis: 100%;
+        flex-grow: 1;
+        z-index: 1;
+        position: absolute;
+        top: -96px;
+        right: -11px;
+        background: #F9FAFB;
+        width: 100vw;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
     }
 
     .navbar-nav {
@@ -130,9 +179,7 @@ img.menu-toggle-icon {
         margin: 0;
     }
 
-    .navbar-nav img {
-        display: none;
-    }
+
 
     .logo img {
         width: 90px;
@@ -141,9 +188,7 @@ img.menu-toggle-icon {
 
     .right-links {
         display: flex;
-        /* Show call icon on mobile */
         align-items: center;
-        /* Center icon vertically */
     }
 
     .navbar-brand img {
@@ -154,4 +199,7 @@ img.menu-toggle-icon {
         gap: 200px;
     }
 
+    .navbar-nav img {
+        display: none;
+    }
 }

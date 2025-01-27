@@ -1361,11 +1361,13 @@ h3,
     }
 
     .left_side {
-        width: 465px !important;
+        width: 45% !important;
     }
 
+    
+
     .right_side {
-        width: 530px !important;
+        width: 45% !important;
     }
 
     .testimonial-text {
@@ -1446,6 +1448,10 @@ h3,
         flex-direction: column;
     }
 
+    .banner-wrapper {
+        z-index: -1;
+    }
+
     .image-left,
     .content-right {
         width: 85%;
@@ -1464,10 +1470,7 @@ h3,
         top: 12%;
     }
 
-    .our_info::after {
-        font-size: 120px;
-        top: 69%;
-    }
+
 
     .our_info h2 {
         font-size: 30px;
@@ -1492,7 +1495,9 @@ h3,
     }
 
     .our_info::after {
-        top: 64%;
+        top: 72%;
+        font-size: 90px;
+        right: 37px;
     }
 
     .options-container {
@@ -1533,8 +1538,13 @@ h3,
     }
 
     .escape_villa::after {
-        font-size: 120px;
+        font-size: 90px;
         top: -4%;
+        right: 0px;
+    }
+
+    .detail_resort::after {
+        right: 2px;
     }
 
     .main-title,
@@ -1551,11 +1561,11 @@ h3,
     }
 
     .left_side {
-        width: 365px !important;
+        width: 50% !important;
     }
 
     .right_side {
-        width: 430px !important;
+        width: 50% !important;
     }
 
     .testimonial-text {
@@ -1699,7 +1709,7 @@ h3,
 
     .main_part::after {
         bottom: -80px;
-        right: -2%;
+        right: 0%;
     }
 
     .main_part::before,
@@ -1712,12 +1722,30 @@ h3,
         left: 0px;
     }
 
+    .detail_resort::after {
+        right: 0px;
+    }
+
     .service .container.service_sec {
         padding-right: 10px;
     }
 
     .stat-box {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .service_blank {
+        height: 585px;
+    }
+
+    .service_sec .black_box_detail {
+        display: block !important;
+    }
+
+    .black_box_detail button {
+        width: 100%;
+        margin: 10px auto 0px;
         text-align: center;
     }
 }

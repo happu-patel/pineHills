@@ -269,7 +269,7 @@ const Home = () => {
             {/* </div> */}
             {/* chhose us */}
             <div className="container my-5">
-                <div className="row gap-5 gap-md-2">
+                <div className="row gap-lg-5 gap-md-0 gap-0">
                     {/* Left Column */}
                     <div className="col-md-5 col-lg-5 left_side">
                         <div className='title_part p-0'>
@@ -414,7 +414,7 @@ const Home = () => {
             <section class="service">
                 <div class="container service_sec">
                     <div class="our_service_box">
-                        <div class="d-block d-lg-flex">
+                        <div class="d-block d-lg-flex d-md-flex">
                             <div class="col-lg-7 col-md-6 col-sm-12 p-0">
                                 <div class="service_data">
                                     <div class="service_data_sec">
@@ -482,7 +482,6 @@ const Home = () => {
                             </div>
                             <div class="col-lg-5 col-md-6 col-sm-12 service_blank">
                                 <div class="service_black_sec">
-
                                 </div>
                             </div>
                         </div>

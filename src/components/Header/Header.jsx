@@ -4,8 +4,8 @@ import mail_icon from "../../assets/image/mail.svg";
 import logo from "../../assets/image/logo.svg";
 import call_icon from "../../assets/image/call-ico.svg";
 import ornament_icon from "../../assets/image/ornament.svg";
-import menu_icon from "../../assets/image/menu_icon.svg"; // Add menu icon
-import close_icon from "../../assets/image/close_icon.svg"; // Add close icon
+import menu_icon from "../../assets/image/menu_icon.svg";
+import close_icon from "../../assets/image/close_icon.svg";
 import "./header.css";
 
 const Header = () => {
@@ -13,6 +13,10 @@ const Header = () => {
 
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
+    };
+
+    const handleNavClick = () => {
+        setIsNavOpen(false); // Close the menu when a menu item is clicked
     };
 
     return (
@@ -44,7 +48,7 @@ const Header = () => {
             {/* Top Bar for Desktop */}
             <div className="top-bar  d-flex justify-content-between align-items-center py-3">
                 {/* Left Links */}
-                <div className="left-links d-flex align-items-center col-lg-4 gap-4 gap-md-2">
+                <div className="left-links d-flex align-items-center col-lg-4 gap-4 gap-md-3">
                     <Link to=""><span>EN</span></Link>
                     <Link to=""><img src={mail_icon} alt="email" /></Link>
                     <Link to="/newsletter">NEWSLETTER</Link>
@@ -72,22 +76,22 @@ const Header = () => {
                 <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">HOME</Link>
+                            <Link className="nav-link" to="/" onClick={handleNavClick}>HOME</Link>
                         </li>
                         <img src={ornament_icon} alt="icon" />
                         <li className="nav-item">
-                            <Link className="nav-link" to="/services">OUR SERVICES</Link>
+                            <Link className="nav-link" to="/services" onClick={handleNavClick}>OUR SERVICES</Link>
                         </li>
                         <img src={ornament_icon} alt="icon" />
                         <li className="nav-item">
-                            <Link className="nav-link" to="/accommodation">ACCOMMODATION</Link>
+                            <Link className="nav-link" to="/accommodation" onClick={handleNavClick}>ACCOMMODATION</Link>
                         </li>
                         <img src={ornament_icon} alt="icon" />
                         <li className="nav-item">
-                            <Link className="nav-link" to="/blog">BLOG & NEWS</Link>
+                            <Link className="nav-link" to="/blog" onClick={handleNavClick}>BLOG & NEWS</Link>
                         </li>
                         <img src={ornament_icon} alt="icon" />
-                        <li className="nav-item dropdown">
+                        <li className="nav-item dropdown  d-lg-block">
                             <Link
                                 className="nav-link dropdown-toggle"
                                 to="#"
@@ -100,7 +104,7 @@ const Header = () => {
                             </Link>
                             <ul className="dropdown-menu" aria-labelledby="pagesDropdown">
                                 <li><Link className="dropdown-item" to="/testimonials">Testimonials</Link></li>
-                                <li><Link className="dropdown-item active" to="/pricing">Pricing</Link></li>
+                                <li><Link className="dropdown-item" to="/pricing">Pricing</Link></li>
                                 <li><Link className="dropdown-item" to="/faq">FAQ</Link></li>
                                 <li><Link className="dropdown-item" to="/404">404</Link></li>
                                 <li><Link className="dropdown-item" to="/coming-soon">Coming Soon</Link></li>
@@ -109,7 +113,7 @@ const Header = () => {
                         </li>
                         <img src={ornament_icon} alt="icon" />
                         <li className="nav-item">
-                            <Link className="nav-link" to="/events">EVENTS</Link>
+                            <Link className="nav-link" to="/events" onClick={handleNavClick}>EVENTS</Link>
                         </li>
                     </ul>
                 </div>

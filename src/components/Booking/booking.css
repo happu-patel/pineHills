@@ -149,5 +149,6 @@ label {
 
     .banner-wrapper {
         margin-bottom: 118px;
+        z-index: -1;
     }
 }

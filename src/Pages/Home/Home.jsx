@@ -271,7 +271,7 @@ const Home = () => {
             <div className="container my-5">
                 <div className="row gap-lg-5 gap-md-0 gap-0">
                     {/* Left Column */}
-                    <div className="col-md-5 col-lg-5 left_side">
+                    <div className="col-md-5 col-lg-5 left_side col-sm-12">
                         <div className='title_part p-0'>
                             <img src={ornament_icon} />
                             <span className="section-title px-2">
@@ -306,7 +306,7 @@ const Home = () => {
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-md-7 col-lg-7 position-relative right_side">
+                    <div className="col-md-7 col-lg-7 col-sm-12 position-relative right_side">
                         <div className="testimonial-section">
                             <div className="testimonial-container">
                                 {/* Left image section */}

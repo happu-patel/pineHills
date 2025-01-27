@@ -1364,7 +1364,7 @@ h3,
         width: 45% !important;
     }
 
-    
+
 
     .right_side {
         width: 45% !important;
@@ -1747,5 +1747,15 @@ h3,
         width: 100%;
         margin: 10px auto 0px;
         text-align: center;
+    }
+
+    .left_side {
+        width: 100% !important;
+    }
+
+
+
+    .right_side {
+        width: 100% !important;
     }
 }

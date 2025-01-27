@@ -12,7 +12,7 @@
 
 .testimonial-slider-part .slick-next,
 .testimonial-slider-part .slick-prev {
-    background: #472c10d9;
+    background: #472c1074;
     width: 40px;
     border-radius: 50%;
     height: 40px;
@@ -24,6 +24,40 @@
 .testimonial-slider-part .slick-prev:before {
     font-size: 30px;
     z-index: 1;
+}
+
+.slick-prev:before {
+    content: "";
+    background-image: url('../../assets/image/back_icon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 11px;
+    position: absolute;
+}
+
+.slick-next:before {
+    content: "";
+    background-image: url('../../assets/image/next_icon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 11px;
+    position: absolute;
+}
+
+.slick-next {
+    right: -12px;
+}
+
+.slick-prev {
+    left: -12px;
 }
 
 .testimonial-box {

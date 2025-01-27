@@ -4,7 +4,7 @@ import squre_icon from '../../assets/image/squre.svg';
 import ornament_icon from '../../assets/image/ornament.svg';
 import locationIcon from '../../assets/image/location_icon.svg';
 import callIcon from '../../assets/image/call_icon_c.svg';
- 
+
 const Contact = () => {
     return (
         <>
@@ -27,8 +27,8 @@ const Contact = () => {
             <section className="contact_section_wrapper py-5">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-7 col-lg-7 bg-gray"></div>
-                        <div className="col-md-5 col-lg-5">
+                        <div className="col-md-7 col-lg-7 bg-gray col-sm-12"></div>
+                        <div className="col-md-5 col-lg-5 col-sm-12">
                             <div className="form-container shadow bg-white">
                                 <div className='title_part p-0 text-center'>
                                     <img src={ornament_icon} />
@@ -80,7 +80,7 @@ const Contact = () => {
                         <div className="col-md-4 border-end">
                             <div className="contact-item d-flex align-items-start">
                                 <div className="icon">
-                                    <img src={locationIcon} alt="Location" className="icon-img" />
+                                    <img src={locationIcon} alt="Location" className="icon-img" width={23} />
                                 </div>
                                 <div className="contact_content">
                                     <h5>Office Address</h5>
@@ -90,7 +90,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                  
+
                         {/* Phone Number */}
                         <div className="col-md-4 border-end contact-column-middle">
                             <div className="contact-item d-flex align-items-start">
@@ -98,9 +98,9 @@ const Contact = () => {
                                     <img src={callIcon} alt="Call" className="icon-img" />
                                 </div>
                                 <div className="contact_content">
-                                    <h5 className="fw-bold">Phone Number</h5>
-                                    <p className="text-muted mb-0">(987) 654-3210 (ADMIN)</p>
-                                    <p className="text-muted">(987) 234-4567 (CS)</p>
+                                    <h5>Phone Number</h5>
+                                    <p>(987) 654-3210 (ADMIN)</p>
+                                    <p>(987) 234-4567 (CS)</p>
                                 </div>
                             </div>
                         </div>
@@ -109,11 +109,11 @@ const Contact = () => {
                         <div className="col-md-4 contact-column-middle">
                             <div className="contact-item d-flex align-items-start">
                                 <div className="icon">
-                                    <img src={locationIcon} alt="Email" className="icon-img" />
+                                    <img src={locationIcon} alt="Email" className="icon-img" width={23} />
                                 </div>
                                 <div className="contact_content">
-                                    <h5 className="fw-bold">Email Address</h5>
-                                    <p className="text-muted mb-0">PINEHILLSSUPPORT@PINEHILLS<br/>.COM</p>
+                                    <h5>Email Address</h5>
+                                    <p>PINEHILLSSUPPORT@PINEHILLS<br />.COM</p>
                                 </div>
                             </div>
                         </div>

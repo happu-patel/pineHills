@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import './App.css'
@@ -14,14 +14,16 @@ import BlogDetail from './components/BlogDetail/BlogDetail';
 import PricingPlans from './Pages/PricePlan/PricingPlans';
 import Villas from './Pages/Villas/Villas';
 import Our_staff from './Pages/Our_staff/Our_staff';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
 
 function App() {
+
   return (
     <Router>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/facilities" element={<Facilities />} />
@@ -30,12 +32,13 @@ function App() {
           <Route path='/blog' element={<BlogList />} />
           <Route path='/blog/:id' element={<BlogDetail />} />
           <Route path='/villa' element={<Villas />} />
-          <Route path='/pricing' element={<PricingPlans />} /> 
-          <Route path='/our_staff' element={<Our_staff/>} />
+          <Route path='/pricing' element={<PricingPlans />} />
+          <Route path='/our_staff' element={<Our_staff />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+
   );
 }
 

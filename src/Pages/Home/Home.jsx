@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import squre_icon from '../../assets/image/squre.svg'
 import BookingSection from '../../components/Booking/BookingSection'
 import resort_img from '../../assets/image/resort_img.jpg'
@@ -36,6 +37,15 @@ import news_section3 from '../../assets/image/news_section3.jpg';
 
 
 const Home = () => {
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+    const handlePlayClick = () => {
+        setIsVideoOpen(true);
+    };
+
+    const handleCloseClick = () => {
+        setIsVideoOpen(false);
+    };
     return (
         <>
             <div className="banner-wrapper">
@@ -72,8 +82,29 @@ const Home = () => {
                                 <img src={resort_img} alt="Video Thumbnail"
                                     className="img-fluid" />
                                 <div class="border-overlay"></div>
-                                <div className="play-icon">
-                                    <img src={play_circle} alt="" />
+                                <div className="play-icon" onClick={handlePlayClick}>
+                                    <img src={play_circle} alt="Play Video" className='play_circle' />
+                                </div>
+                                <div className={`modal fade ${isVideoOpen ? 'show' : ''}`} style={{ display: isVideoOpen ? 'block' : 'none' }}>
+                                    <div className="modal-dialog modal-lg">
+                                        <div className="modal-content">
+                                            <div className="modal-header">
+                                                <h5 className="modal-title">Video</h5>
+                                                <button type="button" className="btn-close" onClick={handleCloseClick}></button>
+                                            </div>
+                                            <div className="modal-body">
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/H1CIBqDeWQ0" // Make sure this is a valid embed URL
+                                                    title="Video"
+                                                    frameBorder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowFullScreen
+                                                    width="100%"
+                                                    height="400px"
+                                                ></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='title_part'>
@@ -547,37 +578,50 @@ const Home = () => {
                             to important announcements and upcoming events.
                         </p>
                     </div>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="img_div">
-                                <img src={resort_img} class="card-img-top" alt="Luxury Villas" />
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Pine Hills Unveils New Luxury Villas With Stunning Mountain Views</h5>
-                                    <p class="card-text text-muted">July 22, 2024</p>
+                    <div className="row g-4">
+                        <div className="col-md-4">
+                            <div className="img_div">
+                                <img src={resort_img} className="card-img-top" alt="Luxury Villas" />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title">
+                                        <a href="/luxury-villas" className="text-decoration-none">
+                                            Pine Hills Unveils New Luxury Villas With Stunning Mountain Views
+                                        </a>
+                                    </h5>
+                                    <p className="card-text text-muted">July 22, 2024</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="img_div">
-                                <img src={news_section2}
-                                    class="card-img-top" alt="Special Offer" />
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Special Offer: Save 20% On All Bookings At Pine Hills This Summer!</h5>
-                                    <p class="card-text text-muted">July 20, 2024</p>
+                        <div className="col-md-4">
+                            <div className="img_div">
+                                <img src={news_section2} className="card-img-top" alt="Special Offer" />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title">
+                                        <a href="/special-offer" className="text-decoration-none">
+                                            Special Offer: Save 20% On All Bookings At Pine Hills This Summer!
+                                        </a>
+                                    </h5>
+                                    <p className="card-text text-muted">July 20, 2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="img_div">
-                                <img src={news_section3} class="card-img-top" alt="Wellness Retreat" />
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Pine Hills Announces Exciting New Wellness Retreat Program</h5>
-                                    <p class="card-text text-muted">July 25, 2024</p>
+
+                        <div className="col-md-4">
+                            <div className="img_div">
+                                <img src={news_section3} className="card-img-top" alt="Wellness Retreat" />
+                                <div className="card-body text-center">
+                                    <h5 className="card-title">
+                                        <a href="/wellness-retreat" className="text-decoration-none">
+                                            Pine Hills Announces Exciting New Wellness Retreat Program
+                                        </a>
+                                    </h5>
+                                    <p className="card-text text-muted">July 25, 2024</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 

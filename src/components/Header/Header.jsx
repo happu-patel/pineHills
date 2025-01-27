@@ -10,20 +10,55 @@ import "./header.css";
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isMobileView, setIsMobileView] = useState(window.innerWidth < 992);
+
+    // Handle window resize
+    React.useEffect(() => {
+        const handleResize = () => {
+            setIsMobileView(window.innerWidth < 992);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const toggleNav = () => {
         setIsNavOpen(!isNavOpen);
+        // Close dropdown when closing mobile menu
+        if (isNavOpen) {
+            setIsDropdownOpen(false);
+        }
+    };
+
+    const toggleDropdown = (e) => {
+        e.preventDefault();
+        setIsDropdownOpen(!isDropdownOpen);
     };
 
     const handleNavClick = () => {
-        setIsNavOpen(false); // Close the menu when a menu item is clicked
+        if (isMobileView) {
+            setIsNavOpen(false);
+        }
+        setIsDropdownOpen(false);
     };
+
+    // Close dropdown when clicking outside (desktop only)
+    React.useEffect(() => {
+        if (!isMobileView) {
+            const closeDropdown = (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    setIsDropdownOpen(false);
+                }
+            };
+            document.addEventListener('click', closeDropdown);
+            return () => document.removeEventListener('click', closeDropdown);
+        }
+    }, [isMobileView]);
 
     return (
         <header className="main-header container">
             {/* Top Bar for Mobile */}
             <div className="top-bar d-lg-none d-flex justify-content-between align-items-center py-3">
-                {/* Logo and Menu Icon */}
                 <div className="d-flex align-items-center navbar_menu_icon">
                     <Link className="navbar-brand" to="/">
                         <img src={logo} alt="logo" />
@@ -46,7 +81,7 @@ const Header = () => {
             </div>
 
             {/* Top Bar for Desktop */}
-            <div className="top-bar  d-flex justify-content-between align-items-center py-3">
+            <div className="top-bar d-flex justify-content-between align-items-center py-3">
                 {/* Left Links */}
                 <div className="left-links d-flex align-items-center col-lg-4 gap-4 gap-md-3">
                     <Link to=""><span>EN</span></Link>
@@ -72,46 +107,45 @@ const Header = () => {
             </div>
 
             {/* Navigation Bar */}
-            <nav className="navbar navbar-expand-lg px-4">
+            <nav className={`navbar navbar-expand-lg px-4 ${isNavOpen ? 'mobile-nav-open' : ''}`}>
                 <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to="/" onClick={handleNavClick}>HOME</Link>
                         </li>
-                        <img src={ornament_icon} alt="icon" />
+                        <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
                         <li className="nav-item">
                             <Link className="nav-link" to="/services" onClick={handleNavClick}>OUR SERVICES</Link>
                         </li>
-                        <img src={ornament_icon} alt="icon" />
+                        <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
                         <li className="nav-item">
                             <Link className="nav-link" to="/accommodation" onClick={handleNavClick}>ACCOMMODATION</Link>
                         </li>
-                        <img src={ornament_icon} alt="icon" />
+                        <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
                         <li className="nav-item">
                             <Link className="nav-link" to="/blog" onClick={handleNavClick}>BLOG & NEWS</Link>
                         </li>
-                        <img src={ornament_icon} alt="icon" />
-                        <li className="nav-item dropdown  d-lg-block">
-                            <Link
-                                className="nav-link dropdown-toggle"
-                                to="#"
-                                id="pagesDropdown"
+                        <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
+                        <li className="nav-item dropdown">
+                            <a
+                                className={`nav-link dropdown-toggle ${isDropdownOpen ? 'active' : ''}`}
+                                href="#"
+                                onClick={toggleDropdown}
                                 role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
+                                aria-expanded={isDropdownOpen}
                             >
                                 PAGES
-                            </Link>
-                            <ul className="dropdown-menu" aria-labelledby="pagesDropdown">
-                                <li><Link className="dropdown-item" to="/testimonials">Testimonials</Link></li>
-                                <li><Link className="dropdown-item" to="/pricing">Pricing</Link></li>
-                                <li><Link className="dropdown-item" to="/faq">FAQ</Link></li>
-                                <li><Link className="dropdown-item" to="/404">404</Link></li>
-                                <li><Link className="dropdown-item" to="/coming-soon">Coming Soon</Link></li>
-                                <li><Link className="dropdown-item" to="/popup-banner">Popup Banner</Link></li>
+                            </a>
+                            <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""} ${isMobileView ? 'mobile-dropdown' : ''}`}>
+                                <li><Link className="dropdown-item" to="/testimonials" onClick={handleNavClick}>Testimonials</Link></li>
+                                <li><Link className="dropdown-item" to="/pricing" onClick={handleNavClick}>Pricing</Link></li>
+                                <li><Link className="dropdown-item" to="/faq" onClick={handleNavClick}>FAQ</Link></li>
+                                <li><Link className="dropdown-item" to="/404" onClick={handleNavClick}>404</Link></li>
+                                <li><Link className="dropdown-item" to="/coming-soon" onClick={handleNavClick}>Coming Soon</Link></li>
+                                <li><Link className="dropdown-item" to="/popup-banner" onClick={handleNavClick}>Popup Banner</Link></li>
                             </ul>
                         </li>
-                        <img src={ornament_icon} alt="icon" />
+                        <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
                         <li className="nav-item">
                             <Link className="nav-link" to="/events" onClick={handleNavClick}>EVENTS</Link>
                         </li>

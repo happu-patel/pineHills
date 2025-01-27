@@ -34,8 +34,10 @@
 
 
 .bg-gray {
-    background-color: #BDBDBD;
+    background-image: url('../../assets/image/contact_us.jpg');
     width: 840px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact_section_wrapper .col-md-5 {
@@ -154,7 +156,8 @@
 
 
 .grey_area {
-    background-color: #828282;
+    background-image: url('../../assets/image/contact_bottom.jpg');
+    background-size: cover;
     border-radius: 12px;
     height: 370px;
 }
@@ -167,5 +170,113 @@
 
     .contact_section_wrapper .col-md-5 {
         width: 605px !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .bg-gray {
+        width: 600px !important;
+    }
+
+    .contact-column-middle {
+        padding-left: 22px !important;
+    }
+
+    .contact_content h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact_content p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:991px) {
+    .bg-gray {
+        width: 445px !important;
+    }
+
+    .contact-item {
+        flex-direction: column;
+    }
+
+    .contact_section_wrapper .col-md-5 {
+        width: 545px !important;
+    }
+
+    .contact-column-middle {
+        padding-left: 22px !important;
+    }
+
+    .contact_content h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact_content p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .contact_head {
+        font-size: 40px;
+        line-height: 52px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .bg-gray {
+        width: 420px !important;
+    }
+
+    .contact-column-middle {
+        padding-left: 8px !important;
+    }
+
+    .contact-info .row {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .contact-info .row {
+        gap: 15px;
+    }
+    .contact-info .border-end {
+        border-right: none !important;
+    }
+
+    .contact-item {
+        flex-direction: row;
+    }
+
+    .contact-column-middle {
+        padding-left: 0px !important;
+    }
+
+    .contact-info .border-end {
+        padding-left: 0px !important;
+    }
+
+    .contact-info {
+        padding: 0px 0px 50px;
+    }
+
+    .contact_content p {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .bg-gray {
+        width: 100% !important;
+        height: 500px;
+    }
+
+    .contact_section_wrapper .col-md-5 {
+        width: 100% !important;
+        margin-left: 0px;
+        margin-top: -90px !important;
     }
 }

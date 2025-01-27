@@ -5,9 +5,16 @@
 
 .booking-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+
+.booking-item:first-child {
+    width: 50%;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
 }
 
 .booking-item {
@@ -111,6 +118,14 @@ label {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .react-datepicker {
+        z-index: 1050 !important;
+    }
+
+    .booking-item:first-child {
+        width: 100%;
     }
 
     .booking-item {

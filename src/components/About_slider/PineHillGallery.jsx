@@ -10,6 +10,8 @@ const PineHillGallery = () => {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1, // Show 3 slides at a time
         slidesToScroll: 1, // Scroll one slide at a time
         arrows: false,
@@ -19,12 +21,22 @@ const PineHillGallery = () => {
             {
                 breakpoint: 1024, // For screens smaller than 1024px
                 settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerPadding: "0px",
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 991,
+                settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    centerPadding: "200px",
-                    dots: true,
-                },
+                    centerPadding: "0px",
+                    dots: false,
+                }
             },
             {
                 breakpoint: 768, // For screens smaller than 768px
@@ -49,7 +61,7 @@ const PineHillGallery = () => {
                 </div>
                 <h2 className="main-title">Captured Moments With Pine Hill <br /> Through Our Lens</h2>
                 <p className="description">
-                    rom breathtaking landscapes to intimate gatherings, explore the essence of Pine Hill and envision <br/> your own extraordinary escape.
+                    rom breathtaking landscapes to intimate gatherings, explore the essence of Pine Hill and envision <br /> your own extraordinary escape.
                 </p>
             </div>
             <Slider {...settings} className="slider-container mt-4">
@@ -59,12 +71,12 @@ const PineHillGallery = () => {
                 </div>
                 <div className="slider-item slide2_img">
                     <div className="slider-content">
-                        
+
                     </div>
                 </div>
                 <div className="slider-item slide3_img">
                     <div className="slider-content">
-                        
+
                     </div>
                 </div>
             </Slider>

@@ -42,7 +42,7 @@ const About = () => {
       </section>
       <section className='our_info'>
         <div className="container">
-          <div className="row gx-5">
+          <div className="row gx-lg-5 gx-0 gx-md-4">
             {/* Left Column */}
             <div className="col-md-6">
               <div className="video-box position-relative">
@@ -66,7 +66,7 @@ const About = () => {
                 Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years, we’ve grown into a luxurious resort, while staying true to our roots and the natural beauty that surrounds us.
               </p>
               <hr className='info_hr'></hr>
-              <div className="stats d-flex justify-content-between">
+              <div className="stats  d-flex justify-content-between">
                 {/* Stat 1 */}
                 <div className="stat-box">
                   <div className="icon-box">
@@ -264,84 +264,83 @@ const About = () => {
         </div>
       </section>
 
-    <section class="service">
-                   <div class="container service_sec">
-                       <div class="our_service_box">
-                           <div class="d-flex">
-                               <div class="col-lg-7 p-0">
-                                   <div class="service_data">
-                                       <div class="service_data_sec">
-                                           <div className="title_part p-0">
-                                               <img src={ornament_icon} alt="Ornament Icon" />
-                                               <span className="section-title px-2">OUR SERVICES</span>
-                                               <img src={ornament_icon} alt="Ornament Icon" />
-                                           </div>
-                                           <h1 className='main-title pb-4'>Exceptional Service <br /> For An Unforgettable Stay</h1>
-   
-                                           <div class="service_data_box">
-                                               <div class="row">
-                                                   <div class="col-lg-2 d-flex  align-items-center">
-                                                       <div class="black_box">
-                                                           <img src={events} alt="" />
-                                                       </div>
-                                                   </div>
-                                                   <div class="col-lg-10 box_data">
-                                                       <h5>meeting & events</h5>
-                                                       <p>Seamlessly host your event with our versatile spaces and expert support.</p>
-                                                   </div>
-                                               </div>
-                                           </div>
-   
-                                           <div class="service_data_box">
-                                               <div class="row">
-                                                   <div class="col-lg-2 d-flex align-items-center">
-                                                       <div class="black_box">
-                                                           <img src={wedding} alt="" />
-                                                       </div>
-                                                   </div>
-                                                   <div class="col-lg-10 box_data">
-                                                       <h5>wedding & romantic moments</h5>
-                                                       <p>Create unforgettable memories with our elegant venues and personalized services.</p>
-                                                   </div>
-                                               </div>
-                                           </div>
-   
-                                           <div class="service_data_box">
-                                               <div class="row">
-                                                   <div class="col-lg-2 d-flex justify-content-center align-items-center">
-                                                       <div class="black_box">
-                                                           <img src={family} alt="" />
-                                                       </div>
-                                                   </div>
-                                                   <div class="col-lg-10 box_data">
-                                                       <h5>family holidays</h5>
-                                                       <p>Enjoy a fun and relaxing family getaway with activities and accommodations for all ages.</p>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
-   
-                                   <div class=" bg-black ms-0">
-                                       <div class="black_box_detail d-flex">
-                                           <div className='contain_p col-lg-8'>
-                                               Our range of premium services is designed to make your stay as enjoyable and stress free as possible.
-                                           </div>
-                                           <button className='col-lg-4'>
-                                               BOOK NOW
-                                           </button>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="col-lg-5 service_blank">
-                                   <div class="service_black_sec">
-   
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </section>
+      <section class="service">
+        <div class="container service_sec">
+          <div class="our_service_box">
+            <div class="d-block d-lg-flex d-md-flex">
+              <div class="col-lg-7 col-md-6 col-sm-12 p-0">
+                <div class="service_data">
+                  <div class="service_data_sec">
+                    <div className="title_part p-0">
+                      <img src={ornament_icon} alt="Ornament Icon" />
+                      <span className="section-title px-2">OUR SERVICES</span>
+                      <img src={ornament_icon} alt="Ornament Icon" />
+                    </div>
+                    <h1 className='main-title pb-4'>Exceptional Service <br /> For An Unforgettable Stay</h1>
+
+                    <div class="service_data_box">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex  align-items-center">
+                          <div class="black_box">
+                            <img src={events} alt="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-12 box_data">
+                          <h5>meeting & events</h5>
+                          <p>Seamlessly host your event with our versatile spaces and expert support.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="service_data_box">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
+                          <div class="black_box">
+                            <img src={wedding} alt="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-12 box_data">
+                          <h5>wedding & romantic moments</h5>
+                          <p>Create unforgettable memories with our elegant venues and personalized services.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="service_data_box">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-2 d-flex  align-items-center">
+                          <div class="black_box">
+                            <img src={family} alt="" />
+                          </div>
+                        </div>
+                        <div class="col-lg-10 col-md-10 box_data">
+                          <h5>family holidays</h5>
+                          <p>Enjoy a fun and relaxing family getaway with activities and accommodations for all ages.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" bg-black ms-0">
+                  <div class="black_box_detail d-flex">
+                    <div className='contain_p col-lg-8 col-md-8'>
+                      Our range of premium services is designed to make your stay as enjoyable and stress free as possible.
+                    </div>
+                    <button className='col-lg-4 col-md-4'>
+                      BOOK NOW
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 col-sm-12 service_blank">
+                <div class="service_black_sec">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className='pine_slider pb-0'>
         <PineHillGallery />
       </div>

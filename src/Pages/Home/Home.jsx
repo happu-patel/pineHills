@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './home.css'
+import * as bootstrap from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import squre_icon from '../../assets/image/squre.svg'
 import BookingSection from '../../components/Booking/BookingSection'
@@ -38,6 +39,8 @@ import news_section3 from '../../assets/image/news_section3.jpg';
 
 const Home = () => {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
+    const modalRef = useRef(null);
+
 
     const handlePlayClick = () => {
         setIsVideoOpen(true);
@@ -46,6 +49,25 @@ const Home = () => {
     const handleCloseClick = () => {
         setIsVideoOpen(false);
     };
+
+    useEffect(() => {
+        const modalElement = modalRef.current;
+
+        // Initialize the Bootstrap modal instance
+        if (modalElement) {
+            const modal = new bootstrap.Modal(modalElement, {
+                backdrop: true, // Optional: explicitly set the backdrop
+                keyboard: true, // Optional: allow closing modal with "ESC"
+            });
+
+            if (isVideoOpen) {
+                modal.show();
+            } else {
+                modal.hide();
+            }
+        }
+    }, [isVideoOpen]);
+
     return (
         <>
             <div className="banner-wrapper">
@@ -78,23 +100,42 @@ const Home = () => {
                         {/* Left Column */}
                         <div className="col-md-6">
                             <div className="video-box position-relative">
-                                {/* <h1 className="background-text">OUR STORY</h1> */}
-                                <img src={resort_img} alt="Video Thumbnail"
-                                    className="img-fluid" />
-                                <div class="border-overlay"></div>
-                                <div className="play-icon" onClick={handlePlayClick}>
-                                    <img src={play_circle} alt="Play Video" className='play_circle' />
+                                <img src={resort_img} alt="Video Thumbnail" className="img-fluid" />
+                                <div className="border-overlay"></div>
+                                <div
+                                    className="play-icon"
+                                    onClick={handlePlayClick}
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#videoModal"
+                                    role="button"
+                                >
+                                    <img src={play_circle} alt="Play Video" className="play_circle" />
                                 </div>
-                                <div className={`modal fade ${isVideoOpen ? 'show' : ''}`} style={{ display: isVideoOpen ? 'block' : 'none' }}>
+                                {/* Modal */}
+                                <div
+                                    className="modal fade"
+                                    id="videoModal"
+                                    tabIndex="-1"
+                                    aria-labelledby="videoModalLabel"
+                                    aria-hidden="true"
+                                >
                                     <div className="modal-dialog modal-lg">
                                         <div className="modal-content">
                                             <div className="modal-header">
-                                                <h5 className="modal-title">Video</h5>
-                                                <button type="button" className="btn-close" onClick={handleCloseClick}></button>
+                                                <h5 className="modal-title" id="videoModalLabel">
+                                                    Watch Video
+                                                </h5>
+                                                <button
+                                                    type="button"
+                                                    className="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
                                             </div>
                                             <div className="modal-body">
+                                                {/* Video Embed */}
                                                 <iframe
-                                                    src="https://www.youtube.com/embed/H1CIBqDeWQ0" // Make sure this is a valid embed URL
+                                                    src="https://www.youtube.com/embed/H1CIBqDeWQ0?autoplay=1"
                                                     title="Video"
                                                     frameBorder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -107,6 +148,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+
                             <div className='title_part'>
                                 <img src={ornament_icon} />
                                 <span className="section-title px-2">
@@ -174,7 +216,7 @@ const Home = () => {
                             <div className="image-box">
                                 <img src={resort_img1} alt="Video Thumbnail"
                                     className="img-fluid" />
-                                <div class="border_info"></div>
+                                <div className="border_info"></div>
                             </div>
                         </div>
                     </div>
@@ -274,7 +316,7 @@ const Home = () => {
             <section className="escape_villa">
                 <div className="container">
                     <div className="hero-container d-block d-lg-flex">
-                        <div className="col-md-8 col-sm-12">
+                        <div className="col-md-12 col-sm-12 col-lg-8">
                             <div className="title_part p-0">
                                 <img src={ornament_icon} alt="Ornament Icon" />
                                 <span className="section-title px-2">ESCAPE TO LUXURY VILLAS</span>
@@ -289,7 +331,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-4 col-sm-12 text-end d-flex align-items-end justify-content-end">
+                        <div className="col-md-12 col-sm-12 col-lg-4 text-end d-flex align-items-end justify-content-end">
                             <button className="discover_btn">DISCOVER MORE</button>
                         </div>
                     </div>

@@ -18,11 +18,27 @@ const TestimonialSection = () => {
         arrows: true,
         responsive: [
             {
+                breakpoint: 1467,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    arrows: true,
+                }
+            },
+            {
                 breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 991,
                 settings: {
                     slidesToShow: 1,
                     centerMode: false,
-                    arrows: false,
+                    arrows: true,
                 }
             },
             {
@@ -30,7 +46,7 @@ const TestimonialSection = () => {
                 settings: {
                     slidesToShow: 1,
                     centerMode: false,
-                    arrows: false,
+                    arrows: true,
                 }
             }
         ]

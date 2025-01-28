@@ -140,6 +140,12 @@ h3,
     font-style: italic;
 }
 
+@media (max-width:1024px) {
+    .quote-text {
+        font-size: 13px;
+    }
+}
+
 @media (max-width:767px) {
     .content {
         padding-left: 0px;

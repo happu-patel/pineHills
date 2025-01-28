@@ -1,5 +1,6 @@
 .banner-wrapper {
     position: relative;
+    z-index: 9;
     margin-bottom: 70px;
 }
 
@@ -104,7 +105,6 @@ body {
 
 .our_info {
     padding-top: 60px;
-    z-index: -1;
     position: relative;
     padding-bottom: 60px;
 }
@@ -196,9 +196,11 @@ body {
     color: #333;
     cursor: pointer;
 }
+
 .play_circle {
     cursor: pointer;
 }
+
 .section-title {
     padding-top: 40px;
     font-size: 14px;
@@ -957,7 +959,7 @@ h3,
 .card-title a {
     text-decoration: none;
     padding-top: 20px;
-    font-family: 'GFS Didot';   
+    font-family: 'GFS Didot';
     font-size: 24px;
     color: #1B1C21;
     line-height: 32px;
@@ -1302,8 +1304,9 @@ h3,
     }
 
     .our_info::after {
-        font-size: 140px;
-        top: 58%;
+        font-size: 100px;
+        top: 65%;
+        right: 0px
     }
 
     .border_info {
@@ -1361,7 +1364,7 @@ h3,
     }
 
     .detail_resort::after {
-        right: -7px;
+        right: 0px;
     }
 
     .main_part::before {
@@ -1379,10 +1382,7 @@ h3,
         right: 22%;
     }
 
-    .escape_villa::after {
-        font-size: 140px;
-        top: -12%;
-    }
+
 
     .discover_btn {
         padding: 18px 15px;
@@ -1495,6 +1495,12 @@ h3,
         line-height: 26px;
     }
 
+    .escape_villa::after {
+        font-size: 100px;
+        top: -4%;
+        right: 0px;
+    }
+
 }
 
 
@@ -1503,9 +1509,7 @@ h3,
         flex-direction: column;
     }
 
-    .banner-wrapper {
-        z-index: -1;
-    }
+
 
     .image-left,
     .content-right {

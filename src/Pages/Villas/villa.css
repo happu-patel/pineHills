@@ -3,6 +3,7 @@
 .villas_page .escape_villa::after {
     top: -30%;
 }
+
 .villas_pag {
     padding: 50px 0;
 }
@@ -14,10 +15,12 @@
     position: relative;
     margin-top: 50px;
 }
+
 .villas_pag .villa-wrapper:nth-child(2n + 1) {
     margin-right: 0px;
     /* Avoid additional spacing on left columns */
 }
+
 .villas_pag .villa-image {
     width: 100%;
     height: 310px;
@@ -74,7 +77,7 @@
 }
 
 .villas_page .testimonial-sec {
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
 .villas_page .middle_text {
@@ -87,4 +90,39 @@
 
 .villas_page .mid_text_area {
     padding: 100px 0px 0px;
+}
+
+@media(max-width:1024px) {
+    .villas_pag .card-title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .villas_pag .card-text {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width:767px) {
+    .villas_pag .card-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .villas_page .middle_text br {
+        display: none;
+    }
+
+    .villas_page .mid_text_area {
+        padding: 60px 0px 0px 0px;
+    }
+
+    .villas_pag {
+        padding: 0px 0px;
+    }
+
+    .offset-top {
+        margin-top: 0px !important;
+    }
 }

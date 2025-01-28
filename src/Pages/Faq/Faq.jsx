@@ -61,7 +61,7 @@ const Faq = () => {
                     <div className="container">
                         <div className="row faq_row">
                             {/* Left Column */}
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className="faq-card">
                                     <h3>General Information FAQ</h3>
                                     <p>
@@ -115,7 +115,7 @@ const Faq = () => {
                             </div>
 
                             {/* Right Column */}
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className="faq-card">
                                     <h3>Payment And Booking FAQ</h3>
                                     <p>

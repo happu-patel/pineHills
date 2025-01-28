@@ -1255,6 +1255,16 @@ h3,
 
 }
 
+@media (max-width:1199px) {
+    .title_part {
+        padding-top: 32px;
+    }
+
+    .amenities-heading {
+        margin-bottom: 0px;
+        padding-bottom: 22px;
+    }
+}
 
 
 @media (max-width:1024px) {
@@ -1440,7 +1450,7 @@ h3,
     }
 
     .Amenities_box_data h1 {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 36px;
     }
 

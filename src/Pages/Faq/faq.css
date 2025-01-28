@@ -3,7 +3,9 @@
 }
 
 .faq_area {
-    background-color: #666;
+    background-image: url('../../assets/image/faq_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 0px 0px;
 }
 
@@ -104,4 +106,44 @@
 
 .faq_testimonial {
     padding-bottom: 90px
+}
+
+@media(max-width:1199px) {
+    .faq_area .col-lg-6 {
+        width: 50% !important;
+    }
+
+    .faq_row {
+        gap: 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .faq-card h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .faq-card p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .faq-question {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:767px) {
+    .faq_area .col-lg-6 {
+        width: 100% !important;
+    }
+
+    .faq_row {
+        gap: 75px;
+    }
+
+    .faq-question {
+        font-size: 13px;
+    }
 }

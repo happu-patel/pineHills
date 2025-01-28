@@ -12,6 +12,9 @@ import reasot from '../../assets/image/reasot.svg';
 import wifi from '../../assets/image/wifi.svg';
 import laundry from '../../assets/image/laundry.svg';
 import kids_area from '../../assets/image/kids_area.svg';
+import boxes_img1 from '../../assets/image/boxes_img1.jpg'
+import boxes_img2 from '../../assets/image/boxes_img2.jpg'
+import boxes_img3 from '../../assets/image/boxes_img3.jpg'
 
 const Facilities = () => {
     return (
@@ -38,7 +41,7 @@ const Facilities = () => {
                             <h3>
                                 Highlights The Quality Of The <br /> Amenities At Pine Hill Resort.
                             </h3>
-                            <p>
+                            <p className='mb-0'>
                                 From luxurious rooms and rejuvenating spa services to world-class dining and
                                 recreational activities, our facilities are designed to provide you with a memorable
                                 and relaxing stay.
@@ -157,7 +160,7 @@ const Facilities = () => {
                             </div>
 
                             <div className="col-lg-4">
-                                <div className="Amenities_box_data res_bg">
+                                <div className="Amenities_box_data internet_bg">
                                     <div>
                                         <div className="Amenities_icon ">
                                             <img src={wifi} alt="" />
@@ -169,7 +172,7 @@ const Facilities = () => {
                         </div>
                         <div className="row g-3 mb-3">
                             <div className="col-lg-4">
-                                <div className="Amenities_box_data spa_bg">
+                                <div className="Amenities_box_data laundry_bg">
                                     <div>
                                         <div className="Amenities_icon ">
                                             <img src={laundry} alt="" />
@@ -179,7 +182,7 @@ const Facilities = () => {
                                 </div>
                             </div>
                             <div className="col-lg-8">
-                                <div className="Amenities_box_data gym_bg">
+                                <div className="Amenities_box_data kids_bg">
                                     <div>
                                         <div className="Amenities_icon ">
                                             <img src={kids_area} alt="" />
@@ -195,21 +198,24 @@ const Facilities = () => {
             <section className='detail_palce'>
                 <div className='container'>
                     <div className='heading_part d-flex'>
-                        <div className='left_head col-lg-7'>
+                        <div className='left_head col-lg-7 col-sm-12 col-md-7'>
                             <h3>Awesome Place And What Improves It,<br /> Explore The Radiance. An Uncommon Place <br /> Where Nature And Man Exist In Agreement</h3>
                         </div>
-                        <div className='right_head col-lg-5'>
+                        <div className='right_head col-lg-5 col-sm-12 col-md-5'>
                             <p>At Pine Hill Resort, every corner reflects our commitment to blending the splendor of nature with luxurious, thoughtfully designed spaces.</p>
                             <p>From serene landscapes to expertly crafted amenities, experience a setting that celebrates the seamless coexistence of elegance and the  environment. Embrace the radiance of a truly exceptional retreat where every detail enhances the tranquil balance between the natural world and sophisticated comfort.</p>
                         </div>
                     </div>
                     <div className='boxes_area'>
                         <div className='d-flex boxes_gap row'>
-                            <div className='boxes col-lg-3'>
+                            <div className='boxes col-lg-3 boxes_1 col-md-3 col-sm-12'>
+                                
                             </div>
-                            <div className='boxes col-lg-3'>
+                            <div className='boxes col-lg-3 boxes_2 col-md-3 col-sm-12'>
+                               
                             </div>
-                            <div className='boxes col-lg-3'>
+                            <div className='boxes col-lg-3 boxes_3 col-md-3 col-sm-12'>
+                                
                             </div>
                         </div>
                     </div>

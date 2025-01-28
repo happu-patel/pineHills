@@ -102,12 +102,20 @@
         font-size: 15px;
         line-height: 24px;
     }
+
+    .villas_page .escape_villa:after {
+        top: -14%;
+    }
 }
 
 @media(max-width:767px) {
     .villas_pag .card-title {
         font-size: 20px;
         line-height: 28px;
+    }
+
+    .villas_page .escape_villa:after {
+        top: -8%;
     }
 
     .villas_page .middle_text br {

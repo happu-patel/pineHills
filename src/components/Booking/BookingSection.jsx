@@ -41,25 +41,28 @@ const BookingSection = () => {
                     </div>
                 </div>
 
-                {/* Adults Counter */}
-                <div className="booking-item">
-                    <label>ADULTS</label>
-                    <div className="counter">
-                        <button onClick={decrementAdults}>-</button>
-                        <span>{String(adults).padStart(2, '0')}</span>
-                        <button onClick={incrementAdults}>+</button>
+                <div className="booking-counter-wrapper">
+                    {/* Adults Counter */}
+                    <div className="booking-item">
+                        <label>ADULTS</label>
+                        <div className="counter">
+                            <button onClick={decrementAdults}>-</button>
+                            <span>{String(adults).padStart(2, '0')}</span>
+                            <button onClick={incrementAdults}>+</button>
+                        </div>
+                    </div>
+
+                    {/* Children Counter */}
+                    <div className="booking-item">
+                        <label>CHILDREN</label>
+                        <div className="counter">
+                            <button onClick={decrementChildren}>-</button>
+                            <span>{String(children).padStart(2, '0')}</span>
+                            <button onClick={incrementChildren}>+</button>
+                        </div>
                     </div>
                 </div>
 
-                {/* Children Counter */}
-                <div className="booking-item">
-                    <label>CHILDREN</label>
-                    <div className="counter">
-                        <button onClick={decrementChildren}>-</button>
-                        <span>{String(children).padStart(2, '0')}</span>
-                        <button onClick={incrementChildren}>+</button>
-                    </div>
-                </div>
 
                 {/* Book Now Button */}
                 <div className="booking-item">

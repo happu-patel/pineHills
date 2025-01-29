@@ -1091,7 +1091,10 @@ h3,
     padding: 80px 0;
     background-image: url('../../assets/image/dining_hall.jpg');
     background-size: cover;
+    background-position: center;
     position: relative;
+    overflow: visible;
+    /* Allow image to overflow */
 }
 
 /* Container for the testimonial section */
@@ -1104,11 +1107,16 @@ h3,
     padding: 0 15px;
 }
 
-/* Left image styling */
 .image-left {
+    position: absolute;
+    z-index: 2;
+}
+
+/* Left image styling */
+.image-left img {
     width: 390px;
     height: 370px;
-    background-image: url('../../assets/image/hotel_interior.jpg');
+    /* background-image: url('../../assets/image/hotel_interior.jpg'); */
     background-size: cover;
     position: absolute;
     top: 321px;
@@ -1248,6 +1256,10 @@ h3,
     color: #ff4c4c;
 }
 
+.news-section .card-body {
+    margin-top: 20px;
+}
+
 @media (max-width:1230px) {
     .right_side {
         width: 500px !important;
@@ -1326,8 +1338,8 @@ h3,
     }
 
     .our_info {
-        padding-bottom: 40px;
-        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 
     .lodging {
@@ -1446,12 +1458,17 @@ h3,
     .amenities-heading {
         font-size: 40px;
         line-height: 43px;
-        padding-bottom: 22px;
+        padding-bottom: 35px;
     }
 
     .Amenities_box_data h1 {
         font-size: 22px;
         line-height: 36px;
+    }
+
+    .Amenities {
+        padding-top: 10px;
+        padding-bottom: 50px;
     }
 
     .black_box img {
@@ -1509,6 +1526,15 @@ h3,
         font-size: 100px;
         top: -4%;
         right: 0px;
+    }
+
+    .news-section {
+        text-align: center;
+        padding: 0px 0 10px;
+    }
+
+    .news-section .card-body {
+        margin-top: 20px;
     }
 
 }
@@ -1629,12 +1655,21 @@ h3,
         line-height: 44px !important;
     }
 
+    .chhose_us .row {
+        gap: 30px !important;
+    }
+
     .left_side {
-        width: 50% !important;
+        width: 45% !important;
     }
 
     .right_side {
         width: 50% !important;
+    }
+
+    .image-left img {
+        width: 330px;
+        left: -28px;
     }
 
     .testimonial-text {
@@ -1681,19 +1716,27 @@ h3,
 
 @media (min-width: 768px) and (max-width: 768px) {
     .left_side {
-        width: 360px !important;
+        width: 345px !important;
     }
 
     .right_side {
         width: 390px !important;
     }
 
+    .image-left img {
+        top: 409px;
+    }
 }
 
 /* Responsive Styles */
 @media (max-width: 767px) {
     .home-banner {
-        padding-top: 100px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .main-title {
+        letter-spacing: 0px;
     }
 
     .luxury-title {
@@ -1705,17 +1748,39 @@ h3,
     .reconnect-text,
     .banner-subtitle {
         font-size: 12px;
+        line-height: 20px;
     }
 
     .main_part {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0px;
+    }
+
+    .left-section {
+        padding: 50px 25px;
+    }
+
+    .right-section {
+        margin: 0px 0px;
+        gap: 22px;
+    }
+
+    .left-section .feature:last-child {
+        margin-bottom: 0px;
     }
 
     .our_info::before {
         font-size: 85px;
     }
 
+    .title_part {
+        padding-top: 25px;
+    }
 
+    .options-container {
+        padding: 50px 0px;
+    }
 
     .img-fluid {
         margin-left: 0px;
@@ -1780,14 +1845,19 @@ h3,
     }
 
     .main_part::after {
-        bottom: -80px;
+        bottom: -30px;
         right: 0%;
     }
 
     .main_part::before,
     .main_part::after {
-        width: 200px;
-        height: 280px;
+        width: 120px;
+        height: 160px;
+    }
+
+    .escape_villa::before {
+        width: 120px;
+        height: 160px;
     }
 
     .detail_resort::before {
@@ -1796,6 +1866,12 @@ h3,
 
     .detail_resort::after {
         right: 0px;
+    }
+
+    .detail_resort::before,
+    .detail_resort::after {
+        width: 120px;
+        height: 160px;
     }
 
     .service .container.service_sec {
@@ -1817,7 +1893,7 @@ h3,
 
     .black_box_detail button {
         width: 100%;
-        margin: 10px auto 0px;
+        margin: 20px auto 0px;
         text-align: center;
     }
 
@@ -1825,9 +1901,72 @@ h3,
         width: 100% !important;
     }
 
-
+    .Amenities {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
 
     .right_side {
         width: 100% !important;
+    }
+
+    .service {
+        padding: 70px 0px;
+    }
+
+    .testimonial-section1 {
+        padding: 70px 0px;
+    }
+
+    .testimonial-section1 .title_part {
+        padding-top: 0px;
+    }
+
+    .news-section {
+        padding: 0px 0px 70px;
+    }
+
+    .news-section .container {
+        padding: 0px 0px !important;
+    }
+
+    .news-section .row {
+        display: block !important;
+        margin: 0px 5px !important;
+    }
+
+    .news-section .card-body {
+        margin: 10px 0px 0px;
+    }
+
+    .image-left {
+        width: 100%;
+        left: 0px;
+    }
+
+    .image-left {
+        position: inherit;
+        z-index: 2;
+    }
+
+    .image-left img {
+        position: inherit;
+        top: 0;
+        left: 0;
+        border: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .content-right {
+        min-height: 500px;
+    }
+
+    .testimonial-section::before {
+        display: none;
+    }
+
+    .lodging .title_part {
+        padding-top: 0px;
     }
 }

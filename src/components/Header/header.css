@@ -170,7 +170,9 @@ img.menu-toggle-icon {
         gap: 10px;
     }
 
-
+    .main-header .mobile_top {
+        padding: 8px 0px !important;
+    }
 
     .main-header .left-links,
     .right-links {
@@ -207,12 +209,10 @@ img.menu-toggle-icon {
         margin: 0;
     }
 
-
-
-    .logo img {
-        width: 90px;
-        /* Adjust logo size for mobile */
+    img.menu-toggle-icon {
+        width: 24px;
     }
+
 
     .right-links {
         display: flex;
@@ -220,7 +220,7 @@ img.menu-toggle-icon {
     }
 
     .navbar-brand img {
-        width: 120px;
+        width: 170px;
     }
 
     .navbar_menu_icon {

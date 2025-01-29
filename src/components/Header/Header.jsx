@@ -81,7 +81,7 @@ const Header = () => {
             </div>
 
             {/* Top Bar for Desktop */}
-            <div className="top-bar d-flex justify-content-between align-items-center py-3">
+            <div className="top-bar d-flex justify-content-between align-items-center py-3 mobile_top">
                 {/* Left Links */}
                 <div className="left-links d-flex align-items-center col-lg-4 gap-4 gap-md-3">
                     <Link to=""><span>EN</span></Link>

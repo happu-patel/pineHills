@@ -117,6 +117,18 @@ label {
         max-width: 1220px;
         padding: 0 10px;
     }
+
+
+}
+
+@media (max-width:1199px) {
+    .booking-section {
+        padding: 17px 30px;
+    }
+
+    .booking-row {
+        gap: 40px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -135,12 +147,14 @@ label {
     .banner-wrapper {
         z-index: 0;
     }
-    .booking-section{
+
+    .booking-section {
         padding: 17px 20px;
     }
-        .booking-row {
-            gap: 40px;
-        }
+
+    .booking-row {
+        gap: 40px;
+    }
 }
 
 @media (max-width: 767px) {

@@ -97,7 +97,7 @@ const Home = () => {
             </div>
             <section className='our_info'>
                 <div className="container">
-                    <div className="row gx-lg-5 gx-0 gx-md-4">
+                    <div className="row gx-lg-4 gx-0 gx-md-4">
                         {/* Left Column */}
                         <div className="col-md-6">
                             <div className="video-box position-relative">

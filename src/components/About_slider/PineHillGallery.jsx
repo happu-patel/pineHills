@@ -19,6 +19,16 @@ const PineHillGallery = () => {
         centerPadding: "400px",
         responsive: [
             {
+                breakpoint: 1199, // For screens smaller than 1024px
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    centerPadding: "0px",
+                    dots: true,
+                },
+            },
+            {
                 breakpoint: 1024, // For screens smaller than 1024px
                 settings: {
                     slidesToShow: 3,

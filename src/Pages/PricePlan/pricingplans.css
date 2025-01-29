@@ -192,12 +192,38 @@
     color: #472C10;
     text-transform: uppercase;
     border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing_plan .start_btn_white:hover {
+    color: #1B1C21;
+    background-color: #B7A18B;
+    border: 1px solid #B7A18B;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing_plan .start_btn:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    color: #000;
+    transition: all 0.3s ease-in-out;
 }
 
 .pricing_plan .start_btn_white {
     border: 1px solid #000;
     color: #000;
+    transition: all 0.3s ease-in-out;
     background-color: #FFFFFF;
+    padding: 15px 40px;
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    color: #472C10;
+    text-transform: uppercase;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .feature_list li:last-child {
@@ -219,4 +245,57 @@
 .pricing_plan .Amenities {
     padding-bottom: 80px;
     padding-top: 80px;
+}
+
+@media (max-width:1024px) {
+    .feature_list {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:991px) {
+    .pricing_plan .card-body {
+        padding: 12px;
+    }
+
+    .pricing_plan .card-text {
+        font-size: 16px;
+    }
+
+    .feature_list {
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width:767px) {
+    .pricing_plan .card-body {
+        padding: 30px;
+    }
+
+    .card_padding {
+        padding-top: 0px;
+    }
+
+    .card_title1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .feature_list {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+
+    .pricing_plan .Amenities {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .mb_mobile {
+        margin-bottom: 25px;
+    }
 }

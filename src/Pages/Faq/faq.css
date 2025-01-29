@@ -140,10 +140,25 @@
     }
 
     .faq_row {
-        gap: 75px;
+        gap: 45px;
+    }
+        .faq_area {
+            padding: 60px 0px;
+        }
+
+    .faq-card {
+        margin-bottom: 0px;
     }
 
     .faq-question {
         font-size: 13px;
+    }
+
+    .faq_page .testimonial-section1 {
+        padding-top: 10px;
+    }
+
+    .faq_page .Amenities {
+        padding-bottom: 20px;
     }
 }

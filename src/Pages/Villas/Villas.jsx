@@ -186,7 +186,7 @@ const Villas = () => {
 
                                         <div class="service_data_box">
                                             <div class="row">
-                                                <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                                <div class="col-lg-2 d-flex align-items-center">
                                                     <div class="black_box">
                                                         <img src={family} alt="" />
                                                     </div>

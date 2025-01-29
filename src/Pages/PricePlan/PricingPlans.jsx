@@ -49,7 +49,7 @@ const PricingPlans = () => {
                     <div className="row">
                         {/* Classic Escape */}
                         <div className="col-md-4 card_padding">
-                            <div className="card shadow-sm mb-4 white_card">
+                            <div className="card shadow-sm white_card mb_mobile">
                                 <div className="card-body">
                                     <h5 className="card_title1_black card_title1">CLASSIC ESCAPE</h5>
                                     <h3 className="card-price text-dark">$299<span className="text_night">/night</span></h3>
@@ -66,14 +66,14 @@ const PricingPlans = () => {
                                         <li><img src={dark_check_circle} alt="check_icon" className="check_icon" />Private Balcony with Garden View</li>
                                     </ul>
                                     <hr className="price_hr text-dark" />
-                                    <button className="start_btn start_btn_white">Get Started</button>
+                                    <button className="start_btn_white">Get Started</button>
                                 </div>
                             </div>
                         </div>
 
                         {/* Premium Retreat */}
                         <div className="col-md-4">
-                            <div className="card border-dark shadow-sm mb-4 black-card">
+                            <div className="card border-dark shadow-sm  black-card mb_mobile">
                                 <div className="card-body">
                                     <div className="card-title pt-0">
                                         <img src={ornament_icon} />
@@ -107,7 +107,7 @@ const PricingPlans = () => {
 
                         {/* Luxury Indulgence */}
                         <div className="col-md-4 card_padding">
-                            <div className="card  shadow-sm mb-4 white_card">
+                            <div className="card  shadow-sm  white_card">
                                 <div className="card-body">
                                     <h5 className="card_title1_black card_title1">LUXURY INDULGENCE</h5>
                                     <h3 className="card-price text-dark">$799<span className="text_night">/night</span></h3>
@@ -124,7 +124,7 @@ const PricingPlans = () => {
                                         <li><img src={dark_check_circle} alt="check_icon" className="check_icon" /> Complimentary In-Room Massage</li>
                                     </ul>
                                     <hr className="price_hr text-dark" />
-                                    <button className="start_btn start_btn_white">Get Started</button>
+                                    <button className="start_btn_white">Get Started</button>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@ const PricingPlans = () => {
 
                                         <div class="service_data_box">
                                             <div class="row">
-                                                <div class="col-lg-2 d-flex justify-content-center align-items-center">
+                                                <div class="col-lg-2 d-flex align-items-center">
                                                     <div class="black_box">
                                                         <img src={family} alt="" />
                                                     </div>

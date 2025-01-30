@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './about.css'
 import squre_icon from '../../assets/image/squre.svg';
 import resort_img from '../../assets/image/resort_img.jpg'
@@ -23,6 +23,35 @@ import wedding from '../../assets/image/wedding.svg'
 import family from '../../assets/image/family.svg'
 
 const About = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const modalRef = useRef(null);
+
+
+  const handlePlayClick = () => {
+    setIsVideoOpen(true);
+  };
+
+  const handleCloseClick = () => {
+    setIsVideoOpen(false);
+  };
+
+  useEffect(() => {
+    const modalElement = modalRef.current;
+
+    // Initialize the Bootstrap modal instance
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement, {
+        backdrop: true, // Optional: explicitly set the backdrop
+        keyboard: true, // Optional: allow closing modal with "ESC"
+      });
+
+      if (isVideoOpen) {
+        modal.show();
+      } else {
+        modal.hide();
+      }
+    }
+  }, [isVideoOpen]);
   return (
     <>
       <section className="contact_pine">
@@ -42,18 +71,59 @@ const About = () => {
       </section>
       <section className='our_info'>
         <div className="container">
-          <div className="row gx-lg-5 gx-0 gx-md-4">
+          <div className="row gx-lg-4 gx-0 gx-md-4">
             {/* Left Column */}
             <div className="col-md-6">
               <div className="video-box position-relative">
-                {/* <h1 className="background-text">OUR STORY</h1> */}
-                <img src={resort_img} alt="Video Thumbnail"
-                  className="img-fluid" />
-                <div class="border-overlay"></div>
-                <div className="play-icon">
-                  <img src={play_circle} alt="" />
+                <img src={resort_img} alt="Video Thumbnail" className="img-fluid" />
+                <div className="border-overlay"></div>
+                <div
+                  className="play-icon"
+                  onClick={handlePlayClick}
+                  data-bs-toggle="modal"
+                  data-bs-target="#videoModal"
+                  role="button"
+                >
+                  <img src={play_circle} alt="Play Video" className="play_circle" />
+                </div>
+                {/* Modal */}
+                <div
+                  className="modal fade"
+                  id="videoModal"
+                  tabIndex="-1"
+                  aria-labelledby="videoModalLabel"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog modal-lg">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h5 className="modal-title" id="videoModalLabel">
+                          Watch Video
+                        </h5>
+                        <button
+                          type="button"
+                          className="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        {/* Video Embed */}
+                        <iframe
+                          src="https://www.youtube.com/embed/H1CIBqDeWQ0?autoplay=1"
+                          title="Video"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          width="100%"
+                          height="400px"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div className='title_part'>
                 <img src={ornament_icon} />
                 <span className="section-title px-2">
@@ -121,7 +191,7 @@ const About = () => {
               <div className="image-box">
                 <img src={resort_img1} alt="Video Thumbnail"
                   className="img-fluid" />
-                <div class="border_info"></div>
+                <div className="border_info"></div>
               </div>
             </div>
           </div>
@@ -185,7 +255,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section className="container Amenities">
+      <section className="container Amenities padding_cls">
         <div className="row">
           <div className="col-lg-8 Amenities_box">
             <div className="row g-3 mb-3">
@@ -241,7 +311,10 @@ const About = () => {
           <div className="col-lg-4">
             <div className="amenities-card">
               <div className="card-content text-center">
-                <div className='title_part text-center'>
+                <div className='title_part text-center pt-0'>
+                  <div className="b_white pt-0 mb-4 pb-3">
+                    <span></span>
+                  </div>
                   <img src={ornament_icon} />
                   <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
                     AMENITIES
@@ -341,7 +414,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className='pine_slider pb-0'>
+      <div className='pine_slider'>
         <PineHillGallery />
       </div>
       <section className='detail_resort mt-4'>

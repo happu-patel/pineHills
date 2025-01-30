@@ -84,14 +84,17 @@ a {
     font-size: 17px;
     line-height: 26px;
     padding: 17px;
+    transition: all 0.3s ease-in-out;
 }
 
 .active {
     background-color: #B7A18B !important;
+    color: #1B1C21 !important;
 }
 
 .dropdown-item:hover {
-    background-color: transparent !important;
+    background-color: #B7A18B !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown-toggle::after {
@@ -109,7 +112,10 @@ a {
     left: 4px;
 }
 
-
+.nav-link.dropdown-toggle.open {
+    color: #000;
+    /* Change color to black when dropdown is open */
+}
 
 img.menu-toggle-icon {
     width: 35px;

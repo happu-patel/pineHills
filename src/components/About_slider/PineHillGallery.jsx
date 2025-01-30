@@ -45,7 +45,7 @@ const PineHillGallery = () => {
                     slidesToScroll: 1,
                     infinite: true,
                     centerPadding: "0px",
-                    dots: false,
+                    dots: true,
                 }
             },
             {
@@ -54,6 +54,8 @@ const PineHillGallery = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerPadding: "0px",
+                    dots: true,
+
                 },
             },
         ],

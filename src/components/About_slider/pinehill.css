@@ -1,10 +1,40 @@
 .slick-dots {
     z-index: 1;
-    bottom: 40px !important;
+    bottom: -30px !important;
 }
 
 .slick-list {
     padding-bottom: 10px !important;
+}
+
+.slick-dots li {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.slick-dots li button {
+    width: 40px;
+}
+
+.slick-dots li button:before {
+    content: '';
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 0px;
+    background-color: #D3D3D3;
+}
+
+.slick-dots li.slick-active button:before {
+    content: '';
+    display: block;
+    width: 40px;
+    text-align: center;
+    margin: 0px auto;
+    height: 6px;
+    background-color: #000;
+    border-radius: 1px;
+    background-image: none;
 }
 
 .about_slide.slider-container .slider-item {

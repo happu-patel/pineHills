@@ -230,7 +230,10 @@ const Faq = () => {
                     <div className="col-lg-4">
                         <div className="amenities-card">
                             <div className="card-content text-center">
-                                <div className='title_part text-center'>
+                                <div className='title_part text-center pt-0'>
+                                    <div className="b_white pt-0 mb-4 pb-3">
+                                        <span></span>
+                                    </div>
                                     <img src={ornament_icon} />
                                     <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
                                         AMENITIES

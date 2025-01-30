@@ -128,17 +128,18 @@ const Header = () => {
                         <img src={ornament_icon} alt="icon" className="d-none d-lg-block" />
                         <li className="nav-item dropdown">
                             <a
-                                className={`nav-link dropdown-toggle ${isDropdownOpen ? 'active' : ''}`}
+                                className={`nav-link dropdown-toggle ${isDropdownOpen ? '' : ''}`}
                                 href="#"
                                 onClick={toggleDropdown}
                                 role="button"
+                                style={{ color: isDropdownOpen ? '#000' : 'inherit' }}
                                 aria-expanded={isDropdownOpen}
                             >
                                 PAGES
                             </a>
                             <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""} ${isMobileView ? 'mobile-dropdown' : ''}`}>
                                 <li><Link className="dropdown-item" to="/testimonials" onClick={handleNavClick}>Testimonials</Link></li>
-                                <li><Link className="dropdown-item" to="/pricing" onClick={handleNavClick}>Pricing</Link></li>
+                                <li><Link className="dropdown-item active" to="/pricing" onClick={handleNavClick}>Pricing</Link></li>
                                 <li><Link className="dropdown-item" to="/faq" onClick={handleNavClick}>FAQ</Link></li>
                                 <li><Link className="dropdown-item" to="/404" onClick={handleNavClick}>404</Link></li>
                                 <li><Link className="dropdown-item" to="/coming-soon" onClick={handleNavClick}>Coming Soon</Link></li>

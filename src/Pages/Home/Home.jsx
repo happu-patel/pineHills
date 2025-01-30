@@ -223,7 +223,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className="lodging container">
+            <div className="lodging container pb-5 mb-4">
                 <div className='title_part text-center'>
                     <img src={ornament_icon} />
                     <span className="section-title px-2">
@@ -436,7 +436,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="container Amenities">
+            <section className="container Amenities ">
                 <div className="row">
                     <div className="col-lg-8 Amenities_box">
                         <div className="row g-3 mb-3">
@@ -492,7 +492,10 @@ const Home = () => {
                     <div className="col-lg-4">
                         <div className="amenities-card">
                             <div className="card-content text-center">
-                                <div className='title_part text-center'>
+                                <div className='title_part text-center pt-0'>
+                                    <div className="b_white pt-0 mb-4 pb-3">
+                                        <span></span>
+                                    </div>
                                     <img src={ornament_icon} />
                                     <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
                                         AMENITIES

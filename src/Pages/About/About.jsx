@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './about.css'
+import * as bootstrap from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import squre_icon from '../../assets/image/squre.svg';
 import resort_img from '../../assets/image/resort_img.jpg'
 import resort_img1 from '../../assets/image/resort_img1.jpg'

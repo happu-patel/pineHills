@@ -932,7 +932,7 @@ h3,
 /* news_section */
 .news-section {
     text-align: center;
-    padding: 40px 0;
+    padding: 0px 0px 40px;
 }
 
 .news-item {

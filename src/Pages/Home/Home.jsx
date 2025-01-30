@@ -643,7 +643,7 @@ const Home = () => {
             <TestimonialSection />
 
             <div className="news-section">
-                <div class="container py-5">
+                <div class="container pb-5">
                     <div class="text-center mb-5">
                         <small class="title"><img src={ornament_icon} /><span className="section-title px-2">
                             OUR News

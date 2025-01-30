@@ -117,7 +117,7 @@
     .villas_page .escape_villa:after {
         top: -8%;
     }
- 
+
     .villas_page .middle_text br {
         display: none;
     }
@@ -132,5 +132,13 @@
 
     .offset-top {
         margin-top: 0px !important;
+    }
+
+    .villa-wrapper {
+        margin-bottom: 80px;
+    }
+
+    .villas_page .service {
+        margin-top: 60px;
     }
 }

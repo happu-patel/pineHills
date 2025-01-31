@@ -148,7 +148,7 @@ const BlogDetail = () => {
                         {post.sections.map((section, index) => (
                             <div key={section.id} className="row align-items-center gap-5 blog_post_sec">
                                 {/* Text Content */}
-                                <div className={`col-lg-6 ${index % 2 !== 0 ? 'order-lg-2' : ''}`}>
+                                <div className={`col-lg-6 col-md-6 ${index % 2 !== 0 ? 'order-lg-2' : ''}`}>
                                     {/* First Title and Content */}
                                     <div className="mb-4">
                                         <h3 className="blog-title">{section.title}</h3>
@@ -161,7 +161,7 @@ const BlogDetail = () => {
                                 </div>
 
                                 {/* Image */}
-                                <div className={`col-lg-5 ps-5 ${index % 2 !== 0 ? 'order-lg-1' : ''}`}>
+                                <div className={`col-lg-5 ps-5 col-md-5 blog_post_gry_sec ${index % 2 !== 0 ? 'order-lg-1' : ''}`}>
                                     <img src={blog_grey} alt='blog_gry' />
                                 </div>
                             </div>
@@ -176,11 +176,11 @@ const BlogDetail = () => {
                         {/* Bottom Section */}
                         <div className="row g-4 align-items-start bottom_Sec">
                             {/* Image on the left */}
-                            <div className="col-md-5">
+                            <div className="col-md-6 col-lg-6">
                                 <img src={blog_grey2} alt='blog_gray2' />
                             </div>
                             {/* Text on the right */}
-                            <div className="col-md-6">
+                            <div className="col-md-6 col-lg-6">
                                 <h3 className="blog-title">{post.bottomSection.title}</h3>
                                 <p className="blog_content">{post.bottomSection.content}</p>
                             </div>
@@ -262,7 +262,7 @@ const BlogDetail = () => {
                 </div>
             </section>
 
-            <div className="news-section">
+            <div className="news-section blog_news_section">
                 <div class="container py-5">
                     <div class="text-center mb-5">
                         <small class="title"><img src={ornament_icon} /><span className="section-title px-2">

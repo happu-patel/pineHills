@@ -8,7 +8,7 @@ import resort_img from '../../assets/image/resort_img.jpg'
 import resort_img1 from '../../assets/image/resort_img1.jpg'
 import play_circle from '../../assets/image/PlayCircle.svg'
 import ornament_icon from '../../assets/image/ornament.svg'
-import testimonial_icon from '../../assets/image/testimonial_icon.svg'
+import testimonial_icon from '../../assets/image/testimonal_pg.svg'
 import white_logo from '../../assets/image/footer_logo.svg'
 import ph_logo from '../../assets/image/PH.png'
 import 'swiper/css';
@@ -396,7 +396,7 @@ const Home = () => {
                                             </div>
                                             <div className="testimonial-text">
                                                 <p>Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years</p>
-                                                <span className="quote-mark">“</span>
+                                                <span className="quote-mark"><img src={testimonial_icon}/></span>
                                             </div>
                                         </div>
                                     </div>

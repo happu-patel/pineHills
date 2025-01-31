@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './testimonialsec.css'; // Ensure this file contains your styles
 import ornament_icon from '../../assets/image/ornament.svg'
-import testimonial_icon from '../../assets/image/testimonial_icon.svg' // Ensure you have this import
+import testimonial_icon from '../../assets/image/testimonal_pg.svg' // Ensure you have this import
 
 const TestimonialSection = () => {
     const settings = {

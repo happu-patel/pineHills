@@ -3,7 +3,6 @@ import './villa.css'
 import squre_icon from '../../assets/image/squre.svg';
 import SlickSlider from '../../components/SlickSlider/SlickSlider';
 import ornament_icon from '../../assets/image/ornament.svg'
-import testimonial_icon from '../../assets/image/testimonial_icon.svg'
 import white_logo from '../../assets/image/footer_logo.svg'
 import ph_logo from '../../assets/image/PH.png'
 import TestimonialSection from '../../components/Testimonial/TestimonialSection';

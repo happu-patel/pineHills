@@ -2,15 +2,21 @@ import React from 'react'
 import './our_staff.css'
 import squre_icon from '../../assets/image/squre.svg';
 import ornament_icon from '../../assets/image/ornament.svg';
-import testimonial_icon from '../../assets/image/testimonial_icon.svg'
+import testimonial_icon from '../../assets/image/testimonal_pg.svg'
+import staff_1 from '../../assets/image/staff_1.jpg';
+import staff_2 from '../../assets/image/staff_2.jpg';
+import staff_3 from '../../assets/image/staff_3.jpg';
+import staff_4 from '../../assets/image/staff_4.jpg';
+import staff_5 from '../../assets/image/staff_5.jpg';
+import staff_6 from '../../assets/image/staff_6.jpg';
 
 const teamMembers = [
-    { name: "Rachel Adams", title: "General Manager" },
-    { name: "David Nguyen", title: "Food and Beverage Manager" },
-    { name: "Sarah Lewis", title: "Front Office Manager" },
-    { name: "Michael Ramirez", title: "Head of Maintenance" },
-    { name: "Emma Patel", title: "Marketing Director" },
-    { name: "Mariam Turner", title: "Human Resources Manager" },
+    { name: "Rachel Adams", title: "General Manager", image: staff_1 },
+    { name: "David Nguyen", title: "Food and Beverage Manager", image: staff_2 },
+    { name: "Sarah Lewis", title: "Front Office Manager", image: staff_3 },
+    { name: "Michael Ramirez", title: "Head of Maintenance", image: staff_4 },
+    { name: "Emma Patel", title: "Marketing Director", image: staff_5 },
+    { name: "Mariam Turner", title: "Human Resources Manager", image: staff_6 },
 ];
 
 const Our_staff = () => {
@@ -57,7 +63,7 @@ const Our_staff = () => {
                                     <p className="guest-role">CEO PINE HILLS</p>
                                 </div>
                                 <div className="quote-container">
-                                    <span className="quote-mark"><img src={testimonial_icon} /></span>
+                                    <span className="quote-mark"><img src={testimonial_icon} alt='testimonial_icon'/></span>
                                     <p className="quote-text">
                                         Pine Hills Resort started as a small family-owned getaway nestled in the heart of the mountains. Over the years
                                     </p>
@@ -72,7 +78,7 @@ const Our_staff = () => {
             </section>
             <div className='middle_text'>
                 <div className='container text-center'>
-                    <h4>At Pine Hill Resort, our exquisite villas offer the perfect blend of luxury and <br/> privacy. Each villa is thoughtfully designed to provide an unparalleled <br/> retreat, combining elegant interiors with stunning natural surroundings.<br/> Whether you seek a serene escape or a lavish setting for a special occasion.</h4>
+                    <h4>At Pine Hill Resort, our exquisite villas offer the perfect blend of luxury and <br /> privacy. Each villa is thoughtfully designed to provide an unparalleled <br /> retreat, combining elegant interiors with stunning natural surroundings.<br /> Whether you seek a serene escape or a lavish setting for a special occasion.</h4>
                 </div>
             </div>
             <div className="container my-5">
@@ -80,9 +86,11 @@ const Our_staff = () => {
                     {teamMembers.map((member, index) => (
                         <div className="col-md-4 col-sm-6 mb-4" key={index}>
                             <div className="card team-card">
-                                <div className="placeholder-img"></div>
+                                <img src={member.image} alt={member.name} className="team-img" />
                                 <div className="card-body text-center pb-0">
-                                    <h5 className="card-title"> <img src={ornament_icon} /> {member.name} <img src={ornament_icon} /></h5>
+                                    <h5 className="card-title">
+                                        <img src={ornament_icon} /> {member.name} <img src={ornament_icon} />
+                                    </h5>
                                     <p className="card-text">{member.title}</p>
                                 </div>
                             </div>

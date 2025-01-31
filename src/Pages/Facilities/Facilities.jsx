@@ -12,9 +12,8 @@ import reasot from '../../assets/image/reasot.svg';
 import wifi from '../../assets/image/wifi.svg';
 import laundry from '../../assets/image/laundry.svg';
 import kids_area from '../../assets/image/kids_area.svg';
-import boxes_img1 from '../../assets/image/boxes_img1.jpg'
-import boxes_img2 from '../../assets/image/boxes_img2.jpg'
-import boxes_img3 from '../../assets/image/boxes_img3.jpg'
+import img_1 from '../../assets/image/bed_room.jpg';
+import img_2 from '../../assets/image/activity.jpg';
 
 const Facilities = () => {
     return (
@@ -52,12 +51,17 @@ const Facilities = () => {
                             </p>
                         </div>
                         <div className="img_side col-lg-7">
-                            <div className="image-layer first"></div>
-                            <div className="image-layer second"></div>
+                            <div className="img-wrapper first">
+                                <img src={img_1} alt="Bed Room" />
+                            </div>
+                            <div className="img-wrapper second">
+                                <img src={img_2} alt="Activities" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section className='seprate_text pt-5'>
                 <div className='container'>
                     <div className='right_head text-center'>

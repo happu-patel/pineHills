@@ -1193,13 +1193,15 @@ h3,
 
 /* Quote mark styling */
 .testimonial-text .quote-mark {
-    font-size: 94px;
     color: white;
     position: absolute;
     /* bottom: -18px; */
-    top: -51px;
+    top: -16px;
     right: 50px;
     font-family: serif;
+}
+.testimonial-text .quote-mark img {
+    height: 30px;
 }
 
 /* Custom border styling for overall layout */

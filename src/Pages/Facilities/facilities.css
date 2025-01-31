@@ -83,11 +83,12 @@
 }
 
 .highlights_resort {
-    padding: 80px 0px 60px;
+    padding: 80px 0px 90px;
 }
 
 .detail_sec {
-    gap: 150px;
+    display: flex;
+    gap: 100px;
 }
 
 .detail_side p {
@@ -100,36 +101,45 @@
     justify-content: center;
     align-items: center;
     height: 700px;
-    width: 600px !important;
-    /* Adjust the height as per your layout */
+    width: 648px !important;
 }
 
-.image-layer {
+.img-wrapper {
     position: absolute;
-    /* Light gray background for the placeholder */
     border: 10px solid #fff;
 }
 
-.image-layer.first {
-    width: 1000px;
-    height: 300px;
+.img-wrapper.first {
+    width: 961px;
+    height: 351px;
     z-index: 1;
-    top: 40%;
-    background-image: url('../../assets/image/bed_room.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: -116%;
+    top: 46%;
+    left: -100%;
 }
 
-.image-layer.second {
+.img-wrapper.second {
     width: 100%;
     height: 700px;
     z-index: 0;
     top: 0;
-    background-image: url('../../assets/image/activity.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     left: 0;
+}
+
+.img-wrapper.second::before {
+    position: absolute;
+    content: '';
+    border: 1px solid #bdbdbd;
+    width: 600px;
+    height: 618px;
+    top: 9%;
+    left: -3%;
+}
+
+.img-wrapper.second img {
+    object-fit: cover;
+    height: 700px;
+    width: 638px;
 }
 
 .seprate_text {
@@ -182,10 +192,15 @@
         width: 450px !important;
     }
 
-    .image-layer.first {
-        width: 800px;
-        top: 50%;
-        left: -127%;
+    .img-wrapper.first {
+        width: 829px;
+        height: 335px;
+        left: -116%;
+    }
+
+    .img-wrapper.first img {
+        width: 810px;
+        height: 315px;
     }
 
     .seprate_text::before {
@@ -213,10 +228,31 @@
         width: 150% !important;
     }
 
-    .image-layer.first {
-        width: 639px;
-        top: 50%;
-        left: -124%;
+
+
+    .img-wrapper.first {
+        width: 646px;
+        height: 335px;
+        left: -112%;
+    }
+
+    .img-wrapper.first img {
+        width: 630px;
+        height: 315px;
+    }
+
+    .img-wrapper.second img {
+        object-fit: cover;
+        height: 700px;
+        width: 100%;
+    }
+
+    .img-wrapper.second::before {
+        width: 100%;
+    }
+
+    .detail_side p {
+        font-size: 15px;
     }
 
     .seprate_text::before {
@@ -237,17 +273,50 @@
 
 @media(max-width:767px) {
     .detail_sec {
-        display: block !important;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .highlights_resort,
+    .detail_palce {
+        padding: 60px 0px 60px;
     }
 
     .img_side {
+        display: flex;
+        flex-direction: column;
         width: 100% !important;
+        height: auto;
+        gap: 0px;
     }
 
-    .image-layer.first {
-        width: 511px;
-        top: 50%;
-        left: -51%;
+    .img-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-wrapper.second::before {
+        display: none;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .img-wrapper.first {
+        width: 100%;
+        left: 0%;
+    }
+
+    .img-wrapper.first img {
+        width: 100%;
+    }
+
+    .img-wrapper.second img {
+        width: 100%;
     }
 
     .seprate_text::before {

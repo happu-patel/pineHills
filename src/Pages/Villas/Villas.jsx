@@ -17,6 +17,7 @@ import villa_img5 from '../../assets/image/villas_5.jpg'
 import villa_img6 from '../../assets/image/villas_6.jpg'
 import villa_img7 from '../../assets/image/villas_7.jpg'
 import villa_img8 from '../../assets/image/villas_8.jpg'
+import { Link } from 'react-router-dom';
 
 const villas = [
     {
@@ -79,7 +80,7 @@ const Villas = () => {
                     </div>
                     <h1 className="contact_head">Luxurious Villas For <br />Your Private Sanctuary Awaits</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>HOME</span> / <span className='ms-3'>OUR VILLAS</span>
+                        <Link className='me-3' to="/">HOME</Link> / <Link to='/villa' className='ms-3'>OUR VILLAS</Link>
                     </p>
                 </div>
             </section>

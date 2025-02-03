@@ -10,6 +10,7 @@ import amenities from '../../assets/image/amenities.svg'
 import best_price from '../../assets/image/best_price.svg'
 import service from '../../assets/image/service.svg'
 import left_img from '../../assets/image/hotel_interior.jpg';
+import { Link } from 'react-router-dom';
 
 
 const testimonialsData = [
@@ -91,7 +92,7 @@ const Testimonial = () => {
                     </div>
                     <h1 className="contact_head">Authentic Guest Experiences And <br />Reviews from Our Visitors</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>HOME</span> / <span className='ms-3'>TESTIMONIAL</span>
+                        <Link to='/' className='me-3'>HOME</Link> / <Link className='ms-3' to='testimonial'>TESTIMONIAL</Link>
                     </p>
                 </div>
             </section>

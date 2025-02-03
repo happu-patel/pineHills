@@ -36,6 +36,7 @@ import family from '../../assets/image/family.svg'
 import news_section2 from '../../assets/image/news_section2.jpg';
 import news_section3 from '../../assets/image/news_section3.jpg';
 import left_img from '../../assets/image/hotel_interior.jpg';
+import {Link} from 'react-router-dom'
 
 
 const Home = () => {
@@ -447,7 +448,8 @@ const Home = () => {
                                         <div className="Amenities_icon">
                                             <img src={pool} alt="" />
                                         </div>
-                                        <h1>PRIVATE POOL</h1>
+                                        
+                                        <Link to='#'><h1>PRIVATE POOL</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +461,7 @@ const Home = () => {
                                             <img src={restaurant} alt="" />
 
                                         </div>
-                                        <h1>RESTAURANT</h1>
+                                        <Link to='#'><h1>RESTAURANT</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -472,7 +474,7 @@ const Home = () => {
                                             <img src={bathtub} alt="" />
 
                                         </div>
-                                        <h1>SPA SERVICE</h1>
+                                        <Link to='#'><h1>SPA SERVICE</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -483,7 +485,7 @@ const Home = () => {
                                             <img src={gym} alt="" />
 
                                         </div>
-                                        <h1>QUALITY GYM</h1>
+                                        <Link to='#'><h1>QUALITY GYM</h1></Link>
                                     </div>
                                 </div>
                             </div>

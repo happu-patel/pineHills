@@ -14,6 +14,7 @@ import laundry from '../../assets/image/laundry.svg';
 import kids_area from '../../assets/image/kids_area.svg';
 import img_1 from '../../assets/image/bed_room.jpg';
 import img_2 from '../../assets/image/activity.jpg';
+import { Link } from 'react-router-dom';
 
 const Facilities = () => {
     return (
@@ -29,7 +30,7 @@ const Facilities = () => {
                     </div>
                     <h1 className="contact_head">Stay With World-Class Facilities At <br /> Pine Hill Resort</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>Home</span> / <span className='ms-3'>OUR FACILITIES</span>
+                        <Link to='/' className='me-3'>Home</Link> / <Link className='ms-3' to='/facilities'>OUR FACILITIES</Link>
                     </p>
                 </div>
             </section>
@@ -80,7 +81,8 @@ const Facilities = () => {
                                         <div className="Amenities_icon">
                                             <img src={pool} alt="" />
                                         </div>
-                                        <h1>PRIVATE POOL</h1>
+
+                                        <Link to='#'><h1>PRIVATE POOL</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +94,7 @@ const Facilities = () => {
                                             <img src={restaurant} alt="" />
 
                                         </div>
-                                        <h1>RESTAURANT</h1>
+                                        <Link to='#'><h1>RESTAURANT</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +107,7 @@ const Facilities = () => {
                                             <img src={bathtub} alt="" />
 
                                         </div>
-                                        <h1>SPA SERVICE</h1>
+                                        <Link to='#'><h1>SPA SERVICE</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +118,7 @@ const Facilities = () => {
                                             <img src={gym} alt="" />
 
                                         </div>
-                                        <h1>QUALITY GYM</h1>
+                                        <Link to='#'><h1>QUALITY GYM</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +127,10 @@ const Facilities = () => {
                     <div className="col-lg-4">
                         <div className="amenities-card">
                             <div className="card-content text-center">
-                                <div className='title_part text-center'>
+                                <div className='title_part text-center pt-0'>
+                                    <div className="b_white pt-0 mb-4 pb-3">
+                                        <span></span>
+                                    </div>
                                     <img src={ornament_icon} />
                                     <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
                                         AMENITIES
@@ -158,7 +163,7 @@ const Facilities = () => {
                                         <div className="Amenities_icon ">
                                             <img src={reasot} alt="" />
                                         </div>
-                                        <h1>BEACHFRONT ACCESS</h1>
+                                        <Link to='#'><h1>BEACHFRONT ACCESS</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +174,7 @@ const Facilities = () => {
                                         <div className="Amenities_icon ">
                                             <img src={wifi} alt="" />
                                         </div>
-                                        <h1>FREE INTERNENT</h1>
+                                        <Link to='#'><h1>FREE INTERNENT</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +186,7 @@ const Facilities = () => {
                                         <div className="Amenities_icon ">
                                             <img src={laundry} alt="" />
                                         </div>
-                                        <h1>LAUNDRY SERVICE</h1>
+                                        <Link to='#'><h1>LAUNDRY SERVICE</h1></Link>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +196,7 @@ const Facilities = () => {
                                         <div className="Amenities_icon ">
                                             <img src={kids_area} alt="" />
                                         </div>
-                                        <h1>KIDS' CLUB</h1>
+                                        <Link to='#'><h1>KIDS' CLUB</h1></Link>
                                     </div>
                                 </div>
                             </div>

@@ -9,6 +9,7 @@ import staff_3 from '../../assets/image/staff_3.jpg';
 import staff_4 from '../../assets/image/staff_4.jpg';
 import staff_5 from '../../assets/image/staff_5.jpg';
 import staff_6 from '../../assets/image/staff_6.jpg';
+import { Link } from 'react-router-dom';
 
 const teamMembers = [
     { name: "Rachel Adams", title: "General Manager", image: staff_1 },
@@ -34,7 +35,7 @@ const Our_staff = () => {
                     </div>
                     <h1 className="contact_head">Meet the Dedicated Team Behind <br />Your Unforgettable Stay</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>HOME</span> / <span className='ms-3'>OUR STAFF</span>
+                        <Link to='/' className='me-3'>HOME</Link> / <Link className='ms-3' to='/our_staff'>OUR STAFF</Link>
                     </p>
                 </div>
             </section>

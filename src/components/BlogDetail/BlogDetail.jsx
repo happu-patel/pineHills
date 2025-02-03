@@ -9,6 +9,9 @@ import blog_ins from '../../assets/image/blog_ins.svg';
 import blog_yt from '../../assets/image/blog_yt.svg';
 import blog_grey from '../../assets/image/blog_grey_img.png';
 import blog_grey2 from '../../assets/image/blog_grey_2.png';
+import hills from '../../assets/image/mountain_view.jpg';
+import summer from '../../assets/image/sumer_sale.jpg';
+import wellness from '../../assets/image/new_wellness.jpg';
 
 
 const BlogDetail = () => {
@@ -22,8 +25,9 @@ const BlogDetail = () => {
         const blogPosts = [
             {
                 id: 1,
-                date: 'july 21 2024',
+                date: 'july 20 2024',
                 title: "Lorem Ipsum Dolor Sit Amet, Consectetuer Adipiscing Elit.",
+                image: hills,
                 content: "Bibendum leo, sapien, nisl bibendum. Ultricies urna ultricies risus, at. Risus tincidunt netus et pellentesque maecenas pulvinar. Arcu duis tortor turpis nunc, nunc est blandit. Vel volutpat purus mauris condimentum amet tellus scelerisque semper blandit. Feugiat accumsan blandit acu, integer faucibus. At cursus elit hac vitae nec tortor iaculis viverra. Sem aliquet vulputate metus tristique sem commodo faucibus. Sagittis sittis eget at sit posuere est at. Eget eget id iaculis at est cras tristique sit. Nunc sem magna morbi vitae tempus sed consequat. Urna tellus id tique mattis molestie lectus imperdiet. Facilisi suscipit mauris nisl nibh felis pellentesque. Tempus et vitae, at quis nisl enim molestie felis. Tincidunt ornare facilisis interdum ipsum.",
                 sections: [
                     {
@@ -44,7 +48,8 @@ const BlogDetail = () => {
             },
             {
                 id: 2,
-                date: 'july 20 2024',
+                date: 'july 19 2024',
+                image: summer,
                 title: "Lorem Ipsum Dolor Sit Amet, Consec Tetuer.",
                 content: "Bibendum sit pharetra vitae pellentesque sodales neque mollis oci, purus. Feugiat volutp eu velit purus enim cum. Eu ipsum vierra isse placerat leo. Libero vel mi porttitor luctus viverra a vel veicula ultricies. Tellus egestas ac in sit et quis vitae. Metus auctor.",
                 sections: [
@@ -66,7 +71,8 @@ const BlogDetail = () => {
             },
             {
                 id: 3,
-                date: 'july 19 2024',
+                date: 'july 18 2024',
+                image: wellness,
                 title: "Lorem Ipsum Dolor Sit Amet, Consec Tetuer.",
                 content: "Bibendum sit pharetra vitae pellentesque sodales neque mollis oci, purus. Feugiat volutp eu velit purus enim cum. Eu ipsum vierra isse placerat leo. Libero vel mi porttitor luctus viverra a vel veicula ultricies. Tellus egestas ac in sit et quis vitae. Metus auctor.",
                 sections: [
@@ -119,11 +125,12 @@ const BlogDetail = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="blog-featured-image mb-4"
+
                             style={{
                                 width: "100%",
                                 height: "500px",
-                                backgroundColor: "#d3d3d3"
                             }}>
+                            <img src={post.image} alt='hills' height={500} width={'100%'}/>
                         </div>
 
                         <div className="post-meta mb-4 text-muted d-flex justify-content-between">

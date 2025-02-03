@@ -23,6 +23,7 @@ import gym from '../../assets/image/gym.svg'
 import events from '../../assets/image/event.svg'
 import wedding from '../../assets/image/wedding.svg'
 import family from '../../assets/image/family.svg'
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -67,7 +68,7 @@ const About = () => {
           </div>
           <h1 className="contact_head">Uncover the Heart of Pine Hill <br /> Where Luxury Meets Nature</h1>
           <p className="breadcrumb">
-            <span className='me-3'>Home</span> / <span className='ms-3'>ABOUT US</span>
+            <Link to='/' className='me-3'>Home</Link> / <Link to='/about' className='ms-3'>ABOUT US</Link>
           </p>
         </div>
       </section>
@@ -268,7 +269,8 @@ const About = () => {
                     <div className="Amenities_icon">
                       <img src={pool} alt="" />
                     </div>
-                    <h1>PRIVATE POOL</h1>
+
+                    <Link to='#'><h1>PRIVATE POOL</h1></Link>
                   </div>
                 </div>
               </div>
@@ -280,7 +282,7 @@ const About = () => {
                       <img src={restaurant} alt="" />
 
                     </div>
-                    <h1>RESTAURANT</h1>
+                    <Link to='#'><h1>RESTAURANT</h1></Link>
                   </div>
                 </div>
               </div>
@@ -293,7 +295,7 @@ const About = () => {
                       <img src={bathtub} alt="" />
 
                     </div>
-                    <h1>SPA SERVICE</h1>
+                    <Link to='#'><h1>SPA SERVICE</h1></Link>
                   </div>
                 </div>
               </div>
@@ -304,7 +306,7 @@ const About = () => {
                       <img src={gym} alt="" />
 
                     </div>
-                    <h1>QUALITY GYM</h1>
+                    <Link to='#'><h1>QUALITY GYM</h1></Link>
                   </div>
                 </div>
               </div>

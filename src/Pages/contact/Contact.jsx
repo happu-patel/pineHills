@@ -4,6 +4,7 @@ import squre_icon from '../../assets/image/squre.svg';
 import ornament_icon from '../../assets/image/ornament.svg';
 import locationIcon from '../../assets/image/location_icon.svg';
 import callIcon from '../../assets/image/call_icon_c.svg';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -19,7 +20,7 @@ const Contact = () => {
                     </div>
                     <h1 className="contact_head">Connect With Us For Personalized<br />Support And Assistance</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>Home</span> / <span className='ms-3'>Contact Us</span>
+                        <Link to='/' className='me-3'>Home</Link> / <Link to='/contact' className='ms-3'>Contact Us</Link>
                     </p>
                 </div>
             </section>

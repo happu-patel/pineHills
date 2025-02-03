@@ -14,6 +14,7 @@ import pool from '../../assets/image/pool.svg'
 import restaurant from '../../assets/image/restaurant.svg'
 import bathtub from '../../assets/image/bathtub.svg'
 import gym from '../../assets/image/gym.svg'
+import { Link } from 'react-router-dom';
 import left_img from '../../assets/image/hotel_interior.jpg';
 
 
@@ -38,7 +39,7 @@ const Faq = () => {
                     </div>
                     <h1 className="contact_head">Everything You Need <br />to Know for a Perfect Stay</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>Home</span> / <span className='ms-3'>FAQ</span>
+                        <Link to='/' className='me-3'>Home</Link> / <Link to='/faq' className='ms-3'>FAQ</Link>
                     </p>
                 </div>
             </section>
@@ -174,87 +175,87 @@ const Faq = () => {
                     </div>
                 </section>
             </section>
-            <section className="container Amenities">
-                <div className="row">
-                    <div className="col-lg-8 Amenities_box">
-                        <div className="row g-3 mb-3">
-
-                            <div className="col-lg-7">
-                                <div className="Amenities_box_data pool_bg">
-                                    <div>
-                                        <div className="Amenities_icon">
-                                            <img src={pool} alt="" />
-                                        </div>
-                                        <h1>PRIVATE POOL</h1>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-5">
-                                <div className="Amenities_box_data res_bg">
-                                    <div>
-                                        <div className="Amenities_icon">
-                                            <img src={restaurant} alt="" />
-
-                                        </div>
-                                        <h1>RESTAURANT</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row g-3 mb-3">
-                            <div className="col-lg-5">
-                                <div className="Amenities_box_data spa_bg">
-                                    <div>
-                                        <div className="Amenities_icon">
-                                            <img src={bathtub} alt="" />
-
-                                        </div>
-                                        <h1>SPA SERVICE</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-7">
-                                <div className="Amenities_box_data gym_bg">
-                                    <div>
-                                        <div className="Amenities_icon">
-                                            <img src={gym} alt="" />
-
-                                        </div>
-                                        <h1>QUALITY GYM</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <div className="amenities-card">
-                            <div className="card-content text-center">
-                                <div className='title_part text-center pt-0'>
-                                    <div className="b_white pt-0 mb-4 pb-3">
-                                        <span></span>
-                                    </div>
-                                    <img src={ornament_icon} />
-                                    <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
-                                        AMENITIES
-                                    </span>
-                                    <img src={ornament_icon} />
-                                </div>
-
-                                <h2 className="amenities-heading">We Offer You <br /> Luxurious Amenities</h2>
-                                <p className="amenities-text">
-                                    Indulge in unparalleled luxury with our top-tier amenities.
-                                    From private pools and fully equipped kitchens to personalized concierge services and elegant interiors.
-                                </p>
-                                <a href="#" className="read-more-btn">Read More</a>
-                            </div>
-                            <div className="b_white">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           <section className="container Amenities">
+                         <div className="row">
+                             <div className="col-lg-8 Amenities_box">
+                                 <div className="row g-3 mb-3">
+                                     <div className="col-lg-7">
+                                         <div className="Amenities_box_data pool_bg">
+                                             <div>
+                                                 <div className="Amenities_icon">
+                                                     <img src={pool} alt="" />
+                                                 </div>
+                                                 
+                                                 <Link to='#'><h1>PRIVATE POOL</h1></Link>
+                                             </div>
+                                         </div>
+                                     </div>
+         
+                                     <div className="col-lg-5">
+                                         <div className="Amenities_box_data res_bg">
+                                             <div>
+                                                 <div className="Amenities_icon">
+                                                     <img src={restaurant} alt="" />
+         
+                                                 </div>
+                                                 <Link to='#'><h1>RESTAURANT</h1></Link>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div className="row g-3 mb-3">
+                                     <div className="col-lg-5">
+                                         <div className="Amenities_box_data spa_bg">
+                                             <div>
+                                                 <div className="Amenities_icon">
+                                                     <img src={bathtub} alt="" />
+         
+                                                 </div>
+                                                 <Link to='#'><h1>SPA SERVICE</h1></Link>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div className="col-lg-7">
+                                         <div className="Amenities_box_data gym_bg">
+                                             <div>
+                                                 <div className="Amenities_icon">
+                                                     <img src={gym} alt="" />
+         
+                                                 </div>
+                                                 <Link to='#'><h1>QUALITY GYM</h1></Link>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div className="col-lg-4">
+                                 <div className="amenities-card">
+                                     <div className="card-content text-center">
+                                         <div className='title_part text-center pt-0'>
+                                             <div className="b_white pt-0 mb-4 pb-3">
+                                                 <span></span>
+                                             </div>
+                                             <img src={ornament_icon} />
+                                             <span className="section-title px-2 pb-1" style={{ color: '#B7A18B' }}>
+                                                 AMENITIES
+                                             </span>
+                                             <img src={ornament_icon} />
+                                         </div>
+         
+                                         <h2 className="amenities-heading">We Offer You <br /> Luxurious Amenities</h2>
+                                         <p className="amenities-text">
+                                             Indulge in unparalleled luxury with our top-tier amenities.
+                                             From private pools and fully equipped kitchens to personalized concierge services and elegant interiors.
+                                         </p>
+                                         <a href="#" className="read-more-btn">Read More</a>
+                                     </div>
+                                     <div className="b_white">
+                                         <span></span>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </section>
             {/* chhose us */}
               <section className='chhose_us'>
                            <div className="container my-5">

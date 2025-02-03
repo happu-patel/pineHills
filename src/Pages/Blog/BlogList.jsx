@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './blog.css'
 import ornament_icon from '../../assets/image/ornament.svg'
 import squre_icon from '../../assets/image/squre.svg';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import family_img from '../../assets/image/family_img.jpg';
 import hotel_img from '../../assets/image/hotel_img.jpg';
 import summer from '../../assets/image/sumer_sale.jpg';
@@ -16,50 +16,50 @@ import landscape from '../../assets/image/landscape_view.jpg';
 import wellness_new from '../../assets/image/wellness.jpg';
 
 const blogPosts = [
-    { title: "Pine Hills Unveils New Luxury Villas With Stunning Mountain Views", date: "July 20, 2024", image: hills },
-    { title: "Special Offer: Save 20% On All Bookings At Pine Hills This Summer!", date: "July 19, 2024", image: summer },
-    { title: "Pine Hills Announces Exciting New Wellness Retreat Program", date: "July 18, 2024", image: wellness },
-    { title: "Pine Hill Resort Offers Fun For The Whole Family!", date: "July 17, 2024", image: famili_fun },
-    { title: "Enhance Your Stay With Day Trips To Nearby Cultural Attractions", date: "July 16, 2024", image: caluter },
-    { title: "Get Tips And Inspiration For Your Dream Wedding At Pine Hill", date: "July 15, 2024", image: wedding_decor },
-    { title: "Check Out Our Chef's Top Five Dishes That Showcase The Flavors", date: "July 14, 2024", image: chief_dish },
-    { title: "Experience Our Infinity Pool Offering Breathtaking Landscape Views", date: "July 13, 2024", image: landscape },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
-    { title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:1, title: "Pine Hills Unveils New Luxury Villas With Stunning Mountain Views", date: "July 20, 2024", image: hills },
+    { id:2, title: "Special Offer: Save 20% On All Bookings At Pine Hills This Summer!", date: "July 19, 2024", image: summer },
+    { id:3, title: "Pine Hills Announces Exciting New Wellness Retreat Program", date: "July 18, 2024", image: wellness },
+    { id:4, title: "Pine Hill Resort Offers Fun For The Whole Family!", date: "July 17, 2024", image: famili_fun },
+    { id:5, title: "Enhance Your Stay With Day Trips To Nearby Cultural Attractions", date: "July 16, 2024", image: caluter },
+    { id:6, title: "Get Tips And Inspiration For Your Dream Wedding At Pine Hill", date: "July 15, 2024", image: wedding_decor },
+    { id:7, title: "Check Out Our Chef's Top Five Dishes That Showcase The Flavors", date: "July 14, 2024", image: chief_dish },
+    { id:8, title: "Experience Our Infinity Pool Offering Breathtaking Landscape Views", date: "July 13, 2024", image: landscape },
+    { id:9, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:10, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:11, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:12, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:13, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:14, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:15, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:16, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:17, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:18, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:19, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:20, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:21, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:22, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:23, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:24, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:25, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:26, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:27, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:28, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:29, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:30, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:31, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:32, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:33, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:34, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:35, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:36, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:37, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:38, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:39, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:40, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:41, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:42, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:43, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
+    { id:44, title: "Thrilled To Launch Our New Wellness Retreat Package", date: "July 12, 2024", image: wellness_new },
 
 ].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -205,7 +205,7 @@ const BlogList = () => {
                     <h1 className="contact_head">Stay Informed with
                         <br /> Our Latest Blog Posts</h1>
                     <p className="breadcrumb">
-                        <span className='me-3'>HOME</span> / <span className='ms-3'>BLOG & NEWS</span>
+                        <Link to='/' className='me-3'>HOME</Link> / <Link to='/blog' className='ms-3'>BLOG & NEWS</Link>
                     </p>
                 </div>
             </section>
@@ -258,7 +258,7 @@ const BlogList = () => {
                     <div className="row">
                         {currentPosts.map((post, index) => (
                             <div className="col-md-4 main_card col-sm-12 col-lg-4" key={index}
-                                onClick={() => navigate(`/blog/${index + 1}`)}
+                                onClick={() => navigate(`/blog/${post.id}`)}
                                 style={{ cursor: 'pointer' }}>
                                 <div className="card text-center">
                                     {/* Placeholder for Image */}

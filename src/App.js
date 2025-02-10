@@ -14,6 +14,7 @@ import PricingPlans from "./Pages/PricePlan/PricingPlans";
 import Villas from "./Pages/Villas/Villas";
 import Our_staff from "./Pages/Our_staff/Our_staff";
 import NotFound from "./Pages/Notfound/NotFound";
+import Error_Page from "./Pages/404_page/Error_Page";
 
 function App() {
   return (
@@ -129,7 +130,7 @@ function App() {
             </>
           }
         />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Error_Page />} />
       </Routes>
     </Router>
   );

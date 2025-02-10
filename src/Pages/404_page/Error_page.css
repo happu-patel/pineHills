@@ -1,0 +1,69 @@
+.brown_div {
+    background-color: #472c1094;
+    padding: 100px 0px;
+}
+
+.number_txt {
+    font-family: 'GFS Didot';
+    font-size: 144px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.error_msg {
+    font-family: 'GFS Didot';
+    font-size: 64px;
+    line-height: 76px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.sub_msg {
+    font-family: 'Raleway';
+    padding: 32px 0px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.back_home_btn button {
+    padding: 18px 44px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.back_home_btn button:hover {
+    background-color: #FFFFFF;
+    color: #472c1094;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:991px) {
+    .brown_div {
+        padding: 70px 0px;
+    }
+    .number_txt {
+        font-size: 80px;
+    }
+
+    .error_msg {
+        font-size: 55px;
+        line-height: 66px;
+    }
+
+    .sub_msg {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+}

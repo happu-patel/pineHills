@@ -42,7 +42,7 @@ const Contact = () => {
                                 <p className="text-center mb-4 description">
                                     Do you have anything in your brain to let us know? Kindly don’t falter to connect to us through our contact form.
                                 </p>
-                                <hr class="styled-hr" />
+                                <hr className="styled-hr" />
                                 <form>
                                     <div className="mb-3">
                                         <label htmlFor="name" className="form-label visually-hidden">Full Name</label>
